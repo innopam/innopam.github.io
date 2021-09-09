@@ -1,0 +1,31 @@
+# Home 페이지
+
+# Hero영역 텍스트
+hero-text: |
+  INNOVATIVE PLATFORM
+  FOR AI AND MAPPING
+
+# Hero 영역 프리로딩 이미지
+hero-bg: "/assets/img/hero-background.png"
+
+# Youtube Video ID
+video: "UPUhZqVrirA"
+
+missions:
+  - title: 사회적 문제 해결
+    description: "혁신적인 기술을 바탕으로<br>사회적인 문제 해결 솔루션 제공"
+
+  - title: 혁신적인 기술 개발
+    description: "지형공간의 가치를 극대화하는 혁신적인 기술개발"
+
+  - title: 즐겁고, 안정적인 일자리 창출
+    description: "자유롭고 안정적이며 즐겁게 일할 수 있는 복리후생이 탄탄한 양질의 일자리 창출"
+
+visions:
+  - title: 독보적인 공간정보 기술을 보유한<br> 세계적인 강소기업
+  - title: 인공지능, 센서, IOT 등의<br> 최신 기술과 융합을 통한 혁신적인 솔루션 개발
+  - title: 드론, 공간정보 교육을 위한<br> 혁신적인 컨텐츠와 솔루션 개발
+  - title: 고객, 투자자, 직원, 회사<br> 모두가 수익을 공유하는 기업
+
+# 채용 사이트 링크
+recruit: "https://innopam.com"

@@ -1,0 +1,117 @@
+---
+title : Innopam - Products
+permalink: /products/
+nav: products
+---
+
+<!DOCTYPE html>
+<html lang="ko">
+  {% include head.html %}
+  <body id="page-top" class="index">
+    {% include header.html %}
+    <article>
+      <div class="page-title">
+        Products
+      </div>
+      <div class="container product">
+        {% assign oscar = site.data.products.oscar %}
+        <div class="row" id="header">
+          <div class="col-sm-12 text-center">
+            <h2>{{oscar.name}}</h2>
+            <h3>{{oscar.subtitle}}</h3>
+            <div class="desc">
+              {{oscar.description}}
+            </div>
+          </div>
+        </div>
+        <div class="row" id="header-image">
+          <div class="col-12 text-center">
+            <div class="image" style="background-image:url('{{oscar.header-image}}');"></div>
+          </div>
+        </div>
+        <div class="row" id="key-features">
+          <div class="col-sm-12 text-center section-title">
+            Key Features
+          </div>
+          {% for feature in oscar.features %}
+            <div class="col-sm-6">
+              <div class="feature">
+                <div class="icon">
+                  <img src="{{feature.icon}}">
+                </div>
+                <div class="desc">
+                  {{feature.desc}}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="row" id="controllers">
+          <div class="col-sm-12 text-center section-title">
+            Controllers & Survey Apps
+          </div>
+          {% for platform in oscar.platforms %}
+            <div class="col-sm-6 platforms">
+              <div class="controller">
+                <img src="{{platform.image}}">
+              </div>
+              <div class="platform">
+                {{platform.platform}}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="row" id="version-comparison">
+          <div class="col-sm-12 text-center">
+            <p class="section-title">Version Comparison</p>
+            <div class="desc">
+              {{oscar.versions-desc | newline_to_br}}
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <table>
+              <tr>
+                {% for version in oscar.versions %}
+                  <th><img src="{{version.image}}"></th>
+                {% endfor %}
+              </tr>
+              {% tablerow version in oscar.versions %}
+                {{ version.name }}
+              {% endtablerow %}
+              {% tablerow version in oscar.versions %}
+                {{ version.display }}
+              {% endtablerow %}
+              {% tablerow version in oscar.versions %}
+                {{ version.led | newline_to_br }}
+              {% endtablerow %}
+              {% tablerow version in oscar.versions %}
+                {% if version.imu == true %}
+                  <i class="fas fa-check"></i>
+                {% elsif version.imu == false %}
+                  -
+                {% else %}
+                  {{version.imu}}
+                {% endif %}
+              {% endtablerow %}
+              {% tablerow version in oscar.versions %}
+                {{ version.memory }}
+              {% endtablerow %}
+              {% tablerow version in oscar.versions %}
+                {{ version.warranty }}
+              {% endtablerow %}
+            </table>
+          </div>
+        </div>
+        <div class="row" id="pdf">
+          <div class="col-sm-12 text-center">
+            <a href="{{oscar.pdf}}" class="btn-show-more">
+              <i class="fas fa-arrow-down"></i>&nbsp;&nbsp;제품 소개서 다운로드
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+    {% include footer.html %}
+    {% include js.html %}
+  </body>
+</html>

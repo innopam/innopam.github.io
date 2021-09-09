@@ -1,0 +1,116 @@
+// Solutions Scss
+
+.solution-item {
+    margin-bottom:$margin*2;
+
+    .image {
+        background-color:$main-color;
+        width:100%;
+        height:350px;
+        border-radius: 20px;
+        background-size:cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .desc {
+        font-size:18px;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .solution-item {
+        text-align: center;
+        .image {
+            margin-bottom:$margin/2;
+        }
+    }
+} 
+
+.solution-hero {
+    position: relative;
+    z-index:1;
+    padding:$margin 0;
+    background-color:$main-color;
+    .desc {
+        width:400px;
+        margin:0 auto;
+    }
+    .background {
+        position: absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        opacity: 0.1;
+        z-index: -1;
+        background-size:cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+}
+
+#solution-detail {
+    text-align:center;
+    background-color:black;
+
+    #feature {
+        margin-top:$margin;
+        .item-wrap {
+            display: flex;
+            flex-flow: row wrap;
+            margin-top:$margin/2;
+            .item {
+                margin-bottom:$margin;
+
+                .image {
+                    width:100%;
+                    height:300px;
+                    border-radius: 20px 20px 0 0;
+                    background-size:cover;
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                }
+                .text {
+                    padding:$margin;
+                    background-color:rgba(255,255,255,0.1);
+                    border-radius:0 0 20px 20px;
+
+                    h2 {font-size:20px;}
+                }
+            }
+        }
+    }
+
+    #example {
+        @extend #feature;
+    }
+}
+
+.close {
+  position: fixed;
+  z-index:999;
+  right: 24px;
+  top: 24px;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+}
+.close:hover {
+  opacity: 0.5;
+  transition-duration: 0.5s;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 51px;
+  width: 2px;
+  background-color: white;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}

@@ -1,0 +1,89 @@
+#Solutions 페이지
+
+# 리스트
+lists:
+  - id: 1
+    title: DmapAI
+    subtitle: Drone Mapping AI
+    description: "드론 영상을 업로드하면 정사영상(Orthophoto), 포인트클라우드(PointCloud), 3차원모델(3D Mesh), DSM(Digital Surface Model)을 생성하는 솔루션"
+    image: "/assets/img/solutions/dmapai.gif"
+    url: "#"
+
+  - id: 2
+    title: LDMapAI
+    subtitle: LiveDroneMapAI
+    description: "드론에서 전송되는 영상에서 자동으로 객체를 식별하고 실시간으로 위치를 결정하는 솔루션"
+    image: "/assets/img/solutions/ldmapai.gif"
+    url: "#"
+
+# DmapAI 상세페이지
+# 헤더
+dmapai:
+    title: DmapAI
+    subtitle: Drone Mapping DmapAI
+    description: "드론 영상을 업로드하면 정사영사(Orthophoto), 포인트클라우드(PointCloud), 3차원모델(3D Mesh), DSM(Digital Surface Model)을 생성하는 솔루션"
+    image: "/assets/img/solutions/dmapai/header.png"
+
+# 기능
+    features: 
+      - title: 정사 영상 제작 기능
+        description: "사용자가 업로드한 드론영상을 활용해, 영상매칭과 사진측량 기술을 이용해 정사영상을 제작하는 기능"
+        image: "/assets/img/solutions/dmapai/feature-1.png"
+      
+      - title: Point Cloud/3DMesh 제작 기능
+        description: "사용자가 업로드한 드론영상을 활용해, 영상 매칭과 사진측량 기술을 이용해 3차원 Point Cloud와 Mesh를제작하는 기능"
+        image: "/assets/img/solutions/dmapai/feature-2.png"
+
+      - title: DSM 제작기능
+        description: "사용자가 업로드한 여러장의 드론영상을 활용해, 영상매칭과 사진측량 기술을 이용해 DSM을 제작하는 기능"
+        image: "/assets/img/solutions/dmapai/feature-3.png"
+
+      - title: AI 기반 드론 영상 분석 기능
+        description: "딥러닝 영상 세그멘테이션 기반 농작물 자동 탐지 기능"
+        image: "/assets/img/solutions/dmapai/feature-4.png"
+
+      - title: AI 기반 드론 영상 분석 기능
+        description: "변화탐지 및 불법건축물 탐지 기능"
+        image: "/assets/img/solutions/dmapai/feature-5.png"
+
+      - title: AI 기반 드론 영상 분석 기능
+        description: "도심 녹지 및 태양광 패널 자동 탐지"
+        image: "/assets/img/solutions/dmapai/feature-6.png"
+
+# 도입사례
+    examples:
+      - title: 국립 공원 공단
+        description: "드론 영상과 AI 기반 해양쓰레기/불법건축물 자동탐지"
+        image: "/assets/img/solutions/dmapai/example-1.png"
+
+      - title: 제주특별자치도
+        description: "드론 영상과 AI 기반 월동작물 재배면적 산정 서비스"
+        image: "/assets/img/solutions/dmapai/example-2.png"
+
+# LDmapAI 상세페이지
+# 헤더
+ldmapai:
+    title: LDMapAI
+    subtitle: LiveDroneMapAI
+    description: "드론에서 전송되는 영상에서 자동으로 객체를 식별하고 실시간으로 위치를 결정하는 솔루션"
+    image: "/assets/img/solutions/ldmapai/header.png"
+
+# 적용분야
+    features:
+      - title: 재난재해
+        description: 
+        image: "/assets/img/solutions/ldmapai/feature-1.png"
+
+      - title: 모니터링
+        description: 
+        image: "/assets/img/solutions/ldmapai/feature-2.png"
+
+# 도입사례
+    examples:
+      - title: 국립재난안전연구원
+        description: "실시간 재난지역 탐지"
+        image: "/assets/img/solutions/ldmapai/example-1.png"
+
+      - title: 제주특별자치도
+        description: "실시간 해양오염물질 모니터링"
+        image: "/assets/img/solutions/ldmapai/example-2.png"

@@ -1,0 +1,32 @@
+---
+# Innopam Site SCSS
+---
+
+//Base Url
+$baseurl: "{{ site.baseurl }}";
+
+// Color Setting
+$main-color: #5430E1;
+$sub-color: #70C6CF;
+
+// base margin
+$margin: 36px;
+
+// transition duration
+$transition-duration: 0.5s;
+
+// Webfont Import
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+// Bootstrap-sass
+@import 'bootstrap';
+@import 'modal';
+// $grid-float-breakpoint:     $screen-sm-min !default;
+
+// Innopam scss
+@import 'innopam.global';
+@import 'innopam.home';
+@import 'innopam.solutions';
+@import 'innopam.products';
+@import 'innopam.business-record';
+@import 'innopam.contact';

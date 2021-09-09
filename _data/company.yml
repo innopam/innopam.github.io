@@ -1,0 +1,27 @@
+company-name: 주식회사 이노팸
+
+# 사업자등록번호
+company-number: 204-86-51274
+
+tel: 02-702-5127
+email: innopam@innopam.com
+
+# 본사사무실
+address-1: |
+  서울특별시 동대문구 서울시립대로 163 
+  (전농동, 서울시립대학교 21세기관 711호)
+
+# 연구소
+address-2: |
+  서울시 용산구 원효로 138, 청진빌딩 302호
+
+# 제주지사
+address-3: |
+  제주특별자치도 제주시 동문로9길,13-1,
+  W360 베타룸
+
+sns:
+  - name: facebook
+    url: http://facebook.com/innopam
+  - name: youtube
+    url: https://www.youtube.com/channel/UCKeUHZvbLQ7obvRQLUTqfOQ

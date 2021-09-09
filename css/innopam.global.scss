@@ -1,0 +1,210 @@
+// Global SCSS 
+
+html, body {
+    background-color: black;
+    font-family: 'futura-pt', 'Noto Sans KR', sans-serif;
+    font-size:16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 160%;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    text-rendering: auto;
+    word-break: keep-all;
+}
+
+a, a:visited, a:active, a:hover {
+    color:white;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color:$sub-color !important;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+.active {background-color:$main-color;}
+
+// buttons
+.btn-show-more {
+    display: inline-block;
+    font-size:18px;
+    padding:16px 68px;
+    color:white;
+    background-color:$main-color;
+    border-radius:65px;
+    margin:$margin/2 0;
+}
+
+.btn-show-more:hover {
+    color:white !important;
+    background-color:$sub-color;
+    transition-duration: 0.5s;
+}
+
+// Font
+h1 {
+    font-weight:600;
+    font-size:40px;
+    margin-top:0;
+    margin-bottom:$margin/2;
+}
+
+h2 {
+    font-weight: 600;
+    font-size:48px;
+    margin-top:0;
+    color:$sub-color;
+    margin-bottom:$margin/2;
+}
+
+h3 {
+    font-weight:600;
+    font-size:24px;
+    margin-bottom:$margin/2;
+}
+
+@media (max-width: $screen-xs-max) {
+    br {display: none;}
+}
+
+// variables
+.background-image {
+    width:100%;
+    border-radius: 20px;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+/* header */
+nav {
+    height: 100px;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0;
+    padding: 0;    
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    .navbar-header {
+        button {
+            border:0px;
+            margin-top:27px;
+            span.icon-bar {
+                width:30px;
+                background-color:$sub-color;
+                margin-bottom:10px;
+            }
+        }
+        a.nav-logo {
+            display: block;
+            margin: 30px 0;
+            width: 154px;
+            img {
+                width:100%;
+                height:auto;
+            }
+        }
+    }
+
+    .navbar-nav {
+        li {
+            font-size: 24px;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+            line-height: 100px;
+
+            a.link {
+                color:white !important;
+                display: inline-block;
+                margin-left: 33px;
+                padding: 10px 18px;
+                border-radius: 999px;
+            }
+
+            a.link:hover {
+                color:white !important;
+                background-color: $main-color;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    nav {
+        .container {width:100%;}
+        .navbar-header {
+            margin-bottom:-1px;
+            a.nav-logo {
+                margin-left:15px;
+            }
+        }
+
+        .navbar-nav {
+            background-color:rgba(0,0,0,0.9);
+            margin-top:0;
+            padding-bottom:0;
+            text-align: center;
+            li {
+                line-height:2em;
+                a.link {
+                    width:100%;
+                    margin-left:0;
+                    border-radius:0px;
+                    padding-left:15px;
+                }
+            }
+        }
+    }
+}
+
+
+/* footer */
+footer {
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 100px;
+
+    hr {opacity: 0.5;}
+    a, a:visited, a:active {opacity: 0.5}
+    a:hover {
+        color:white !important;
+        opacity: 1;
+    }
+
+    .footer-sns {
+        text-align: right;
+
+        a { margin-left:5px; }
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    footer {
+        br {display: none;}
+        .footer-sns {
+            margin-top:$margin;
+            text-align:center;
+        }
+    }
+}
+
+// Global
+article {
+    margin-top: 100px;
+}
+
+.page-title {
+    font-size:48px;
+    font-weight: 600;
+    text-align: center;
+    padding-top:$margin;
+    padding-bottom:$margin*2;
+}
+
+.contents {
+    margin:$margin*2 0;
+}

@@ -1,0 +1,5 @@
+﻿{
+  "Description": "웹 사이트 루트의 위치 Office 365에 대한 도메인 소유권 확인 파일",
+  "Domain": "innopam.com",
+  "Id": "a83dab49-8cd0-4059-9041-397cacc49bfc"
+}

@@ -1,0 +1,36 @@
+url: https://innopam.com/
+baseurl: ""
+
+# Site settings
+title: 주식회사 이노팸
+email: jypark.inno@gmail.com
+description: "공간정보 구축 솔루션, 인공지능, 비전 센서 기반 측위 및 매핑 시스템 등 응용소프트웨어 개발 및 공급업체"
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/innopam
+  - title: facebook
+    url: http://facebook.com/innopam
+  - title: bitbucket 
+    url: http://bitbucket.org/innopam
+  - title: github
+    url: http://github.com/innopam
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: InnoPAM HQ, 63, Seoulsiripdae-ro, Dongdaemun-gu, Seoul, Republic of Korea
+  - line: InnoPAM Lab, 3F, 77, Cheongpa-ro, Yongsan-gu, Seoul, Republic of Korea
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+collections:
+  solutions:
+    output: true
+
+sass:
+    style: compressed
+    sass_dir: css

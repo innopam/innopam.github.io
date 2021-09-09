@@ -1,0 +1,91 @@
+#Products 페이지
+
+oscar:
+  name: Oscar
+  subtitle: GNSS RTK Receiver with Calibration-Free Tilt Compensation
+  description: |
+    Oscar GNSS 수신기는 고정밀 관성 측정 장치(IMU)를 탑재한 차세대 기울기(tilt) 측정 GNSS 수신기입니다(Ultimate 버전에 한함). 
+    이러한 캘리브레이션이 필요 없는(calibration-free) 기울기 보정은 자기 교란에 영향을 받지 않고, 
+    측량대를 수직으로 세우지 않아도 되므로 경험해보지 못한 유연성과 효율성을 제공합니다. 
+    Oscar GNSS Receiver는 내부 고성능 multi-constellation과 multi-frequency GNSS 보드를 이용해 
+    높은 정확도와 안정적인 신호 감지 기능을 제공합니다.
+  header-image: "/assets/img/products/oscar/header.png"
+
+# Key features
+  features:
+    - icon: "/assets/img/products/oscar/feature-1-icon.png"
+      desc: 다양한 위성, 주파수 지원 GPS, GLONASS, BeiDou, Galileo, SBAS, QZSS
+    - icon: "/assets/img/products/oscar/feature-2-icon.png"
+      desc: 극한 환경에서 신뢰성을 위한 IP67 등급의 방진, 방수 케이스 
+    - icon: "/assets/img/products/oscar/feature-3-icon.png"
+      desc: 576 채널 지원
+    - icon: "/assets/img/products/oscar/feature-4-icon.png"
+      desc: 16GB / 8GB 내장 메모리
+    - icon: "/assets/img/products/oscar/feature-5-icon.png"
+      desc: 자기 교란에 영향을 받지 않는 기울기 보정
+    - icon: "/assets/img/products/oscar/feature-6-icon.png"
+      desc: 410-470 MHz UHF radio 지원,4G 네트워크, Wi-Fi, Bluetooth, NFC 기능
+    - icon: "/assets/img/products/oscar/feature-7-icon.png"
+      desc: 4G / 3G / 2G 네트워크 및 로버 라디오 모드에서 최대 16 시간 작동되는 2개의 배터리
+    - icon: "/assets/img/products/oscar/feature-8-icon.png"
+      desc: TCS (tersus caster service) 무료 구독 - 내부 4G 네트워크 또는 컨트롤러 네트워크를 통해 수정 데이터를 Oscar Base에서 로버로 전송 가능
+
+# Controllers & Suvey Apps
+  platforms:
+    - image: "/assets/img/products/oscar/window-platform.png"
+      platform: Window Platform
+    - image: "/assets/img/products/oscar/android-platform.png"
+      platform: Android Platform
+
+# Version Comparison
+  versions-desc: |
+    Oscar GNSS 수신기는 Ultimate, Advanced, Baisc 세가지 버전의 다양한 옵션으로 사용자의 필요에 따라 선택할 수 있습니다.
+  versions:
+    - name: 버전
+      image: ""
+      display: 디스플레이
+      led: LED 표시
+      imu: IMU
+      memory: Memory
+      warranty: 보증기간
+
+    - name: Ultimate
+      image: "/assets/img/products/oscar/version-ultimate.png"
+      display: 1.54’’ OLED
+      led: |
+        Satellite
+        Tilt
+        Correction Data 
+        Power
+      imu: true
+      memory: 16GB
+      warranty: 2년
+
+    - name: Advanced
+      image: "/assets/img/products/oscar/version-advanced.png"
+      display: 1.54’’ OLED
+      led: |
+        Satellite
+        Tilt
+        Correction Data 
+        Power
+      imu: false
+      memory: 16GB
+      warranty: 2년
+
+    - name: Basic
+      image: "/assets/img/products/oscar/version-basic.png"
+      display: 1.54’’ OLED
+      led: |
+        Satellite
+        Static
+        Correction Data
+        Power
+        Bluetooth
+        Solution Status
+      imu: false
+      memory: 8GB
+      warranty: 1년
+
+# 제품소개서
+  pdf: "/assets/pdf/oscar.pdf"

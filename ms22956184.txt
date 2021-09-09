@@ -1,0 +1,5 @@
+﻿{
+  "Description": "웹 사이트 루트의 위치 Microsoft 365에 대한 도메인 소유권 확인 파일",
+  "Domain": "innopam.kr",
+  "Id": "328f5fb4-a446-4186-ae7f-1d288dee3c08"
+}

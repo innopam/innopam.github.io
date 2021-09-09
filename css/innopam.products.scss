@@ -1,0 +1,127 @@
+// Products Scss
+
+.product {
+    #header {
+        .desc {
+            width:75%;
+            margin:0 auto;
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        #header {
+            text-align: center;
+            h3 {
+                width:80%;
+                display: inline-block;
+            }
+            .desc {
+                margin-top:$margin/2;
+                width:90%;
+                word-break: keep-all;
+            }
+        }
+    }
+
+    #header-image {
+        margin:$margin 0 $margin/2 0;
+        .image {
+            @extend .background-image;
+            height:333px;
+            background-size:contain;
+            background-color:white;
+        }
+    }
+
+    .section-title {
+        @extend h1;
+        margin:$margin/2 0;
+    }
+
+    #key-features {
+        .feature {
+            height:140px;
+            border:1px solid white;
+            border-radius: 10px;
+            padding:0 32px;
+            margin:15px 0;
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+
+            .icon {
+                img {width:50px;height:auto;}
+            }
+
+            .desc {
+                padding-left:$margin;
+                word-wrap: normal;
+            }
+        }
+
+        .feature:hover {
+            background-color:$main-color;
+            border-color:$main-color;
+            transition-duration:$transition-duration;
+        }
+    }
+
+    #controllers {
+        .platforms {
+            margin:$margin/2 0;
+
+            .controller {
+                background-color:rgba(255,255,255,0.1);
+                border-radius:10px 10px 0 0;
+                text-align: center;
+                padding:55px;
+                img {width:60%;}
+            }
+
+            .platform {
+                background-color:$main-color;
+                border-radius:0 0 10px 10px;
+                text-align: center;
+                font-size:28px;
+                font-weight:600;
+                padding:46px;
+
+            }
+        }
+    }
+
+    #version-comparison {
+        table {
+            width:100%;
+            margin:$margin 0 $margin/2 0;
+
+            th {
+                border-bottom:1px solid rgba(255,255,225,0.5);
+                padding:10px 0px 30px 0;
+                text-align: center;
+                img {width:70%;}
+            }
+
+            th:nth-child(1) {width:2/12*100%;}
+            th:nth-child(2) {width:3.3/12*100%;}
+            th:nth-child(3) {width:3.3/12*100%;}
+            th:nth-child(4) {width:3.3/12*100%;}
+
+            td {
+                padding:10px 30px 10px 0;
+                border-bottom:1px solid rgba(255,255,255,0.5);
+                text-align: center;
+                vertical-align: top;
+            }
+
+            td:nth-child(1) {
+                color:$sub-color;
+                text-align:left;
+            }
+        }
+    }
+
+    #pdf {
+        margin-bottom:$margin;
+    }
+}

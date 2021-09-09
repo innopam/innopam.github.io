@@ -1,0 +1,13 @@
+# Contact 페이지
+
+map-1:
+  name: 이노팸 본사
+  latlng: 37.5830126,127.0585939
+  img: "/assets/img/map/uos21.png"
+  address: 서울시 동대문구 서울시립대로 163 서울시립대학교 21세기관 711호
+
+map-2:
+  name: 이노팸 연구소
+  latlng: 37.5336172,126.9604495
+  img: "/assets/img/map/ysssg.png"
+  address: 서울시 용산구 원효로 138, 청진빌딩 302호

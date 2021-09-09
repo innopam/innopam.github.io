@@ -1,0 +1,133 @@
+// Home Scss
+
+// Youtube-Background
+iframe {
+    transition: opacity 500ms ease-in-out;
+    transition-delay: 250ms;
+}
+
+.hero {
+    // height: 400px;
+    height:640px;
+    // background-color: $main-color;
+    .content {
+        display:table;
+        width:90%;
+        height:100%;
+        margin:0 auto;
+        position: relative;
+        z-index:2;
+        .hero-text {
+            display: table-cell;
+            vertical-align: middle;
+            text-align:center;
+            transition: opacity 1000ms ease-in-out;
+            transition-delay:5000ms;
+        }
+        .preloader {
+            position: absolute;
+            bottom:$margin;
+            left:50%;
+            vertical-align: baseline;
+            text-align: center;
+            transition: opacity 1000ms ease-in-out;
+            transition-delay:5000ms;
+            border: 5px solid rgba(255,255,255,0.5);
+            border-top: 5px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+    }
+    .blur {
+        width:100%;
+        height:640px;
+        position:absolute;
+        top:0;
+        z-index:1;
+        overflow: hidden;
+        // background-color:$main-color;
+        background-size:cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        transition: opacity 1000ms ease-in-out;
+        transition-delay:5000ms;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .hero {
+        height:300px !important;
+            .hero-text {
+                h1 {font-size:32px;}
+            }
+            .preloader {
+                width:20px !important;
+                height:20px !important;
+                border: 3px solid rgba(255,255,255,0.5) !important;
+                border-top: 3px solid white !important;
+            }
+        }
+        .blur {height:300px !important;}
+    }
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .hero {
+        height:520px !important;
+        .blur {height:520px !important;}
+    }
+}
+
+#missions {
+    margin-top:$margin;
+
+    .mission-wrap{ 
+        // display: flex;
+        // flex-flow: row wrap;
+        // align-items: center;
+        // justify-content: center;
+        margin-top:$margin/2;
+        .mission {
+            padding:$margin $margin/2;
+            // background-color:$main-color;
+            border-radius: 20px;
+            font-size:18px;
+            margin-bottom:$margin;
+
+            h2 {font-size:24px;}
+        }
+        .mission:hover {
+            background-color:$main-color;
+            transition-duration: $transition-duration;
+        }
+    }
+}
+
+#visions {
+    margin-top: $margin;
+    .vision-wrap {
+        margin-top:$margin/2;
+        .vision {
+            font-size:18px;
+            border:1px solid white;
+            border-radius:10px;
+            padding:$margin $margin/2;
+            margin-bottom:$margin;
+        }
+        .vision:hover {
+            border:1px solid $main-color;
+            background-color:$main-color;
+            transition-duration: $transition-duration;
+        }
+    }
+}
+
+#recruit {
+    margin-top: $margin*2;
+    margin-bottom: $margin*2;
+}
