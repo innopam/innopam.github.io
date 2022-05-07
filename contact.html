@@ -82,7 +82,8 @@ nav: contact
             
             var message = '현재 지도 레벨은 ' + level + ' 입니다';
             var resultDiv = document.getElementById('result');  
-            resultDiv.innerHTML = message;
+            if(resultDiv != null)
+              resultDiv.innerHTML = message;
             
           });
         }
