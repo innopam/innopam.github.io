@@ -151,10 +151,10 @@ business-records:
     year: 2020
     note: 영상처리
 
-  - name: 딥러닝을 이용한 토지의 이용형태 분류 학습/테스트/환경 구축
-    client: 올포랜드
-    year: 2020
-    note: AI
+#  - name: 딥러닝을 이용한 토지의 이용형태 분류 학습/테스트/환경 구축
+#    client: 올포랜드
+#    year: 2020
+#    note: AI
 
   - name: 드론 영상 보관 및 처리 시스템 구축
     client: 국립공원공단
