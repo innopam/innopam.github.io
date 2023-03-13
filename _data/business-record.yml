@@ -165,6 +165,66 @@ business-records:
     client: 한국정보화진흥원
     year: 2021
     note: AI
+    
+  - name: 제주 드론특별자유화구역 조성 사업
+    client: 제주특별자치도
+    year: 2022
+    note: AI알고리즘 개발
+    
+  - name: GeoAI 기반 도시 변화탐지 알고리즘 고도화 연구 용역
+    client: 서울디지털재단
+    year: 2022
+    note: AI알고리즘 개발
+    
+  - name: 제주 수월봉 화산쇄설층 3차원 변화탐지 방재드론 운용체계 구축
+    client: 제주특별자치도
+    year: 2022
+    note: 드론장비도입 및 AI알고리즘 개발
+    
+  - name: 제주 주요 채소류 생산정보 서비스 구축
+    client: 제주특별자치도
+    year: 2022
+    note: 시스템 개발
+    
+  - name: 미세균열 탐지용 정밀 영상 취득 및 AI기반 균열검측 시스템 개발 용역
+    client: 한국건설기술연구원
+    year: 2022
+    note: AI알고리즘 개발
+    
+  - name: 수소연료전지드론과 인공지능을 이용한 농작물 모니터링 및 작황 예측 기술
+    client: 국토교통과학기술진흥원(KAIA)
+    year: 진행중(2021~2023)
+    note: AI알고리즘 개발
+    
+  - name: 기반시설 첨단관리(Total care) 기술개발
+    client: 국토안전관리원
+    year: 진행중(2022~2026)
+    note: AI알고리즘 개발
+    
+  - name: 디지털 국토정보 구축 효율화를 위한 다차원-다시점 공간 데이터 기반 국토정보 변화인식 및 자동갱신 기술개발
+    client: 국토교통과학기술진흥원(KAIA)
+    year: 진행중(2022~2026)
+    note: 도시변화탐지 개발
+    
+  - name: Land-XI 플랫폼 기반 구축 용역
+    client: 국토정보공사(LX)
+    year: 2022
+    note: AI알고리즘, 시스템 개발
+    
+  - name: 드론 관리 및 영상 보관시스템 유지관리
+    client: 국립공원관리공단
+    year: 2022
+    note: 시스템개발
+
+  - name: 드론 실증도시 구축 사업(인천 특화 사회문제 해결 드론 실증도시 구축)
+    client: 항공안전기술원
+    year: 진행중(2022~2023)
+    note: AI알고리즘 개발
+    
+  - name: 제주특별자치도 위성영상 분석시스템 구축 용역
+    client: 제주특별자치도
+    year: 구축중(2023)
+    note: AI알고리즘 및 시스템 개발
 
 # Clients
 clients:
