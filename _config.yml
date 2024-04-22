@@ -34,3 +34,6 @@ collections:
 sass:
     style: compressed
     sass_dir: css
+
+exclude:
+  - products.html
