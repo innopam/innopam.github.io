@@ -1,11 +1,3 @@
 {
-  "cSpell.words": [
-    "garampark",
-    "Innopam"
-  ],
-  "files.associations": {
-    "*.embeddedhtml": "html",
-    "*.rmd": "markdown",
-    "plyconfig.json": "jsonc"
-  }
+  "cSpell.words": ["garampark", "Innopam"]
 }
