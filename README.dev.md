@@ -64,4 +64,14 @@ bundle install
 
 ## docker 및 compose
 
-- 추후에 docker 및 docker compose 로 실행 가능하도록 구성할 예정
+docker 와 docker compose 가 설치되었으면
+
+```sh
+docker compose up
+```
+
+혹은
+
+```sh
+docker-compose up
+```
