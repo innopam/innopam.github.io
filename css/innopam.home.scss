@@ -6,10 +6,21 @@
 //     transition-delay: 250ms;
 // }
 
+h1 {
+    font-size: 48px;
+}
+
+h4{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
 .hero {
     // height: 400px;
     height:500px;
     // background-color: $main-color;
+
     .content {
         display:table;
         width:90%;
@@ -103,7 +114,7 @@
             padding:$margin $margin/2;
             // background-color:$main-color;
             border-radius: 20px;
-            font-size:15px;
+            font-size:14px;
             margin-bottom:$margin;
 
             h2 {font-size:20px;}
