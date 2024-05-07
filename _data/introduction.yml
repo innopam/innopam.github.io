@@ -20,21 +20,33 @@ team: '/assets/img/introduction/team.png'
 
 # 회사 연혁
 history:
-  - date: 2021.06
+  - date: 2021.06.
     content: 기업부설연구소 인정(과학기술정보통신부)
-  - date: 2020.05
+  - date: 2020.05.
     content: TECH밸리 선정
   - date: 2019.10.
     content: 측량업등록(국토교통부)
-  - date: 2019.02
+  - date: 2019.02.
     content: 연구개발전담부서 인정(과학기술정보통신부)
   - date: 2018.10.
     content: 서울형 R&D사업 올해의 최우수기업 선정
-  - date: 2018.08
+  - date: 2018.08.
     content: 국토교통부 ‘드론규제샌드박스 시범사업’수행
-  - date: 2018.04
+  - date: 2018.04.
     content: 초경량비행장치사용사업등록(국토교통부 서울지방공청)
-  - date: 2018.03
+  - date: 2018.03.
     content: 중소기업청 중소기업 인증
-  - date: 2014.06
+  - date: 2014.06.
     content: 벤처기업 인증(중소벤처기업부)
+
+contact:
+  - place: 본사
+    address: 서울특별시 동대문구 서울시립대로 163 (전농동, 서울시립대학교 21세기관 711호)
+  - place: 연구소
+    address: 서울시 용산구 원효로 146 금강프라임빌딩 6층, 13층
+  - place: 제주지사
+    address: 제주특별자치도 제주시 첨단로 213-65 제주 종합비즈니스센터 4층 이노팸
+  - place: Tel.
+    address: 02-702-5127
+  - place: E-mail.
+    address: innopam@innopam.com
