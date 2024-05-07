@@ -71,14 +71,6 @@ nav: introduction
 
         <div class="row contents" id="contact">
           <div class="smallTitle">Contact</div>
-
-          {% for contact in introduction.contact %}
-          <div class="row">
-            <div class="col-xs-2" style="font-size: 24px; font-weight: 500; margin-top: 15px">{{contact.place}}</div>
-            <div class="col-xs-9" style="font-size: 18px; font-weight: 500; margin-top: 15px">{{contact.address}}</div>
-          </div>
-          {% endfor %}
-
           <div class="fullwidthbanner-container">
             <div id="map"></div>
             <script
@@ -202,10 +194,16 @@ nav: introduction
               initialize();
             </script>
           </div>
+          {% for contact in introduction.contact %}
+          <div class="row">
+            <div class="col-xs-2" style="font-size: 24px; font-weight: 500; margin-top: 15px">{{contact.place}}</div>
+            <div class="col-xs-9" style="font-size: 18px; font-weight: 500; margin-top: 15px">{{contact.address}}</div>
+          </div>
+          {% endfor %}
         </div>
       </div>
     </article>
 
-    <!-- {% include dmapai.html %} {% include ldmapai.html %} {% include footer.html %} {% include js.html %} -->
+    {% include footer.html %} {% include js.html %}
   </body>
 </html>
