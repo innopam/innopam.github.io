@@ -1,5 +1,5 @@
 ---
-title : Innopam - Solutions
+title: Innopam - Solutions
 permalink: /solutions/
 nav: solutions
 ---
@@ -10,56 +10,44 @@ nav: solutions
   <body id="page-top" class="index">
     {% include header.html %}
     <article>
-      <div class="page-title">
-        Solutions
-      </div>
+      <div class="page-title">Solutions</div>
       <div class="container">
-        {% assign solution-lists = site.data.solutions.lists | sort: 'id'  %}
-        {% for solution in solution-lists %}
-          {% assign mod = forloop.index | modulo: 2 %}
-          {% if mod == 1 %}
-            <div class="row solution-item">
-              <div class="col-sm-7 visible-xs">
-                <div class="image" style="background-image:url('{{solution.image}}');">
-                </div>
-              </div>
-              <div class="col-sm-5">
-                <h2>{{solution.title}}</h2>
-                <h3>{{solution.subtitle}}</h3>
-                <div class="desc">
-                  {{solution.description}}
-                </div>
-                <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">더 알아보기</a>
-              </div>
-              <div class="col-sm-7 hidden-xs">
-                <div class="image" style="background-image:url('{{solution.image}}');">
-                </div>
-              </div>
-            </div>
-          {% else %}
-            <div class="row solution-item">
-              <div class="col-sm-7">
-                <div class="image" style="background-image:url('{{solution.image}}');">
-                </div>
-              </div>
-              <div class="col-sm-5">
-                <h2>{{solution.title}}</h2>
-                <h3>{{solution.subtitle}}</h3>
-                <div class="desc">
-                  {{solution.description}}
-                </div>
-                <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">더 알아보기</a>
-              </div>
-            </div>
-          {% endif %}
-        {% endfor %}
+        {% assign solution-lists = site.data.solutions.lists | sort: 'id' %} {% for solution in solution-lists %} {%
+        assign mod = forloop.index | modulo: 2 %} {% if mod == 1 %}
+        <div class="row solution-item">
+          <div class="col-sm-7 visible-xs">
+            <div class="image" style="background-image:url('{{solution.image}}');"></div>
+          </div>
+          <div class="col-sm-5">
+            <h2>{{solution.title}}</h2>
+            <h3>{{solution.subtitle}}</h3>
+            <div class="desc">{{solution.description}}</div>
+            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}"
+              >더 알아보기</a
+            >
+          </div>
+          <div class="col-sm-7 hidden-xs">
+            <div class="image" style="background-image:url('{{solution.image}}');"></div>
+          </div>
+        </div>
+        {% else %}
+        <div class="row solution-item">
+          <div class="col-sm-7">
+            <div class="image" style="background-image:url('{{solution.image}}');"></div>
+          </div>
+          <div class="col-sm-5">
+            <h2>{{solution.title}}</h2>
+            <h3>{{solution.subtitle}}</h3>
+            <div class="desc">{{solution.description}}</div>
+            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}"
+              >더 알아보기</a
+            >
+          </div>
+        </div>
+        {% endif %} {% endfor %}
       </div>
     </article>
 
-    {% include dmapai.html %}
-    {% include ldmapai.html %}
-    {% include footer.html %}
-    {% include js.html %}
-
+    {% include dmapai.html %} {% include ldmapai.html %} {% include footer.html %} {% include js.html %}
   </body>
 </html>

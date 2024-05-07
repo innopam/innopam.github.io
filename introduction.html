@@ -1,0 +1,53 @@
+---
+title: Innopam - Introduction
+permalink: /introduction/
+nav: introduction
+---
+
+<!DOCTYPE html>
+<html lang="ko">
+  {% include head.html %}
+  <body id="page-top" class="index">
+    {% include header.html %} {% assign introduction = site.data.introduction %}
+    <article>
+      <div class="pageTitle">Introduction</div>
+      <div class="container" id="about">
+        <div class="row contents" id="ceo-text">
+          <div class="smallTitle">CEO 인사말</div>
+          <div class="col-xl-9" style="font-size: 18px">{{introduction.ceo-text | newline_to_br}}</div>
+        </div>
+
+        <div class="row contents" id="mission">
+          <div class="smallTitle">Mission</div>
+          <div class="content">
+            <div class="row">
+              <div class="blur" style="background-image: url('{{introduction.social}}')"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row contents" id="history">
+          <div class="smallTitle">History</div>
+          <div class="col-sm-8">
+            {% for history in introduction.history %}
+            <div class="row">
+              <div class="col-xs-3 content" style="font-size: 24px; font-weight: 500; margin-top: 15px">
+                {{history.date}}
+              </div>
+              <div class="col-xs-9 content" style="font-size: 18px; font-weight: 500; margin-top: 15px">
+                {{history.content}}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="row contents" id="contact">
+          <div class="smallTitle">Contact</div>
+        </div>
+      </div>
+    </article>
+
+    {% include dmapai.html %} {% include ldmapai.html %} {% include footer.html %} {% include js.html %}
+  </body>
+</html>
