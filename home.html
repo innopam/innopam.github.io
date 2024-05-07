@@ -15,29 +15,71 @@ nav: home
         <div class="content">
           <div class="hero-text">
             <h1>{{home.hero-text | newline_to_br }}</h1>
+            <h4>{{home.hero-sub-text | newline_to_br }}</h4>
           </div>
-          <div class="preloader"></div>
+          <!-- <div class="preloader"></div> -->
         </div>
         <div class="blur" style="background-image:url('{{home.hero-bg}}');"></div>
-        <div data-ytbg-fit-box="true" data-ytbg-load-background="false" data-youtube="https://www.youtube.com/watch?v={{home.video}}"></div>
+        <!-- <div data-ytbg-fit-box="true" data-ytbg-load-background="false" data-youtube="https://www.youtube.com/watch?v={{home.video}}"></div> -->
       </div>
       <div class="container">
         <div class="row text-center" id="missions">
-          <div class="col-sm-12">
+          <!-- <div class="col-sm-12">
             <h1>Missions</h1>
-          </div>
+          </div> -->
           <div class="mission-wrap col-sm-12 ">
             {% for mission in home.missions %}
-            <div class="col-sm-4 col-xs-12">
+            <div class="sm-4 col-xs-12 col-sm-4">
               <div class="mission">
-                <h2>{{mission.title}}</h2>
+                <h2><a>{{mission.number}}</a>{{mission.title}}</h2>
                 {{mission.description}}
               </div>
             </div>
             {% endfor %}
           </div>
         </div>
-        <div class="row text-center" id="visions">
+
+
+        <div class="fullwidthbanner-container hero">
+          <div class="content">
+            <div class="hero-text" style="color: white !important;">
+              <h1>{{home.maps-text | newline_to_br }}</h1>
+              <h4>{{home.maps-sub-text | newline_to_br }}</h4>
+            </div>
+          
+          </div>
+          <div style="background-image:url('{{home.maps-bg}}');"></div>
+        </div>
+
+
+        <div class="row text-center" id="missions">
+          <div class="col-sm-12">
+            <h1>Solution</h1>
+            <h4>{{home.solution-text | newline_to_br }}</h4>
+          </div>
+
+          <div
+          style="display: inline-flex;
+          padding: 12px 24px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          border-radius: 999px;
+          background: #1057C1;
+          width: 190px;
+          "
+          >
+          <a>View more <img src="/assets/img/main/tail-right.svg" style="float: right;"/></a>
+          
+        
+        </div>
+    
+        </div>
+
+
+
+        
+        <!-- <div class="row text-center" id="visions">
           <div class="col-sm-12">
             <h1>Visions</h1>
           </div>
@@ -50,25 +92,25 @@ nav: home
             </div>
             {% endfor %}
           </div>
-        </div>
-        <div class="row text-center" id="career">
+        </div> -->
+        <!-- <div class="row text-center" id="career">
           <div class="col-sm-12">
             <h1>채용 공고</h1>
           </div>
           <div class="recruit-wrap col-sm-12">
             <a href="{{home.recruit}}" class="btn-show-more" target="_blank">채용 사이트 바로가기</a>
           </div>
-        </div>
+        </div> -->
       </div>
     </article>
     {% include footer.html %}
     {% include js.html %}
     <script type="text/javascript">
         jQuery(document).ready(function() {
-            jQuery('[data-youtube]').youtube_background();
-            jQuery('.blur').css('opacity','0');
-            jQuery('.hero-text').css('opacity','0');
-            jQuery('.preloader').css('opacity','0');
+        //     jQuery('[data-youtube]').youtube_background();
+        //     jQuery('.blur').css('opacity','0');
+        //     jQuery('.hero-text').css('opacity','0');
+        //     jQuery('.preloader').css('opacity','0');
         });
     </script>
   </body>
