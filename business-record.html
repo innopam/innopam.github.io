@@ -1,5 +1,5 @@
 ---
-title : Innopam - Business Record
+title: Innopam - Business Record
 permalink: /business-record/
 nav: business-record
 ---
@@ -8,12 +8,9 @@ nav: business-record
 <html lang="ko">
   {% include head.html %}
   <body id="page-top" class="index">
-    {% include header.html %}
-    {% assign business-record = site.data.business-record %}
+    {% include header.html %} {% assign business-record = site.data.business-record %}
     <article>
-      <div class="page-title">
-        Business Record
-      </div>
+      <div class="page-title">Business Record</div>
       <div class="fullwidthbanner-container hero-about">
         <img src="{{ "assets/img/innopam-about-logo@2x.png" | relative_url }}" alt="absolute" width="320">
       </div>
@@ -22,9 +19,7 @@ nav: business-record
           <div class="col-sm-4">
             <h1>대표이사 인사말</h1>
           </div>
-          <div class="col-sm-8">
-            {{business-record.ceo-text | newline_to_br}}
-          </div>
+          <div class="col-sm-8">{{business-record.ceo-text | newline_to_br}}</div>
         </div>
         <div class="row contents" id="history">
           <div class="col-sm-4">
@@ -32,14 +27,10 @@ nav: business-record
           </div>
           <div class="col-sm-8">
             {% for history in business-record.history %}
-              <div class="row">
-                <div class="col-xs-3 date">
-                  {{history.date}}              
-                </div>
-                <div class="col-xs-9 content">
-                  {{history.content}}
-                </div>
-              </div>
+            <div class="row">
+              <div class="col-xs-3 date">{{history.date}}</div>
+              <div class="col-xs-9 content">{{history.content}}</div>
+            </div>
             {% endfor %}
           </div>
         </div>
@@ -49,9 +40,9 @@ nav: business-record
           </div>
           <div class="col-sm-12">
             {% for media in business-record.media %}
-              <div class="item">
-                <a href="{{media.url}}" target="_blank">[{{media.source}}] {{media.title}}</a>
-              </div>
+            <div class="item">
+              <a href="{{media.url}}" target="_blank">[{{media.source}}] {{media.title}}</a>
+            </div>
             {% endfor %}
           </div>
         </div>
@@ -68,12 +59,12 @@ nav: business-record
                 <th class="hidden-xs"></th>
               </tr>
               {% for record in business-record.business-records %}
-                <tr>
-                  <td>{{record.name}}</td>
-                  <td>{{record.client}}</td>
-                  <td class="hidden-xs">{{record.year}}</td>
-                  <td class="hidden-xs">{{record.note}}</td>
-                </tr>
+              <tr>
+                <td>{{record.name}}</td>
+                <td>{{record.client}}</td>
+                <td class="hidden-xs">{{record.year}}</td>
+                <td class="hidden-xs">{{record.note}}</td>
+              </tr>
               {% endfor %}
             </table>
           </div>
@@ -85,13 +76,13 @@ nav: business-record
           <div class="col-sm-12 clients-img">
             <div class="row">
               {% for client in business-record.clients %}
-                <div class="col-md-3 col-sm-4 col-xs-6 item">
-                  {% if client.img == "" %}
-                    <span class="logo">{{client.name}}</span>
-                  {% else %}
-                    <img src="{{client.img}}">
-                  {% endif %}
-                </div>
+              <div class="col-md-3 col-sm-4 col-xs-6 item">
+                {% if client.img == "" %}
+                <span class="logo">{{client.name}}</span>
+                {% else %}
+                <img src="{{client.img}}" />
+                {% endif %}
+              </div>
               {% endfor %}
             </div>
           </div>
@@ -109,19 +100,18 @@ nav: business-record
                 <th class="hidden-xs">비고</th>
               </tr>
               {% for patent in business-record.patents %}
-                <tr>
-                  <td>{{patent.status}}</td>
-                  <td>{{patent.name}}</td>
-                  <td class="hidden-xs">{{patent.date}}</td>
-                  <td class="hidden-xs">{{patent.note}}</td>
-                </tr>
+              <tr>
+                <td>{{patent.status}}</td>
+                <td>{{patent.name}}</td>
+                <td class="hidden-xs">{{patent.date}}</td>
+                <td class="hidden-xs">{{patent.note}}</td>
+              </tr>
               {% endfor %}
             </table>
           </div>
         </div>
       </div>
     </article>
-    {% include footer.html %}
-    {% include js.html %}
+    {% include footer.html %} {% include js.html %}
   </body>
 </html>
