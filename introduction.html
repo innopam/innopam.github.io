@@ -8,12 +8,12 @@ nav: introduction
 <html lang="ko">
   {% include head.html %}
   <body id="page-top" class="index">
-    {% include header.html %} {% assign introduction = site.data.introduction %} {% assign contact = site.data.contact
-    %}
+    {% include header.html %}
     <article>
       <!-- <img src="/assets/img/introduction/introtitle.png" style="width: 100%; height: 440px" /> -->
       <div class="pageTitle">Introduction</div>
       <div class="container" id="about">
+        {% assign introduction = site.data.introduction %}
         <div class="row contents" id="ceo-text">
           <div class="smallTitle">CEO 인사말</div>
           <div class="col-xl-9" style="font-size: 18px">{{introduction.ceo-text | newline_to_br}}</div>
