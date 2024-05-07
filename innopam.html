@@ -10,12 +10,10 @@ nav: innopam
   <body id="page-top" class="index">
     {% include header.html %}
     <article>
-      <div class="pageTitle">Innopam</div>
+      <div class="pageTitle">Introduction</div>
       <div class="container" id="about">
         <div class="row contents" id="ceo-text">
-          <div class="smallTitle">
-            <h1>CEO 인사말</h1>
-          </div>
+          <div class="smallTitle">CEO 인사말</div>
           <!-- <div class="col-sm-8">{{innopam.ceo-text | newline_to_br}}</div> -->
           <div class="col-sm-8">
             안녕하세요. 우리 회사는 GeoAI 전문 기업입니다. 드론, 매핑, AI,빅데이터 기술을 기반으로 감시/정찰, 환경,
@@ -33,9 +31,16 @@ nav: innopam
         </div>
 
         <div class="row contents" id="history">
-          <div class="smallTitle">
-            <h1>Mission</h1>
+          <div class="smallTitle">Mission</div>
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="blur" style="background-image: url('assets/img/introduction/atom\,\ science.png')"></div>
+            </div>
           </div>
+        </div>
+
+        <div class="row contents" id="history">
+          <div class="smallTitle">History</div>
           <div class="col-sm-8">
             {% for history in innopam.history %}
             <div class="row">
@@ -47,17 +52,7 @@ nav: innopam
         </div>
 
         <div class="row contents" id="history">
-          <div class="smallTitle">
-            <h1>History</h1>
-          </div>
-          <div class="col-sm-8">
-            {% for history in innopam.history %}
-            <div class="row">
-              <div class="col-xs-3 date">{{history.date}}</div>
-              <div class="col-xs-9 content">{{history.content}}</div>
-            </div>
-            {% endfor %}
-          </div>
+          <div class="smallTitle">Contact</div>
         </div>
       </div>
     </article>

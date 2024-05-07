@@ -1,3 +1,5 @@
+#Introduction페이지
+
 # CEO 인사말
 ceo-text: |
   안녕하세요.
@@ -10,6 +12,11 @@ ceo-text: |
 
   (주)이노팸 대표이사
   이임평
+
+#Mission 이미지
+social: '/assets/img/introduction/atom.png'
+inno: '/assets/img/introduction/global.png'
+team: '/assets/img/introduction/team.png'
 
 # 회사 연혁
 history:
