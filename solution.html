@@ -1,4 +1,8 @@
---- title: Innopam - Solutions permalink: /solutions/ nav: solutions s---
+---
+title: Innopam - Solutions
+permalink: /solutions/
+nav: solutions
+---
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -19,7 +23,7 @@
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
             <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}"
-              >더 알아보기</a
+              >View more</a
             >
           </div>
           <div class="col-sm-7 hidden-xs">
@@ -36,14 +40,16 @@
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
             <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}"
-              >더 알아보기</a
+              >View more</a
             >
           </div>
         </div>
+
         {% endif %} {% endfor %}
       </div>
     </article>
 
-    {% include dmapai.html %} {% include ldmapai.html %} {% include footer.html %} {% include js.html %}
+    {% include dmapai.html %} {% include ldmapai.html %} {? include ddriveai.html ?}{% include footer.html %} {% include
+    js.html %}
   </body>
 </html>

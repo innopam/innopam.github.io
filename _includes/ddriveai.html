@@ -1,7 +1,7 @@
-{% assign ldmapai = site.data.solutions.ldmapai %}
+{% assign ddriveai = site.data.solutions.dmapai %}
 <div
   class="modal fade modal-fullscreen"
-  id="modal-{{ldmapai.title}}"
+  id="#modal-{{ddriveai.title}}"
   tabindex="-1"
   role="dialog"
   aria-labelledby="myModalLabel"
@@ -10,9 +10,9 @@
   <a class="close" data-dismiss="modal" aria-hidden="true"></a>
   <div class="fullwidthbanner-container">
     <div class="solution-hero text-center">
-      <h2>{{ldmapai.title}}</h2>
-      <h3>{{ldmapai.subtitle}}</h3>
-      <div class="desc">{{ldmapai.description}}</div>
+      <h2>{{ddriveai.title}}</h2>
+      <h3>{{ddriveai.subtitle}}</h3>
+      <div class="desc">{{ddriveai.description}}</div>
       <div class="background"></div>
     </div>
   </div>
@@ -22,7 +22,7 @@
         <h1>기능</h1>
       </div>
       <div class="item-wrap col-sm-12">
-        {% for feature in ldmapai.features %}
+        {% for feature in ddriveai.features %}
         <div class="item col-sm-6 col-xs-12">
           <div class="image" style="background-image:url('{{feature.image}}');"></div>
           <div class="text">
@@ -38,8 +38,8 @@
         <h1>도입 사례</h1>
       </div>
       <div class="item-wrap col-sm-12">
-        {% for example in ldmapai.examples %}
-        <div class="item col-sm-6 col-xs-12">
+        {% for example in ddriveai.examples %}
+        <div class="item col-md-6 col-sm-12">
           <div class="image" style="background-image:url('{{example.image}}');"></div>
           <div class="text">
             <h2>{{example.title}}</h2>
