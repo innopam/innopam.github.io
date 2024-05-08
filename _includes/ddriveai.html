@@ -1,7 +1,8 @@
-{% assign ddriveai = site.data.solutions.dmapai %}
+{% assign ddriveai = site.data.solutions.ddrive %}
+
 <div
   class="modal fade modal-fullscreen"
-  id="#modal-{{ddriveai.title}}"
+  id="modal-D-drive"
   tabindex="-1"
   role="dialog"
   aria-labelledby="myModalLabel"
@@ -28,22 +29,6 @@
           <div class="text">
             <h2>{{feature.title}}</h2>
             {{feature.description}}
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="row" id="example">
-      <div class="col-sm-12">
-        <h1>도입 사례</h1>
-      </div>
-      <div class="item-wrap col-sm-12">
-        {% for example in ddriveai.examples %}
-        <div class="item col-md-6 col-sm-12">
-          <div class="image" style="background-image:url('{{example.image}}');"></div>
-          <div class="text">
-            <h2>{{example.title}}</h2>
-            {{example.description}}
           </div>
         </div>
         {% endfor %}

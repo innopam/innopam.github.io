@@ -23,8 +23,8 @@ nav: solutions
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
             <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}"
-              >View more</a
-            >
+              >View more <img src="/assets/img/main/tail-right.svg"
+            /></a>
           </div>
           <div class="col-sm-7 hidden-xs">
             <div class="image" style="background-image:url('{{solution.image}}');"></div>
@@ -40,8 +40,8 @@ nav: solutions
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
             <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}"
-              >View more</a
-            >
+              >View more <img src="/assets/img/main/tail-right.svg"
+            /></a>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ nav: solutions
       </div>
     </article>
 
-    {% include dmapai.html %} {% include ldmapai.html %} {? include ddriveai.html ?}{% include footer.html %} {% include
+    {% include dmapai.html %} {% include ldmapai.html %} {% include ddriveai.html %}{% include footer.html %} {% include
     js.html %}
   </body>
 </html>
