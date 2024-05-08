@@ -10,7 +10,13 @@ nav: solutions
   <body id="page-top" class="index">
     {% include header.html %}
     <article>
-      <div class="page-title">Solutions</div>
+      <div class="fullwidthbanner-container" style="margin: 50px 0px">
+        <div class="solution-hero text-center" style="background-color: transparent; height: 340px">
+          <h2 style="color: white">Solutions</h2>
+          <div class="desc">INNOVATIVE PLATFORM FOR AI & MAPPING COMPANY</div>
+          <div class="background" style="background-image: url('/assets/img/solutions/menu2.jpg'); opacity: 1"></div>
+        </div>
+      </div>
       <div class="container">
         {% assign solution-lists = site.data.solutions.lists | sort: 'id' %} {% for solution in solution-lists %} {%
         assign mod = forloop.index | modulo: 2 %} {% if mod == 1 %}

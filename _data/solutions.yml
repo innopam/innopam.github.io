@@ -119,6 +119,6 @@ ddrive:
       image: '/assets/img/solutions/D-drive/d3.png'
 
     - title: 공유
-      description: '링크 방식으로 지도기반 화면의
+      description: '링크 방식으로 지도기반 화면의 <br>
 영상 데이터 공유'
       image: '/assets/img/solutions/D-drive/d4.png'
