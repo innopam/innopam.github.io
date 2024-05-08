@@ -62,24 +62,24 @@ nav: home
     <div class="container" style="margin-top: 120px;">
       <!-- Solution 메뉴 -->
       <div class="fullwidthbanner-container hero" style="height: max-content;">
-        <div class="content">
+        <div class="content" style="width: 100%;">
           <div class="hero-text" style="color: white !important;">
             <h1>Solution</h1>
             <h4 style="opacity: 0.7;">{{home.solution-text | newline_to_br }}</h4>
-            <br/>
+            <br />
             <div class="card_parent">
               <section class="card">
-                <img class="solution-img" src="/assets/img/main/DmapAi.png"/>
+                <img class="solution-img" src="/assets/img/main/DmapAi.png" />
                 <h2>DmapAI</h2>
                 <h3>Drone Mapping AI</h3>
                 <h5>드론 영상을 업로드하면 정사영상(Orthophoto), 포인트클라우드(PointCloud), 3차원모델(3D Mesh), DSM(Digital Surface Model)을 생성하는
                   솔루션</h5>
-                  <a class="btn-show-more" role="button" href="/introduction">View more
-                    <img src="/assets/img/main/tail-right.svg" /></a>
+                <a class="btn-show-more" role="button" href="/introduction">View more
+                  <img src="/assets/img/main/tail-right.svg" /></a>
               </section>
 
               <section class="card">
-                <img class="solution-img" src="/assets/img/main/LDMapAI.png"/>
+                <img class="solution-img" src="/assets/img/main/LDMapAI.png" />
                 <h2>LDMapAI</h2>
                 <h3>LiveDroneMapAI</h3>
                 <h5>드론에서 전송되는 영상에서 자동으로 객체를 식별하고 실시간으로 위치를 결정하는 솔루션</h5>
@@ -88,14 +88,14 @@ nav: home
               </section>
 
               <section class="card">
-                <img class="solution-img" src="/assets/img/main/DDrive.png"/>
+                <img class="solution-img" src="/assets/img/main/DDrive.png" />
                 <h2>D-drive</h2>
                 <h3>영상 데이터 저장·관리</h3>
                 <h5>수많은 영상을 한곳에서 편리하게 관리/검색/공유하는 서비스<br />
                   AI를 활용한 영상 자동 분류</h5>
-             
-                  <a class="btn-show-more" role="button" href="/introduction">View more
-                    <img src="/assets/img/main/tail-right.svg" /></a>
+
+                <a class="btn-show-more" role="button" href="/introduction">View more
+                  <img src="/assets/img/main/tail-right.svg" /></a>
               </section>
 
             </div>
@@ -104,9 +104,18 @@ nav: home
       </div>
 
 
-      <div class="recruit-wrap col-sm-12" style="text-align: center; margin-top: 100px;">
-        <a href="{{home.recruit}}" class="btn-show-more" target="_blank">채용사이트 바로가기</a>
-        <a href="{{home.recruit}}" class="btn-show-more" target="_blank">회사소개서 다운로드</a>
+      <div class="recruit-wrap col-sm-12" style="
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      margin: 100px 330px 100px 290px;
+      width: 600px;">
+        <a href="{{home.recruit}}" class="btn-show-more" target="_blank">채용사이트 바로가기
+          <img src="/assets/img/main/tail-right.svg"/>
+        </a>
+        <a href="/assets/pdf/2024_InnoPAM_IR_Full version_pdf_V1.7.pdf" class="btn-show-more" download=>회사소개서 다운로드
+          <img src="/assets/img/main/file_download.svg"/>
+        </a>
 
       </div>
 
