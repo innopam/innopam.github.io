@@ -1,0 +1,43 @@
+---
+title: Innopam - Media
+permalink: /media/
+nav: media
+---
+
+<!DOCTYPE html>
+<html lang="ko">
+  {% include head.html %}
+  <body id="page-top" class="index">
+    {% include header.html %} {% assign business-record = site.data.business-record %}
+    <article>
+      <div class="title-wrapper">
+        <div class="title-group">
+          <div class="title">business record</div>
+          <div class="sub-title">innovative platform for ai & mapping company</div>
+        </div>
+        <img src="{{ "assets/img/business-record/business-record-top.jpg" | relative_url }}" 
+          alt="absolute"
+          width="100%"
+          style="object-fit: cover;"
+        >
+      </div>
+      <div class="container" id="about">
+        <div class="row contents" id="business-records">
+          <div class="row contents" id="media">
+          <div class="col-sm-12">
+            <h1>언론 보도</h1>
+          </div>
+          <div class="col-sm-12">
+            {% for media in business-record.media %}
+            <div class="item">
+              <img src="{{media.imgUrl}}" alt="{{media.source}}" srcset="">
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </article>
+    {% include footer.html %} {% include js.html %}
+  </body>
+  <script src="{{ "/assets/js/business-record.js" }}"></script>
+</html>
