@@ -23,7 +23,7 @@ nav: solutions
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
             <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}"
-              >더 알아보기</a
+              >View more</a
             >
           </div>
           <div class="col-sm-7 hidden-xs">
@@ -40,27 +40,11 @@ nav: solutions
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
             <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}"
-              >더 알아보기</a
+              >View more</a
             >
           </div>
         </div>
-        {% else if mod == 3 %}
-        <div class="row solution-item">
-          <div class="col-sm-7 visible-xs">
-            <div class="image" style="background-image:url('{{solution.image}}');"></div>
-          </div>
-          <div class="col-sm-5">
-            <h2>{{solution.title}}</h2>
-            <h3>{{solution.subtitle}}</h3>
-            <div class="desc">{{solution.description}}</div>
-            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}"
-              >더 알아보기</a
-            >
-          </div>
-          <div class="col-sm-7 hidden-xs">
-            <div class="image" style="background-image:url('{{solution.image}}');"></div>
-          </div>
-        </div>
+
         {% endif %} {% endfor %}
       </div>
     </article>
