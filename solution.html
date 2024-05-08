@@ -30,7 +30,7 @@ nav: solutions
             <div class="image" style="background-image:url('{{solution.image}}');"></div>
           </div>
         </div>
-        {% else %}
+        {% else if mod ==2 %}
         <div class="row solution-item">
           <div class="col-sm-7">
             <div class="image" style="background-image:url('{{solution.image}}');"></div>
@@ -44,11 +44,28 @@ nav: solutions
             >
           </div>
         </div>
+        {% else if mod == 3 %}
+        <div class="row solution-item">
+          <div class="col-sm-7 visible-xs">
+            <div class="image" style="background-image:url('{{solution.image}}');"></div>
+          </div>
+          <div class="col-sm-5">
+            <h2>{{solution.title}}</h2>
+            <h3>{{solution.subtitle}}</h3>
+            <div class="desc">{{solution.description}}</div>
+            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}"
+              >더 알아보기</a
+            >
+          </div>
+          <div class="col-sm-7 hidden-xs">
+            <div class="image" style="background-image:url('{{solution.image}}');"></div>
+          </div>
+        </div>
         {% endif %} {% endfor %}
       </div>
     </article>
 
-    {% include dmapai.html %} {% include ldmapai.html %} {% include ddriveai.html %} {% include footer.html %} {%
-    include js.html %}
+    {% include dmapai.html %} {% include ldmapai.html %} {% include ddriveai.html %}{% include footer.html %} {% include
+    js.html %}
   </body>
 </html>
