@@ -17,7 +17,7 @@ lists:
     url: '#'
 
   - id: 3
-    title: D-drive
+    title: Ddrive
     subtitle: Drone drive
     description: '드론 영상을 한 곳에서 자동으로 정리하고 쉽게 찾을 수 있는 드론 영상 관리 서비스'
     image: '/assets/img/solutions/D-drive/bg.png'
@@ -97,8 +97,8 @@ ldmapai:
 
 # # D-drive 상세페이지
 # # 헤더
-ddriveai:
-  title: D-drive
+ddrive:
+  title: Ddrive
   subtitle: LiveDroneMapAI
   description: '드론에서 전송되는 영상에서 자동으로 객체를 식별하고 실시간으로 위치를 결정하는 솔루션'
   image: '/assets/img/solutions/ldmapai/header.png'

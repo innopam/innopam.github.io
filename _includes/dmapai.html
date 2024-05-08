@@ -25,7 +25,7 @@
       <div class="item-wrap col-sm-12">
         {% for feature in dmapai.features %}
         <div class="item col-lg-4 col-md-6 col-sm-6 col-xs-12">
-          <div class="image"></div>
+          <div class="image" style="background-image:url('{{feature.image}}');"></div>
           <div class="text">
             <h2>{{feature.title}}</h2>
             {{feature.description}}
