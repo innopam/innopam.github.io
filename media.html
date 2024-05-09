@@ -11,13 +11,21 @@ nav: media
 <body id="page-top" class="index">
   {% include header.html %} {% assign business-record = site.data.business-record %}
   <article>
-    <div class="title-wrapper">
+    <!-- <div class="title-wrapper">
       <div class="title-group">
         <div class="title">media</div>
         <div class="sub-title">innovative platform for ai & mapping company</div>
       </div>
       <img src="{{ 'assets/img/media/media.jpg' | relative_url }}" alt="absolute" width="100%"
         style="object-fit: cover; opacity: 0.4">
+    </div> -->
+
+    <div class="fullwidthbanner-container" style="margin: 50px 0px">
+      <div class="solution-hero text-center" style="background-color: transparent">
+        <h2 style="color: white">Media</h2>
+        <div>INNOVATIVE PLATFORM FOR AI & MAPPING COMPANY</div>
+        <div class="background" style="background-image: url('/assets/img/media/media.jpg'); opacity: 0.4"></div>
+      </div>
     </div>
     <div class="container" id="about">
       <div class="row contents container-inner">
@@ -27,9 +35,11 @@ nav: media
           </div>
           <div class="col-sm-12">
             {% for media in business-record.media %}
-            <div class="item contents-wrapper">
-              <img src="{{media.imgUrl}}" alt="{{media.source}}" srcset="" width="280px" height="200px">
-              <div class="contents-without-img">
+            <div class="row py-4">
+              <div class="col col-sm-4">
+                <img src="{{media.imgUrl}}" alt="{{media.source}}" srcset="" width="280px" height="200px">
+              </div>
+              <div class="col col-sm-8 pt-4 pt-sm-0">
                 <div>{{media.date}}</div>
                 <div>[{{media.source}}] {{media.title}}</div>
                 <a href="{{media.url}}" target="_blank">기사보기 <img src="/assets/svg/media/article.svg"></a>
@@ -39,6 +49,7 @@ nav: media
           </div>
         </div>
       </div>
+    </div>
   </article>
   {% include footer.html %} {% include js.html %}
 </body>
