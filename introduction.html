@@ -30,7 +30,7 @@ nav: introduction
           <div class="content">
             <div class="row">
               <div
-                class="col-sm-4"
+                class="col-sm-4 mb-4"
                 style="display: flex; flex-direction: column; align-items: center; text-align: center"
               >
                 <img src="/assets/img/introduction/atom.png" style="width: 120px; height: 120px" />
@@ -40,7 +40,7 @@ nav: introduction
                 </div>
               </div>
               <div
-                class="col-sm-4"
+                class="col-sm-4 mb-4"
                 style="display: flex; flex-direction: column; align-items: center; text-align: center"
               >
                 <img src="/assets/img/introduction/global.png" style="width: 120px; height: 120px" />
@@ -81,11 +81,11 @@ nav: introduction
             <div id="map"></div>
             <script
               type="text/javascript"
-              src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5f1892779724f92e035405b0da2c9f5e"
+              src="//dapi.kakao.com/v2/maps/sdk.js?appkey=90f5dafdbae17caebd268e8fb311edd3"
             ></script>
             <script>
               function initialize() {
-                var myLatlng = new daum.maps.LatLng(37.533468,126.96074);
+                var myLatlng = new daum.maps.LatLng(37.583235,127.010390);
 
                 var container = document.getElementById('map');
                 var options = {
@@ -95,6 +95,7 @@ nav: introduction
                 };
 
                 var map = new daum.maps.Map(container, options);
+                {% assign contact = site.data.introduction %}
                 var positions = [
                   {
                     name: '{{contact.map-1.name}}',
@@ -109,11 +110,10 @@ nav: introduction
                     address: '{{contact.map-2.address}}'
                   }
                 ];
-
                 // 지도를 재설정할 범위정보를 가지고 있을 LatLngBounds 객체를 생성합니다
                 var bounds = new daum.maps.LatLngBounds();
 
-                for (var i = 0; i < positions.length; i ++) {
+                for (var i = 0; i < positions.length; i++) {
                   // 마커를 생성합니다
                   var marker = new daum.maps.Marker({
                     map: map, // 마커를 표시할 지도
@@ -134,7 +134,7 @@ nav: introduction
 
                   addCustomOverlay(positions[i], map);
                 }
-                map.setBounds(bounds);
+                // map.setBounds(bounds);
 
                 // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
                 var zoomControl = new daum.maps.ZoomControl();
