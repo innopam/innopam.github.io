@@ -1,0 +1,38 @@
+{% assign maps = site.data.solutions.mmaps %}
+<div
+  class="modal fade modal-fullscreen"
+  id="modal-MAPS"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+>
+  <a class="close" data-dismiss="modal" aria-hidden="true"></a>
+  <div class="fullwidthbanner-container">
+    <div class="solution-hero text-center">
+      <h2>{{maps.title}}</h2>
+      <h3>{{maps.subtitle}}</h3>
+      <div class="desc">{{maps.description}}</div>
+      <div class="background"></div>
+    </div>
+  </div>
+  <div class="container" id="solution-detail">
+    <div class="row" id="feature">
+      <div class="col-sm-12">
+        <h1>기능</h1>
+      </div>
+      <div class="item-wrap col-sm-12">
+        {% for feature in maps.features %}
+        <div class="item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="image" style="background-image:url('{{feature.image}}');"></div>
+          <div class="text">
+            <h2>{{feature.title}}</h2>
+            {{feature.description}}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  
+  </div>
+</div>
