@@ -18,6 +18,7 @@
   }
 }
 
+
 @media (max-width: $screen-xs-max) {
   .solution-item {
     text-align: center;
@@ -30,7 +31,14 @@
     width: -webkit-fill-available;
   }
 
+
 }
+
+.maps-img {
+  width: 100% !important;
+  background-size: cover !important;
+}
+
 
 .solution-hero {
   position: relative;
