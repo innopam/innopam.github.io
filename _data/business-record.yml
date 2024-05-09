@@ -46,30 +46,37 @@ media:
     source: 매일건설신문
     url: https://mcnews.co.kr/77976
     imgUrl: /assets/img/media/20230209.jpeg
+    date: 2023/02/09
   - title: "12시간 비행하는 ‘태양광 드론’, 인공지능 더해 산불까지 예방"
     source: 공학저널 
     url: http://www.engjournal.co.kr/news/articleView.html?idxno=1310
     imgUrl: /assets/img/media/20210215.jpeg
+    date: 2023/02/15
   - title: "제주 해양은 드론이 지킨다…제주 해안선 147㎞ 비행 성공"
     source: 한겨레 
     url:  https://www.hani.co.kr/arti/area/jeju/961625.html
     imgUrl: /assets/img/media/20200910.jpeg
-  - title: "[미래를 선도하는 제주] 수소드론·자율주행차 가속 … 제주, 신산업의 메카로 뜬다"
-    source: 중앙일보
-    url: https://www.joongang.co.kr/article/23946581
-    imgUrl: /assets/img/media/20201216.jpeg
-  - title: "LG유플러스, 드론 활용해 사회기반시설 정밀점검 시연"
-    source: 연합뉴스
-    url: https://www.yna.co.kr/view/AKR20181207152600017
-    imgUrl: /assets/img/media/20181209.jpeg
-  - title: "서울시, 1인칭 시점 동영상지도·드론맵핑 개발 지원…중소기업 돕는다"
-    source: 아시아경제
-    url: https://www.asiae.co.kr/article/2018100707572000522
-    imgUrl: /assets/img/media/20181007.jpeg
+    date: 2020/09/10
   - title: "제주 '드론'이 괭생이 모자반 위치도 분석시대 돌입"
     source: 뉴시스
     url: https://newsis.com/view/?id=NISX20200910_0001161175
     imgUrl: /assets/img/media/202009102.jpeg
+    date: 2020/09/10
+  - title: "[미래를 선도하는 제주] 수소드론·자율주행차 가속 … 제주, 신산업의 메카로 뜬다"
+    source: 중앙일보
+    url: https://www.joongang.co.kr/article/23946581
+    imgUrl: /assets/img/media/20201216.jpeg
+    date: 2020/12/16
+  - title: "LG유플러스, 드론 활용해 사회기반시설 정밀점검 시연"
+    source: 연합뉴스
+    url: https://www.yna.co.kr/view/AKR20181207152600017
+    imgUrl: /assets/img/media/20181209.jpeg
+    date: 2018/12/09
+  - title: "서울시, 1인칭 시점 동영상지도·드론맵핑 개발 지원…중소기업 돕는다"
+    source: 아시아경제
+    url: https://www.asiae.co.kr/article/2018100707572000522
+    imgUrl: /assets/img/media/20181007.jpeg
+    date: 2018/10/07
 
 # 주요사업 수행 실적
 business-records:
