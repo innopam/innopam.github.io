@@ -55,3 +55,23 @@ visions:
 
 # 채용 사이트 링크
 recruit: "https://innopam.notion.site/2022-c2bd7792b4c8416e80df3f17abed3bfa"
+
+solutions: 
+  - title: DmapAI
+    subtitle: Drone Mapping AI
+    description: 드론 영상을 업로드하면 정사영상(Orthophoto), 포인트클라우드(PointCloud), 3차원모델(3D Mesh), DSM(Digital Surface Model)을 생성하는
+                  솔루션
+    img: /assets/img/main/DmapAi.png
+
+  - title: LDMapAI
+    subtitle: LiveDroneMapAI
+    description: 드론에서 전송되는 영상에서 자동으로 객체를 식별하고 실시간으로 위치를 결정하는 솔루션
+    img: /assets/img/main/LDMapAI.png
+
+  - title: D-drive
+    subtitle: 영상 데이터 저장·관리
+    description: |
+      수많은 영상을 한곳에서 편리하게 관리/검색/공유하는 서비스
+      AI를 활용한 영상 자동 분류
+    img: /assets/img/main/DDrive.png
+
