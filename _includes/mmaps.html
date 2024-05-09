@@ -22,8 +22,9 @@
         <h1>기능</h1>
       </div>
       <div class="item-wrap col-sm-12">
+
         {% for feature in maps.features %}
-        <div class="item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <div class="item col-md-6 col-sm-12">
           <div class="image" style="background-image:url('{{feature.image}}');"></div>
           <div class="text">
             <h2>{{feature.title}}</h2>
@@ -31,6 +32,17 @@
           </div>
         </div>
         {% endfor %}
+
+
+        <!-- {% for feature in maps.features %}
+        <div class="item col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="image" style="background-image:url('{{feature.image}}');"></div>
+          <div class="text">
+            <h2>{{feature.title}}</h2>
+            {{feature.description}}
+          </div>
+        </div>
+        {% endfor %} -->
       </div>
     </div>
   
