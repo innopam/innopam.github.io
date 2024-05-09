@@ -25,6 +25,11 @@
       margin-bottom: $margin/2;
     }
   }
+
+  .min-width{
+    width: -webkit-fill-available;
+  }
+
 }
 
 .solution-hero {

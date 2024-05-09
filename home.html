@@ -33,12 +33,11 @@ nav: home
             <img src="/assets/img/main/tail-right.svg" /></a>
         </div>
       </div>
- 
       <div class="container">
         <div class="text-center" id="missions">
           <div class="row mission-wrap align-items-center">
             {% for mission in home.missions %}
-            <div class="col-xs-12 col-sm-3">
+            <div class="col-xs-12 col-sm-3 my-sm-2">
               <div class="mission">
                 <h2>
                   <a>{{mission.number}}</a>{{mission.title}}
@@ -59,7 +58,7 @@ nav: home
         <div class="hero-text" style="color: white !important;">
           <h1>{{home.maps-text | newline_to_br }}</h1>
           <h4>{{home.maps-sub-text | newline_to_br }}</h4>
-          <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">View more
+          <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-MAPS">View more
             <img src="/assets/img/main/tail-right.svg" /></a>
         </div>
 
@@ -81,13 +80,13 @@ nav: home
         <br />
         <div class="row justify-content-around">
           {% for solution in home.solutions %}
-          <section class="col-xs-12 col-sm-4">
-            <div class="card" style="max-width: 320px;">
+          <section class="col-xs-12 col-sm-4 p-3">
+            <div class="card pb-sm-3" style="max-width: 320px;">
               <img class="solution-img" src="{{solution.img}}" />
               <h2>{{solution.title}}</h2>
               <h3>{{solution.subtitle}}</h3>
               <h5>{{solution.description}}</h5>
-              <a class="btn-show-more" role="button" href="/introduction">View more
+              <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">View more
                 <img src="/assets/img/main/tail-right.svg" /></a>
             </div>
 
@@ -97,8 +96,9 @@ nav: home
       </div>
 
 
-      <div class="recruit-wrap col-sm-12" style="text-align: center; margin-top: 100px;">
+      <div class="recruit-wrap col-sm-12 pt-xl-6 pb-xl-6 pt-4" style="text-align: center;">
         <a href="{{home.recruit}}" class="btn-show-more" target="_blank">채용사이트 바로가기</a>
+        <a class="pl-lg-6 pl-0"> </a>
         <a href="{{home.recruit}}" class="btn-show-more" target="_blank">회사소개서 다운로드</a>
       </div>
 
@@ -133,6 +133,7 @@ nav: home
     </div>
     </div> -->
   </article>
+  {% include mmaps.html %} {% include dmapai.html %} {% include ldmapai.html %} {% include ddriveai.html %}
   {% include footer.html %}
   {% include js.html %}
   <script type="text/javascript">
