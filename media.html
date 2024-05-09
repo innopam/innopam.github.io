@@ -1,0 +1,48 @@
+---
+title: Innopam - Media
+permalink: /media/
+nav: media
+---
+
+<!DOCTYPE html>
+<html lang="ko">
+  {% include head.html %}
+  <body id="page-top" class="index">
+    {% include header.html %} {% assign business-record = site.data.business-record %}
+    <article>
+      <div class="title-wrapper">
+        <div class="title-group">
+          <div class="title">media</div>
+          <div class="sub-title">innovative platform for ai & mapping company</div>
+        </div>
+        <img src="{{ "assets/img/media/media.jpg" | relative_url }}" 
+          alt="absolute"
+          width="100%"
+          style="object-fit: cover;"
+        >
+      </div>
+      <div class="container" id="about">
+        <div class="row contents container-inner">
+          <div class="row contents" id="media">
+          <div class="col-sm-12">
+            <h1>언론 보도</h1>
+          </div>
+          <div class="col-sm-12">
+            {% for media in business-record.media %}
+            <div class="item contents-wrapper">
+              <img src="{{media.imgUrl}}" alt="{{media.source}}" srcset="" width="280px" height="200px">
+              <div class="contents-without-img">
+                <div>{{media.date}}</div>
+                <div>[{{media.source}}] {{media.title}}</div>
+                <a href="{{media.url}}" target="_blank">기사보기 <img src="/assets/svg/media/article.svg"></a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </article>
+    {% include footer.html %} {% include js.html %}
+  </body>
+  <script src="{{ "/assets/js/business-record.js" }}"></script>
+</html>
