@@ -67,7 +67,7 @@ nav: introduction
           <div class="smallTitle">History</div>
           {% for history in introduction.history %}
           <div class="row">
-            <div class="col-xs-2" style="font-size: 24px; font-weight: 700; margin-bottom: 15px">{{history.date}}</div>
+            <div class="col-xs-3 col-sm-2" style="font-size: 24px; font-weight: 700; margin-bottom: 15px">{{history.date}}</div>
             <div class="col-xs-9" style="font-size: 18px; font-weight: 500; margin-bottom: 15px">
               {{history.content}}
             </div>
@@ -202,7 +202,7 @@ nav: introduction
           </div>
           {% for contact in introduction.contact %}
           <div class="row">
-            <div class="col-xs-2" style="font-size: 24px; font-weight: 500; margin-top: 15px">{{contact.place}}</div>
+            <div class="col-xs-3 col-sm-2" style="font-size: 24px; font-weight: 500; margin-top: 15px">{{contact.place}}</div>
             <div class="col-xs-9" style="font-size: 18px; font-weight: 500; margin-top: 15px">{{contact.address}}</div>
           </div>
           {% endfor %}
