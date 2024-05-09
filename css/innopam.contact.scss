@@ -6,6 +6,12 @@
     height:800px;
 }
 
+@media (max-width: 767px) {
+    #map {
+        height: 500px;
+    }
+}
+
 .overlaybox {
     position:relative;
     width:360px;
