@@ -17,7 +17,7 @@ lists:
     url: '#'
 
   - id: 3
-    title: Ddrive
+    title: D-drive
     subtitle: Drone drive
     description: '드론 영상을 한 곳에서 자동으로 정리하고 쉽게 찾을 수 있는 드론 영상 관리 서비스'
     image: '/assets/img/solutions/D-drive/bg.png'
@@ -98,27 +98,63 @@ ldmapai:
 # # D-drive 상세페이지
 # # 헤더
 ddrive:
-  title: Ddrive
-  subtitle: LiveDroneMapAI
-  description: '드론에서 전송되는 영상에서 자동으로 객체를 식별하고 실시간으로 위치를 결정하는 솔루션'
-  image: '/assets/img/solutions/ldmapai/header.png'
+  title: D-drive
+  subtitle: Drone drive
+  description: '드론 영상을 한 곳에서 자동으로 정리하고 쉽게 찾을 수 있는 드론 영상 관리 서비스'
+
 
   # 적용분야
   features:
-    - title: 재난재해
-      description:
-      image: '/assets/img/solutions/ldmapai/feature-1.png'
+    - title: D-drive
+      description: '드론영상 자동 관리 서비스'
+      image: '/assets/img/solutions/D-drive/d1.png'
 
-    - title: 모니터링
-      description:
-      image: '/assets/img/solutions/ldmapai/feature-2.png'
+    - title: 관리
+      description: 'AI를 활용한 자동 영상 분류'
+      image: '/assets/img/solutions/D-drive/d2.png'
 
-  # 도입사례
-  examples:
-    - title: 국립재난안전연구원
-      description: '실시간 재난지역 탐지'
-      image: '/assets/img/solutions/ldmapai/example-1.png'
+    - title: 검색
+      description: '지도-갤러리 연동한 사진/동영상 조회
+그룹, 키워드, 위치 조건을 활용한 검색 기능'
+      image: '/assets/img/solutions/D-drive/d3.png'
 
-    - title: 제주특별자치도
-      description: '실시간 해양오염물질 모니터링'
-      image: '/assets/img/solutions/ldmapai/example-2.png'
+    - title: 공유
+      description: '링크 방식으로 지도기반 화면의 <br>
+영상 데이터 공유'
+      image: '/assets/img/solutions/D-drive/d4.png'
+
+
+# # M.A.P.S 상세페이지
+# # 헤더
+mmaps:
+  title: M.A.P.S
+  subtitle: Mapping & Ai Platform Service
+  description: '공간정보기반 디지털트윈 구현 전 과정을 아우르는 end to end 서비스'
+
+
+  # 기능
+  features:
+    - title: 데이터 저장관리
+      description: '공간정보 기반
+원천데이터 관리 체계화.효율화'
+      image: '/assets/img/solutions/MAPS/1img.png'
+
+    - title: 데이터 처리
+      description: '지오레퍼런싱 통한 공간데이터 생성
+ 이종데이터 융합'
+      image: '/assets/img/solutions/MAPS/2img.png'
+
+    - title: 공간정보분석
+      description: 'AI 공간정보분석
+(객체탐지, 변화탐지)'
+      image: '/assets/img/solutions/MAPS/3img.png'
+
+    - title: AI모델관리
+      description: '학습데이터생성 모델학습
+버전 및 이력 관리'
+      image: '/assets/img/solutions/MAPS/4img.png'
+
+    - title: UI/UX
+      description: '사용자 인터페이스 라이브러리
+디지털트윈기반 서비스 구현'
+      image: '/assets/img/solutions/MAPS/5img.png'

@@ -26,47 +26,76 @@ nav: home
       <!-- <div data-ytbg-fit-box="true" data-ytbg-load-background="false" data-youtube="https://www.youtube.com/watch?v={{home.video}}"></div> -->
     </div>
     <div class="container">
-      <div class="row text-center" id="missions">
-
-        <div class="mission-wrap col-sm-12 ">
+      <div class="text-center" id="missions">
+        <div class="row mission-wrap align-items-center">
           {% for mission in home.missions %}
-          <div class="sm-4 col-xs-12 col-sm-4">
+          <div class="col-xs-12 col-sm-3">
             <div class="mission">
-              <h2><a>{{mission.number}}</a>{{mission.title}}</h2>
-              {{mission.description}}
+              <h2>
+                <a>{{mission.number}}</a>{{mission.title}}
+              </h2>
+              <a style="opacity: 0.7;">
+                {{mission.description}}
+              </a>
             </div>
           </div>
           {% endfor %}
         </div>
       </div>
 
-      <!-- M.A.P.S 메뉴 -->
-      <div class="fullwidthbanner-container hero">
-        <div class="content" style="background-image:url('{{home.maps-bg}}');">
-          <div class="hero-text" style="color: white !important;">
-            <h1>{{home.maps-text | newline_to_br }}</h1>
-            <h4>{{home.maps-sub-text | newline_to_br }}</h4>
-            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">View more
-              <img src="/assets/img/main/tail-right.svg" /></a>
-          </div>
+    </div>
 
+
+
+    <!-- M.A.P.S 메뉴 -->
+    <div class="fullwidthbanner-container hero" style="height: 630px; margin-bottom: 40px;">
+      <div class="maps-bg content" style="background-image:url('{{home.maps-bg}}'); ">
+        <div class="hero-text" style="color: white !important;">
+          <h1>{{home.maps-text | newline_to_br }}</h1>
+          <h4>{{home.maps-sub-text | newline_to_br }}</h4>
+          <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">View more
+            <img src="/assets/img/main/tail-right.svg" /></a>
         </div>
+
       </div>
+    </div>
 
 
+
+    <div class="container text-center" style="margin-top: 120px;">
       <!-- Solution 메뉴 -->
-      <div class="fullwidthbanner-container hero">
-        <div class="content">
-          <div class="hero-text" style="color: white !important;">
-            <h1>Solution</h1>
-            <h4>{{home.solution-text | newline_to_br }}</h4>
 
-          </div>
+      <div>
+        <h1>Solution</h1>
+        <h4 style="opacity: 0.7;">{{home.solution-text | newline_to_br }}</h4>
+      </div>
 
 
+      <div class="hero-text" style="color: white !important;">
+        <br />
+        <div class="row justify-content-around">
+          {% for solution in home.solutions %}
+          <section class="col-xs-12 col-sm-4">
+            <div class="card" style="max-width: 320px;">
+              <img class="solution-img" src="{{solution.img}}" />
+              <h2>{{solution.title}}</h2>
+              <h3>{{solution.subtitle}}</h3>
+              <h5>{{solution.description}}</h5>
+              <a class="btn-show-more" role="button" href="/introduction">View more
+                <img src="/assets/img/main/tail-right.svg" /></a>
+            </div>
 
+          </section>
+          {% endfor %}
         </div>
       </div>
+
+
+      <div class="recruit-wrap col-sm-12" style="text-align: center; margin-top: 100px;">
+        <a href="{{home.recruit}}" class="btn-show-more" target="_blank">채용사이트 바로가기</a>
+        <a href="{{home.recruit}}" class="btn-show-more" target="_blank">회사소개서 다운로드</a>
+      </div>
+
 
     </div>
 
@@ -88,7 +117,7 @@ nav: home
             {% endfor %}
           </div>
         </div> -->
-    <div class="row text-center" id="career">
+    <!-- <div class="row text-center" id="career">
       <div class="col-sm-12">
         <h1>채용 공고</h1>
       </div>
@@ -96,7 +125,7 @@ nav: home
         <a href="{{home.recruit}}" class="btn-show-more" target="_blank">채용 사이트 바로가기</a>
       </div>
     </div>
-    </div>
+    </div> -->
   </article>
   {% include footer.html %}
   {% include js.html %}
