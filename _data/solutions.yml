@@ -122,3 +122,39 @@ ddrive:
       description: '링크 방식으로 지도기반 화면의 <br>
 영상 데이터 공유'
       image: '/assets/img/solutions/D-drive/d4.png'
+
+
+# # M.A.P.S 상세페이지
+# # 헤더
+mmaps:
+  title: M.A.P.S
+  subtitle: Mapping & Ai Platform Service
+  description: '공간정보기반 디지털트윈 구현 전 과정을 아우르는 end to end 서비스'
+
+
+  # 기능
+  features:
+    - title: 데이터 저장관리
+      description: '공간정보 기반
+원천데이터 관리 체계화.효율화'
+      image: '/assets/img/solutions/MAPS/1img.png'
+
+    - title: 데이터 처리
+      description: '지오레퍼런싱 통한 공간데이터 생성
+ 이종데이터 융합'
+      image: '/assets/img/solutions/MAPS/2img.png'
+
+    - title: 공간정보분석
+      description: 'AI 공간정보분석
+(객체탐지, 변화탐지)'
+      image: '/assets/img/solutions/MAPS/3img.png'
+
+    - title: AI모델관리
+      description: '학습데이터생성 모델학습
+버전 및 이력 관리'
+      image: '/assets/img/solutions/MAPS/4img.png'
+
+    - title: UI/UX
+      description: '사용자 인터페이스 라이브러리
+디지털트윈기반 서비스 구현'
+      image: '/assets/img/solutions/MAPS/5img.png'
