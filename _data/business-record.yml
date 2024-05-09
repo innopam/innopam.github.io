@@ -240,6 +240,26 @@ business-records:
     year: 2023
     note: AI알고리즘 및 시스템 개발
 
+  - name: 제주 NIA 디지털 공공서비스 혁신 프로젝트
+    client: 한국지능정보사회진흥원
+    year: 2023
+    note: AI알고리즘 및 시스템 개발
+
+  - name: 제주특별자치도 드론특별자유화구역 조성사업
+    client: 제주특별자치도
+    year: 2023
+    note: AI, 드론, 시스템 개발
+
+  - name: 광명시 초등학교 통학로 위험유해시설 커뮤니티 맵핑
+    client: 광명시
+    year: 2023
+    note: 시스템 개발
+
+  - name: 성수 디지털아카이브 구축
+    client: 주식회사테크캡슐
+    year: 2023
+    note: AI, 드론
+
 # Clients
 clients:
   - name: 서울특별시
