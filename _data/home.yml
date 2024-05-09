@@ -3,23 +3,49 @@
 # Hero영역 텍스트
 hero-text: |
   INNOVATIVE PLATFORM
-  FOR AI AND MAPPING
+  FOR AI & MAPPING
+
+hero-sub-text: |
+  우리는 AI와 공간정보, 드론, 빅데이터 기술을 통해 사회 문제를 해결하며
+  더 나은 세상을 향해 나아가고 있습니다.
 
 # Hero 영역 프리로딩 이미지
-hero-bg: "/assets/img/hero-background.png"
+hero-bg: "/assets/img/main/main_img1.png"
+
+
+maps-text: M.A.P.S
+maps-bg: "/assets/img/main/main_img2.png"
+
+
+maps-sub-text:  |
+  공간정보기반 드지털트윈 구현 전 과정을 아우르는 end to end 서비스
+  Mapping & AI Platform Service
+
+solution-text:   |
+  MAPS의 토대가 되는 단위별 솔루션은 모듈로 다양한 서비스에
+  적용되어 현장에서 활용 중입니다.
+
+
 
 # Youtube Video ID
 video: "UPUhZqVrirA"
 
 missions:
-  - title: 사회적 문제 해결
-    description: "혁신적인 기술을 바탕으로<br>사회적인 문제 해결 솔루션 제공"
+ - number: "10"
+   title: "년"
+   description: "현장 중심의 GeoAI 기술연구로 국가R&D 및 공공서비스 솔루션 개발 수행"
 
-  - title: 혁신적인 기술 개발
-    description: "지형공간의 가치를 극대화하는 혁신적인 기술개발"
+ - number: "65"
+   title: "%"
+   description: "기술R&D 성과 기반 영리활동 이후 연평균 약 65% 수준 지속 성장"
 
-  - title: 즐겁고, 안정적인 일자리 창출
-    description: "자유롭고 안정적이며 즐겁게 일할 수 있는 복리후생이 탄탄한 양질의 일자리 창출"
+ - number: "7"
+   title: "개 분야"
+   description: "도시관리, 시설물 관리, 농업, 해양, 산림, 행정, 재난안전 등"
+
+ - number: "30"
+   title: "개 모델"
+   description: "변화탐지, 객체탐지 및 데이터 분석・처리 GeoAI 모델 개발・보유"
 
 visions:
   - title: 독보적인 공간정보 기술을 보유한<br> 세계적인 강소기업
@@ -29,3 +55,23 @@ visions:
 
 # 채용 사이트 링크
 recruit: "https://innopam.notion.site/2022-c2bd7792b4c8416e80df3f17abed3bfa"
+
+solutions: 
+  - title: DmapAI
+    subtitle: Drone Mapping AI
+    description: 드론 영상을 업로드하면 정사영상(Orthophoto), 포인트클라우드(PointCloud), 3차원모델(3D Mesh), DSM(Digital Surface Model)을 생성하는
+                  솔루션
+    img: /assets/img/main/DmapAi.png
+
+  - title: LDMapAI
+    subtitle: LiveDroneMapAI
+    description: 드론에서 전송되는 영상에서 자동으로 객체를 식별하고 실시간으로 위치를 결정하는 솔루션
+    img: /assets/img/main/LDMapAI.png
+
+  - title: D-drive
+    subtitle: 영상 데이터 저장·관리
+    description: |
+      수많은 영상을 한곳에서 편리하게 관리/검색/공유하는 서비스
+      AI를 활용한 영상 자동 분류
+    img: /assets/img/main/DDrive.png
+

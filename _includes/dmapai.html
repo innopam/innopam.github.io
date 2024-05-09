@@ -1,14 +1,20 @@
 {% assign dmapai = site.data.solutions.dmapai %}
 
- <div class="modal fade modal-fullscreen" id="modal-{{dmapai.title}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-
+<div
+  class="modal fade modal-fullscreen"
+  id="modal-{{dmapai.title}}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+>
   <a class="close" data-dismiss="modal" aria-hidden="true"></a>
   <div class="fullwidthbanner-container">
     <div class="solution-hero text-center">
       <h2>{{dmapai.title}}</h2>
       <h3>{{dmapai.subtitle}}</h3>
       <div class="desc">{{dmapai.description}}</div>
-      <div class="background" style="background-image:url('{{dmapai.image}}');"></div>
+      <div class="background"></div>
     </div>
   </div>
   <div class="container" id="solution-detail">
@@ -18,13 +24,13 @@
       </div>
       <div class="item-wrap col-sm-12">
         {% for feature in dmapai.features %}
-          <div class="item col-lg-4 col-md-6 col-sm-6 col-xs-12">
-              <div class="image" style="background-image:url('{{feature.image}}');"></div>
-              <div class="text">
-                <h2>{{feature.title}}</h2>
-                {{feature.description}}
-              </div>
+        <div class="item col-lg-4 col-md-6 col-sm-6 col-xs-12 min-width">
+          <div class="image" style="background-image:url('{{feature.image}}');"></div>
+          <div class="text">
+            <h2>{{feature.title}}</h2>
+            {{feature.description}}
           </div>
+        </div>
         {% endfor %}
       </div>
     </div>
@@ -34,13 +40,13 @@
       </div>
       <div class="item-wrap col-sm-12">
         {% for example in dmapai.examples %}
-          <div class="item col-md-6 col-sm-12">
-              <div class="image" style="background-image:url('{{example.image}}');"></div>
-              <div class="text">
-                <h2>{{example.title}}</h2>
-                {{example.description}}
-              </div>
+        <div class="item col-md-6 col-sm-12 min-width">
+          <div class="image" style="background-image:url('{{example.image}}');"></div>
+          <div class="text">
+            <h2>{{example.title}}</h2>
+            {{example.description}}
           </div>
+        </div>
         {% endfor %}
       </div>
     </div>

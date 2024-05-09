@@ -1,5 +1,5 @@
 ---
-title : Innopam - Business Record
+title: Innopam - Business Record
 permalink: /business-record/
 nav: business-record
 ---
@@ -8,92 +8,167 @@ nav: business-record
 <html lang="ko">
   {% include head.html %}
   <body id="page-top" class="index">
-    {% include header.html %}
-    {% assign business-record = site.data.business-record %}
+    {% include header.html %} {% assign business-record = site.data.business-record %}
     <article>
-      <div class="page-title">
-        Business Record
+      <div class="fullwidthbanner-container" style="margin: 50px 0px">
+        <div class="solution-hero text-center" style="background-color: transparent">
+          <h2 style="color: white">Business Record</h2>
+          <div>INNOVATIVE PLATFORM FOR AI & MAPPING COMPANY</div>
+          <div class="background" style="background-image: url('/assets/img/business-record/business-record-top.jpg'); opacity: 0.4"></div>
+        </div>
       </div>
-      <div class="fullwidthbanner-container hero-about">
-        <img src="{{ "assets/img/innopam-about-logo@2x.png" | relative_url }}" alt="absolute" width="320">
-      </div>
+      <!-- </div> -->
       <div class="container" id="about">
-        <div class="row contents" id="ceo-text">
+        <!-- <div class="row contents" id="ceo-text">
           <div class="col-sm-4">
             <h1>대표이사 인사말</h1>
           </div>
-          <div class="col-sm-8">
-            {{business-record.ceo-text | newline_to_br}}
-          </div>
-        </div>
-        <div class="row contents" id="history">
+          <div class="col-sm-8">{{business-record.ceo-text | newline_to_br}}</div>
+        </div> -->
+        <!-- <div class="row contents" id="history">
           <div class="col-sm-4">
             <h1>회사 연혁</h1>
           </div>
           <div class="col-sm-8">
             {% for history in business-record.history %}
-              <div class="row">
-                <div class="col-xs-3 date">
-                  {{history.date}}              
-                </div>
-                <div class="col-xs-9 content">
-                  {{history.content}}
-                </div>
-              </div>
+            <div class="row">
+              <div class="col-xs-3 date">{{history.date}}</div>
+              <div class="col-xs-9 content">{{history.content}}</div>
+            </div>
             {% endfor %}
           </div>
-        </div>
-        <div class="row contents" id="media">
+        </div> -->
+        <!-- <div class="row contents" id="media">
           <div class="col-sm-12">
             <h1>언론 보도</h1>
           </div>
           <div class="col-sm-12">
             {% for media in business-record.media %}
-              <div class="item">
-                <a href="{{media.url}}" target="_blank">[{{media.source}}] {{media.title}}</a>
-              </div>
+            <div class="item">
+              <img src="{{media.imgUrl}}" alt="{{media.source}}" srcset="">
+            </div>
             {% endfor %}
           </div>
-        </div>
+        </div> -->
         <div class="row contents" id="business-records">
           <div class="col-sm-12">
             <h1>주요사업 수행 실적</h1>
           </div>
-          <div class="col-sm-12">
-            <table>
+          <ul class="row years col-sm-12" id="list">
+            <li class="list-active">2023</li>
+            <li>2022</li>
+            <li>2021</li>
+            <li>2020</li>
+            <li>2019</li>
+            <li>2018</li>
+          </ul>
+          <div class="col-sm-12 table show-table" data-year="2023">
+            <table class="main-business">
               <tr>
                 <th>과제명</th>
                 <th>발주처</th>
-                <th class="hidden-xs">수행연도(종료)</th>
-                <th class="hidden-xs"></th>
+                <th class="hidden-xs">사업내용</th>
               </tr>
               {% for record in business-record.business-records %}
+                {% if record.year == 2023 %}
                 <tr>
                   <td>{{record.name}}</td>
                   <td>{{record.client}}</td>
-                  <td class="hidden-xs">{{record.year}}</td>
                   <td class="hidden-xs">{{record.note}}</td>
                 </tr>
+                {% endif %}
               {% endfor %}
             </table>
           </div>
-        </div>
-        <div class="row contents" id="clients">
-          <div class="col-sm-12">
-            <h1>Clients</h1>
-          </div>
-          <div class="col-sm-12 clients-img">
-            <div class="row">
-              {% for client in business-record.clients %}
-                <div class="col-md-3 col-sm-4 col-xs-6 item">
-                  {% if client.img == "" %}
-                    <span class="logo">{{client.name}}</span>
-                  {% else %}
-                    <img src="{{client.img}}">
-                  {% endif %}
-                </div>
+          <div class="col-sm-12 table" data-year="2022">
+            <table class="main-business">
+              <tr>
+                <th>과제명</th>
+                <th>발주처</th>
+                <th class="hidden-xs">사업내용</th>
+              </tr>
+              {% for record in business-record.business-records %}
+                {% if record.year == 2022 %}
+                <tr>
+                  <td>{{record.name}}</td>
+                  <td>{{record.client}}</td>
+                  <td class="hidden-xs">{{record.note}}</td>
+                </tr>
+                {% endif %}
               {% endfor %}
-            </div>
+            </table>
+          </div>
+          <div class="col-sm-12 table" data-year="2021">
+            <table class="main-business">
+              <tr>
+                <th>과제명</th>
+                <th>발주처</th>
+                <th class="hidden-xs">사업내용</th>
+              </tr>
+              {% for record in business-record.business-records %}
+                {% if record.year == 2021 %}
+                <tr>
+                  <td>{{record.name}}</td>
+                  <td>{{record.client}}</td>
+                  <td class="hidden-xs">{{record.note}}</td>
+                </tr>
+                {% endif %}
+              {% endfor %}
+            </table>
+          </div>
+          <div class="col-sm-12 table" data-year="2020">
+            <table class="main-business">
+              <tr>
+                <th>과제명</th>
+                <th>발주처</th>
+                <th class="hidden-xs">사업내용</th>
+              </tr>
+              {% for record in business-record.business-records %}
+                {% if record.year == 2020 %}
+                <tr>
+                  <td>{{record.name}}</td>
+                  <td>{{record.client}}</td>
+                  <td class="hidden-xs">{{record.note}}</td>
+                </tr>
+                {% endif %}
+              {% endfor %}
+            </table>
+          </div>
+          <div class="col-sm-12 table" data-year="2019">
+            <table class="main-business">
+              <tr>
+                <th>과제명</th>
+                <th>발주처</th>
+                <th class="hidden-xs">사업내용</th>
+              </tr>
+              {% for record in business-record.business-records %}
+                {% if record.year == 2019 %}
+                <tr>
+                  <td>{{record.name}}</td>
+                  <td>{{record.client}}</td>
+                  <td class="hidden-xs">{{record.note}}</td>
+                </tr>
+                {% endif %}
+              {% endfor %}
+            </table>
+          </div>
+          <div class="col-sm-12 table" data-year="2018">
+            <table class="main-business">
+              <tr>
+                <th>과제명</th>
+                <th>발주처</th>
+                <th class="hidden-xs">사업내용</th>
+              </tr>
+              {% for record in business-record.business-records %}
+                {% if record.year == 2018 %}
+                <tr>
+                  <td>{{record.name}}</td>
+                  <td>{{record.client}}</td>
+                  <td class="hidden-xs">{{record.note}}</td>
+                </tr>
+                {% endif %}
+              {% endfor %}
+            </table>
           </div>
         </div>
         <div class="row contents" id="patent">
@@ -109,19 +184,37 @@ nav: business-record
                 <th class="hidden-xs">비고</th>
               </tr>
               {% for patent in business-record.patents %}
-                <tr>
-                  <td>{{patent.status}}</td>
-                  <td>{{patent.name}}</td>
-                  <td class="hidden-xs">{{patent.date}}</td>
-                  <td class="hidden-xs">{{patent.note}}</td>
-                </tr>
+              <tr>
+                <td>{{patent.status}}</td>
+                <td>{{patent.name}}</td>
+                <td class="hidden-xs">{{patent.date}}</td>
+                <td class="hidden-xs">{{patent.note}}</td>
+              </tr>
               {% endfor %}
             </table>
           </div>
         </div>
+        <div class="row contents" id="clients">
+          <div class="col-sm-12">
+            <h1>Clients</h1>
+          </div>
+          <div class="col-sm-12 clients-img">
+            <div class="row">
+              {% for client in business-record.clients %}
+              <div class="col-md-3 col-sm-4 col-xs-6 item">
+                {% if client.img == "" %}
+                <span class="logo">{{client.name}}</span>
+                {% else %}
+                <img src="{{client.img}}" />
+                {% endif %}
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
       </div>
     </article>
-    {% include footer.html %}
-    {% include js.html %}
+    {% include footer.html %} {% include js.html %}
   </body>
+  <script src="{{ "/assets/js/business-record.js" }}"></script>
 </html>
