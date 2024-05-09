@@ -28,7 +28,7 @@
           <div class="image" style="background-image:url('{{feature.image}}');"></div>
           <div class="text">
             <h2>{{feature.title}}</h2>
-            {{feature.description}}
+            {{feature.description | newline_to_br}}
           </div>
         </div>
         {% endfor %}

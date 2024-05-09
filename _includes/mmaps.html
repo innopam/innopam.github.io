@@ -12,7 +12,7 @@
     <div class="solution-hero text-center">
       <h2>{{maps.title}}</h2>
       <h3>{{maps.subtitle}}</h3>
-      <div class="desc">{{maps.description}}</div>
+      <div class="desc">{{maps.description | newline_to_br}}</div>
       <div class="background"></div>
     </div>
   </div>
@@ -28,7 +28,7 @@
           <div class="image" style="background-image:url('{{feature.image}}');"></div>
           <div class="text">
             <h2>{{feature.title}}</h2>
-            {{feature.description}}
+            {{feature.description | newline_to_br}}
           </div>
         </div>
         {% endfor %}

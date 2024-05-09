@@ -13,28 +13,34 @@ nav: solutions
       <div class="fullwidthbanner-container" style="margin: 50px 0px">
         <div class="solution-hero text-center" style="background-color: transparent">
           <h2 style="color: white">Solutions</h2>
-          <div class="desc">INNOVATIVE PLATFORM FOR AI & MAPPING COMPANY</div>
+          <div>INNOVATIVE PLATFORM FOR AI & MAPPING COMPANY</div>
           <div
             class="background"
-            style="background-image: url('/assets/img/solutions/menu2.jpg'); background-size: cover; opacity: 1"
+            style="background-image: url('/assets/img/solutions/menu2.jpg'); background-size: cover; opacity: 0.4"
           ></div>
         </div>
       </div>
 
-      <div class="fullwidthbanner-container hero" style="height: 630px; margin-bottom: 40px">
-        <div class="maps-bg content" style="background-image: url('/assets/img/main/main_img2.png');">
-          <div class="hero-text" style="color: white !important">
-            <h1>M.A.P.S</h1>
-            <h4>공간정보기반 디지털트윈 구현 전 과정을 아우르는 end to end 서비스</h4>
-            <h4>Mapping & Ai Platform Service</h4>
-            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-MAPS"
-              >View more <img src="/assets/img/main/tail-right.svg"
-            /></a>
-          </div>
-        </div>
-      </div>
+
 
       <div class="container">
+
+
+        <div class="fullwidthbanner-container hero" style="height: 630px; margin-bottom: 40px">
+          <div class="content maps-img" style="background-image: url('/assets/img/main/main_img2.png');">
+            <div class="hero-text" style="color: white !important">
+              <h1 style="color:  white !important;">M.A.P.S</h1>
+              <h4>공간정보기반 디지털트윈 구현 전 과정을 아우르는 end to end 서비스</h4>
+              <h4>Mapping & Ai Platform Service</h4>
+              <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-MAPS"
+                >View more <img src="/assets/img/main/tail-right.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+
+
         {% assign solution-lists = site.data.solutions.lists | sort: 'id' %} {% for solution in solution-lists %} {%
         assign mod = forloop.index | modulo: 2 %} {% if mod == 1 %}
         <div class="row solution-item">

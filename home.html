@@ -21,12 +21,12 @@ nav: home
       z-index: 1;
       overflow: hidden;
       background-size: cover;
-      background-position: 50% 50%;
+      background-position: 38% 50%;
       background-repeat: no-repeat;
       padding-top: 120px;
       padding-bottom: 120px;
       ">
-        <div>
+        <div class="px-3">
           <h1 style="color: #1057C1;">{{home.hero-text | newline_to_br }}</h1>
           <h4 style="color: #1057C1;">{{home.hero-sub-text | newline_to_br }}</h4>
           <a class="btn-show-more" role="button" href="/introduction">View more
@@ -55,8 +55,8 @@ nav: home
     <!-- M.A.P.S 메뉴 -->
     <div class="fullwidthbanner-container hero" style="height: 630px; margin-bottom: 40px;">
       <div class="maps-bg content" style="background-image:url('{{home.maps-bg}}'); ">
-        <div class="hero-text" style="color: white !important;">
-          <h1>{{home.maps-text | newline_to_br }}</h1>
+        <div class="hero-text px-3" style="color: white !important;">
+          <h1 style="color:  white !important;">{{home.maps-text | newline_to_br }}</h1>
           <h4>{{home.maps-sub-text | newline_to_br }}</h4>
           <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-MAPS">View more
             <img src="/assets/img/main/tail-right.svg" /></a>

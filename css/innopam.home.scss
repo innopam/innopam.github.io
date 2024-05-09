@@ -106,6 +106,10 @@ h5 {
 }
 
 @media (max-width: $screen-xs-max) {
+    h1 {
+        font-size: 32px;
+    }
+
     .hero {
         height: 300px !important;
 
@@ -145,6 +149,12 @@ h5 {
     }
 }
 
+#missions >  a:hover{
+    color: white !important;
+    opacity: 0.7 !important;
+}
+
+
 #missions {
     margin-top: $margin;
 
@@ -155,6 +165,7 @@ h5 {
         // justify-content: center;
         margin-top: 80px;
         margin-bottom: 80px;
+
 
         .mission {
             padding: $margin/2;
@@ -173,10 +184,10 @@ h5 {
             }
         }
 
-        .mission:hover {
-            background-color: $main-color;
-            transition-duration: $transition-duration;
-        }
+        // .mission:hover {
+        //     background-color: $main-color;
+        //     transition-duration: $transition-duration;
+        // }
 
         .col-sm-4 {
             width: 25% !important;
@@ -219,18 +230,13 @@ h5 {
     width: 100% !important;
     background-size: cover !important;
     background: rgba(64, 0, 103, 0.30);
+    background-position: 50% 50% !important;
 }
 
 .card {
     background-color: white;
-    // height: 502px;
-    // width: 320px;
     border-radius: 10px;
     display: inline-table;
-
-    // margin-left: 10px;
-    // position: relative;
-
     color: #5A5C5F;
 }
 
