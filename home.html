@@ -43,7 +43,16 @@ nav: home
                   <a>{{mission.number}}</a>{{mission.title}}
                 </h2>
                 <a style="opacity: 0.7;">
-                  {{mission.description}}
+                  {% assign mission_parts = mission.description | split: "," %}
+                  {% for part in mission_parts %}
+                    {% assign subparts = part | split: "(" %}
+                    <span>{{ subparts[0] | strip }}</span>
+                    {% if subparts.size > 1 %}
+                      {% assign subpartscontents = subparts[1] | split: ")" %}
+                      <span style="font-size: 10px;">({{ subpartscontents[0] | strip }})</span>
+                    {% endif %}
+                    {% unless forloop.last %}, {% endunless %}
+                  {% endfor %}
                 </a>
               </div>
             </div>

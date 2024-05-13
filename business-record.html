@@ -10,46 +10,14 @@ nav: business-record
   <body id="page-top" class="index">
     {% include header.html %} {% assign business-record = site.data.business-record %}
     <article>
-      <div class="fullwidthbanner-container" style="margin: 50px 0px">
+      <div class="fullwidthbanner-container" style="margin: 50px 0px 0px 0px">
         <div class="solution-hero text-center" style="background-color: transparent">
           <h2 style="color: white">Business Record</h2>
           <div class="sub-ino">INNOVATIVE PLATFORM FOR AI & MAPPING COMPANY</div>
           <div class="background" style="background-image: url('/assets/img/business-record/business-record-top.jpg'); opacity: 0.4"></div>
         </div>
       </div>
-      <!-- </div> -->
       <div class="container" id="about">
-        <!-- <div class="row contents" id="ceo-text">
-          <div class="col-sm-4">
-            <h1>대표이사 인사말</h1>
-          </div>
-          <div class="col-sm-8">{{business-record.ceo-text | newline_to_br}}</div>
-        </div> -->
-        <!-- <div class="row contents" id="history">
-          <div class="col-sm-4">
-            <h1>회사 연혁</h1>
-          </div>
-          <div class="col-sm-8">
-            {% for history in business-record.history %}
-            <div class="row">
-              <div class="col-xs-3 date">{{history.date}}</div>
-              <div class="col-xs-9 content">{{history.content}}</div>
-            </div>
-            {% endfor %}
-          </div>
-        </div> -->
-        <!-- <div class="row contents" id="media">
-          <div class="col-sm-12">
-            <h1>언론 보도</h1>
-          </div>
-          <div class="col-sm-12">
-            {% for media in business-record.media %}
-            <div class="item">
-              <img src="{{media.imgUrl}}" alt="{{media.source}}" srcset="">
-            </div>
-            {% endfor %}
-          </div>
-        </div> -->
         <div class="row contents" id="business-records">
           <div class="col-sm-12">
             <h1 class="smallTitle">주요사업 수행 실적</h1>
