@@ -75,3 +75,9 @@ solutions:
       AI를 활용한 영상 자동 분류
     img: /assets/img/main/DDrive.png
 
+  - title: MS-AI-PS
+    subtitle: Multi-Sensor AI platform service
+    description: |
+      멀티센서(위성,항공,드론)영상 기반의 GeoAI분석 플랫폼 서비스
+    img: /assets/img/main/temp_ms-ai-ps.png
+

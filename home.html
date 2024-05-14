@@ -88,16 +88,16 @@ nav: home
 
       <div class="hero-text" style="color: white !important;">
         <br />
-        <div class="row justify-content-around">
+        <div>
           {% for solution in home.solutions %}
-          <section class="col-xs-12 col-sm-4 p-3">
-            <div class="card pb-sm-3" style="max-width: 320px;">
+          <section class="col-md-5 col-xs-12 col-sm-4 p-3" style="max-width: 538px; height: 562px;">
+            <div class="card pb-sm-3">
               <img class="solution-img" src="{{solution.img}}" />
               <h2>{{solution.title}}</h2>
               <h3>{{solution.subtitle}}</h3>
               <h5>{{solution.description}}</h5>
               <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">View more
-                <img src="/assets/img/main/tail-right.svg" /></a>
+                <img src="/assets/img/main/tail-right.svg"/></a>
             </div>
 
           </section>
@@ -119,10 +119,6 @@ nav: home
 
 
     </div>
-
-
-
-
 
     <!-- <div class="row text-center" id="visions">
           <div class="col-sm-12">
