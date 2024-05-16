@@ -1,0 +1,54 @@
+{% assign msaips = site.data.solutions.msaips %}
+
+<div
+  class="modal fade modal-fullscreen"
+  id="modal-{{msaips.title}}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+>
+  <a class="close" data-dismiss="modal" aria-hidden="true"></a>
+  <div class="fullwidthbanner-container">
+    <div class="solution-hero text-center">
+      <h2>{{msaips.title}}</h2>
+      <h3>{{msaips.subtitle}}</h3>
+      <div class="desc">{{msaips.description}}</div>
+      <div class="background"></div>
+    </div>
+  </div>
+  <div class="container" id="solution-detail">
+    <div class="row" id="feature">
+      <div class="col-sm-12">
+        <h1>기능</h1>
+      </div>
+      <div class="item-wrap col-sm-12">
+        {% for feature in msaips.features %}
+        <div class="item col-sm-6 col-xs-12">
+          <div class="image" style="background-image:url('{{feature.image}}');"></div>
+          <div class="text">
+            <h2>{{feature.title}}</h2>
+            {{feature.description | newline_to_br}}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% if msaips.examples %}
+      <div class="col-sm-12 pt-6">
+        <h1>도입 사례</h1>
+      </div>
+      <div class="item-wrap col-sm-12">
+        {% for example in msaips.examples %}
+        <div class="item col-sm-6 col-xs-12">
+          <div class="image" style="background-image:url('{{example.image}}');"></div>
+          <div class="text">
+            <h2>{{example.title}}</h2>
+            {{example.description | newline_to_br}}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
