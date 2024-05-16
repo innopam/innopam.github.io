@@ -27,7 +27,7 @@ lists:
     title: MS-AI-PS
     subtitle: Multi-Sensor AI platform service
     description: '멀티센서(위성, 항공, 드론)영상 기반의 GeoAI 분석 플랫폼 서비스'
-    image: '/assets/img/solutions/MS-AI-PS/MS-AI-PS.png'
+    image: '/assets/img/solutions/NIA.gif'
     url: '#'
 
 # DmapAI 상세페이지
