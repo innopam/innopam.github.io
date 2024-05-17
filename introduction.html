@@ -13,7 +13,7 @@ nav: introduction
       <div class="fullwidthbanner-container">
         <div class="solution-hero text-center" style="background-color: transparent">
           <h2 style="color: white">Introduction</h2>
-          <div>INNOVATIVE PLATFORM FOR AI & MAPPING COMPANY</div>
+          <div class="sub-ino">INNOVATIVE PLATFORM FOR AI & MAPPING COMPANY</div>
           <div class="background" style=" background-image: url('/assets/img/introduction/menu1.jpg'); opacity: 0.4"></div>
         </div>
       </div>
@@ -67,8 +67,8 @@ nav: introduction
           <div class="smallTitle">History</div>
           {% for history in introduction.history %}
           <div class="row">
-            <div class="col-xs-4 col-sm-2" style="font-size: 24px; font-weight: 700; margin-bottom: 15px">{{history.date}}</div>
-            <div class="col-xs-8" style="font-size: 18px; font-weight: 500; margin-bottom: 15px">
+            <div class="col-sm-2" style="font-size: 24px; font-weight: 700; margin-bottom: 15px">{{history.date}}</div>
+            <div class="col-xs-12 col-sm-8" style="font-size: 18px; font-weight: 500; margin-bottom: 15px">
               {{history.content}}
             </div>
           </div>
@@ -91,7 +91,7 @@ nav: introduction
                 var options = {
                   center: myLatlng,
                   scrollwheel :false,
-                  level: 7
+                  level: 9
                 };
 
                 var map = new daum.maps.Map(container, options);

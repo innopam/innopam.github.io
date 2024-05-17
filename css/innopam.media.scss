@@ -5,3 +5,11 @@
     margin-bottom: 20px;
   }
 }
+
+
+@media (max-width: $screen-xs-max) {
+
+  .contents {
+    margin-top: 15px !important;
+  }
+}

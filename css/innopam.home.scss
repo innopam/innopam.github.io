@@ -11,15 +11,25 @@ h1 {
     font-size: 48px;
 }
 
+@media (max-width: $screen-sm-max) {
+
+    .is-mb {
+        height: 400px;
+        padding-top: 100px !important;
+    }
+
+}
+
 
 @media (max-width: $screen-xs-max) {
 
-h4 {
-    font-size: 18px !important;
-    font-weight: 300;
-}
+    h4 {
+        font-size: 18px !important;
+        font-weight: 300;
+    }
 
 }
+
 h4 {
     font-size: 25px;
     font-weight: 300;
@@ -32,9 +42,10 @@ h5 {
 }
 
 
-.btn-show-more{
-    padding: 12px 24px; 
+.btn-show-more {
+    padding: 12px 24px;
 }
+
 
 
 
@@ -57,7 +68,6 @@ h5 {
             display: table-cell;
             vertical-align: middle;
             text-align: center;
-
             // transition: opacity 1000ms ease-in-out;
             // transition-delay:5000ms;
         }
@@ -149,7 +159,7 @@ h5 {
     }
 }
 
-#missions >  a:hover{
+#missions>a:hover {
     color: white !important;
     opacity: 0.7 !important;
 }
@@ -226,7 +236,7 @@ h5 {
 }
 
 
-.maps-bg{
+.maps-bg {
     width: 100% !important;
     background-size: cover !important;
     background: rgba(64, 0, 103, 0.30);
@@ -271,7 +281,7 @@ h5 {
     letter-spacing: -0.8px;
     padding-left: 30px;
     padding-right: 30px;
-    height: 76.75px; 
+    height: 76.75px;
 }
 
 
@@ -284,13 +294,40 @@ h5 {
 /* Add some padding inside the card container */
 .container {
     padding: 2px 16px;
+
+    > .hero-text {
+        section {
+            margin-bottom: 70px;
+        }
+
+        section:nth-of-type(even) {
+            margin-left: 80px
+        }
+    }
 }
 
-
-.solution-img{
-    height: 203px;
-    width: 320px;
+.solution-img {
+    width: 538px; 
+    height: 262.5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
 
+@media (max-width: 544px) {
+    .container {
+        > .hero-text {
+            section {
+                margin-bottom: 0px;
+            }
+    
+            section:nth-of-type(even) {
+                margin-left: 0px
+            }
+        }
+    }
+
+    .solution-img {
+        height: 262px !important;
+        width: 100%;
+    }
 }

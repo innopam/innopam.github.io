@@ -1,31 +1,3 @@
-// About Scss
-.title-wrapper {
-    position: relative;
-
-    > .title-group {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-
-        .title {
-            font-weight: 900;
-            font-size: 48px;
-            margin-bottom: 10px;
-            text-transform: capitalize;
-        }
-    
-        .sub-title {
-            font-weight: 700;
-            font-size: 20px;
-            text-transform: uppercase;
-        }
-    }
-}
 h1 {
     color: #00E3FF;
 }
@@ -87,6 +59,9 @@ h1 {
 }
 
 #business-records {
+    h1 {
+        margin-bottom: 0 !important;
+    }
     .years {
         list-style: none;
         color: white;
@@ -100,6 +75,7 @@ h1 {
     }
     #list {
         cursor: pointer;
+        margin-top: 0 !important;
         .list-active {
             border-bottom: 1px solid #00E3FF;
             color: #00E3FF;

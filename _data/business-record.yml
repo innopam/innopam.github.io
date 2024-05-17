@@ -180,6 +180,46 @@ business-records:
     year: 2021
     note: AI
     
+  - name: 수소연료전지드론과 인공지능을 이용한 농작물 모니터링 및 작황 예측 기술(1차년도)
+    client: 국토교통과학기술진흥원
+    year: 2021
+    note: AI, 드론
+  
+  - name: 드론 영상 AI분석 시스템 고도화 사업
+    client: 제주특별자치도
+    year: 2021
+    note: AI, 시스템 개발
+    
+  - name: 제주 주요작물 자동탐지 데이터 구축
+    client: 한국지능정보화사회진흥원
+    year: 2021
+    note: AI 학습용 데이터 구축
+    
+  - name: 차량 탑재형 영상 정보 취특 및 분석 용역
+    client: 한국건설기술연구원
+    year: 2021
+    note: 시스템 개발
+    
+  - name: 2021 제주 드론특별자유화구역 조성사업
+    client: 제주특별자치도
+    year: 2021
+    note: AI, 드론, 시스템 개발
+    
+  - name: 센싱 및 자세 정보를 활용한 융합 수중영상정합기술 연구 용역
+    client: 한국수자원공사
+    year: 2021
+    note: AI, 시스템 개발
+    
+  - name: 항공 촬영 화상정보를 활용한 작물 식별 딥러닝 연구
+    client: 한국농촌경제연구
+    year: 2021
+    note: AI
+    
+  - name: GUI 기반 공간영상 딥러닝 학습 솔루션 개발
+    client: 올포랜드
+    year: 2021
+    note: AI, 시스템 개발
+    
   - name: 제주 드론특별자유화구역 조성 사업
     client: 제주특별자치도
     year: 2022
@@ -239,6 +279,26 @@ business-records:
     client: 제주특별자치도
     year: 2023
     note: AI알고리즘 및 시스템 개발
+
+  - name: 제주 NIA 디지털 공공서비스 혁신 프로젝트
+    client: 한국지능정보사회진흥원
+    year: 2023
+    note: AI알고리즘 및 시스템 개발
+
+  - name: 제주특별자치도 드론특별자유화구역 조성사업
+    client: 제주특별자치도
+    year: 2023
+    note: AI, 드론, 시스템 개발
+
+  - name: 광명시 초등학교 통학로 위험유해시설 커뮤니티 맵핑
+    client: 광명시
+    year: 2023
+    note: 시스템 개발
+
+  - name: 성수 디지털아카이브 구축
+    client: 주식회사테크캡슐
+    year: 2023
+    note: AI, 드론
 
 # Clients
 clients:

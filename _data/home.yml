@@ -41,7 +41,7 @@ missions:
 
  - number: "7"
    title: "개 분야"
-   description: "도시관리, 시설물 관리, 농업, 해양, 산림, 행정, 재난안전 등"
+   description: "도시관리(도시변화모니터링), 농업분야(생산량 예측), 해양분야(선박 및 쓰레기 탐지), 산림관리(산림훼손, 재선충 탐지), 재난안전(피해지역 분석) 등"
 
  - number: "30"
    title: "개 모델"
@@ -61,12 +61,12 @@ solutions:
     subtitle: Drone Mapping AI
     description: 드론 영상을 업로드하면 정사영상(Orthophoto), 포인트클라우드(PointCloud), 3차원모델(3D Mesh), DSM(Digital Surface Model)을 생성하는
                   솔루션
-    img: /assets/img/main/DmapAi.png
+    img: /assets/img/solutions/dmapai.gif
 
   - title: LDMapAI
     subtitle: LiveDroneMapAI
     description: 드론에서 전송되는 영상에서 자동으로 객체를 식별하고 실시간으로 위치를 결정하는 솔루션
-    img: /assets/img/main/LDMapAI.png
+    img: /assets/img/solutions/ldmapai.gif
 
   - title: D-drive
     subtitle: 영상 데이터 저장·관리
@@ -74,4 +74,10 @@ solutions:
       수많은 영상을 한곳에서 편리하게 관리/검색/공유하는 서비스
       AI를 활용한 영상 자동 분류
     img: /assets/img/main/DDrive.png
+
+  - title: MS-AI-PS
+    subtitle: Multi-Sensor AI platform service
+    description: |
+      멀티센서(위성,항공,드론)영상 기반의 GeoAI분석 플랫폼 서비스
+    img: /assets/img/solutions/NIA.gif
 
