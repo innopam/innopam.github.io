@@ -62,6 +62,12 @@ gem install bundler jekyll
 bundle install
 ```
 
+실행
+
+```sh
+bundle exec jekyll serve --host 0.0.0.0
+```
+
 ## docker 및 compose
 
 docker 와 docker compose 가 설치되었으면
