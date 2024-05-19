@@ -1,46 +1,48 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132465250-1"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	  gtag('config', 'UA-132465250-1');
+		gtag('config', 'UA-132465250-1');
 	</script>
 
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="{{ site.description }}">
 	<meta name="robots" content="all" />
-    <meta name="author" content="Jeongyong Park">
-	<meta name="keywords"	 content="이노팸, innopam, INNOPAM, InnoPAM, 서울시립대, 공간정보공학과, 공간정보, 시립대, GIS, 사진측량, Geospatial, Geographic Infromation Systems, Geomatics, 드론, 무인기, MMS, 이임평, 무인항공기, 고속 자동매핑, 실내 모델링, 실외 모델링, 멀티센서, 실시간 공중자료, 실시간 공간정보, 이동형 멀티센서, 컴퓨터 비전, Computer Vision" >
-    <meta name="naver-site-verification" content="0b0517af9cfb9880c9f9ffb74738f362464a1864"/>
-	<meta property="og:type"		content="website">
-	<meta property="og:url"     	content="//innopam.com/">
-	<meta property="og:title"		content="InnoPAM 이노팸">
-	<meta property="og:site_name"   content="InnoPAM 이노팸">
-	<meta property="og:image"       content="//innopam.com/innopam-fb.png">
-	<meta property="og:description"	content="공간정보 구축 솔루션, 인공지능, 비전 센서 기반 측위 및 매핑 시스템 등 응용소프트웨어 개발 및 공급업체">
+	<meta name="author" content="Jeongyong Park">
+	<meta name="keywords"
+		content="이노팸, innopam, INNOPAM, InnoPAM, 서울시립대, 공간정보공학과, 공간정보, 시립대, GIS, 사진측량, Geospatial, Geographic Infromation Systems, Geomatics, 드론, 무인기, MMS, 이임평, 무인항공기, 고속 자동매핑, 실내 모델링, 실외 모델링, 멀티센서, 실시간 공중자료, 실시간 공간정보, 이동형 멀티센서, 컴퓨터 비전, Computer Vision">
+	<meta name="naver-site-verification" content="0b0517af9cfb9880c9f9ffb74738f362464a1864" />
+	<meta name="google-site-verification" content="opHb2Tl6fDNWHeVO3l8J7vxTttgb9_JsHqFXqmR5p5Q" />
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="//innopam.com/">
+	<meta property="og:title" content="InnoPAM 이노팸">
+	<meta property="og:site_name" content="InnoPAM 이노팸">
+	<meta property="og:image" content="//innopam.com/innopam-fb.png">
+	<meta property="og:description" content="공간정보 구축 솔루션, 인공지능, 비전 센서 기반 측위 및 매핑 시스템 등 응용소프트웨어 개발 및 공급업체">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@innopam">
 	<meta name="twitter:creator" content="@innopam">
 	<meta name="twitter:url" content="//innopam.com/">
 	<meta name="twitter:image:src" content="//innopam.com/innopam-fb.png">
 	<meta name="twitter:title" content="InnoPAM 이노팸">
-	<meta name="twitter:description"	content="공간정보 구축 솔루션, 인공지능, 비전 센서 기반 측위 및 매핑 시스템 등 응용소프트웨어 개발 및 공급업체">
+	<meta name="twitter:description" content="공간정보 구축 솔루션, 인공지능, 비전 센서 기반 측위 및 매핑 시스템 등 응용소프트웨어 개발 및 공급업체">
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
 	<link rel="stylesheet" href="{{ '/css/style.css' | prepend: site.baseurl }}" />
 
 	<link href="favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-    <!-- Custom Fonts -->  
+	<!-- Custom Fonts -->
 	<link rel="stylesheet" href="https://use.typekit.net/hyf6dwe.css" />
-	<script defer src ="{{'/assets/js/fontawesome/all.min.js' | prepend: site.baseurl}}"></script>
+	<script defer src="{{'/assets/js/fontawesome/all.min.js' | prepend: site.baseurl}}"></script>
 	<script defer src="{{'/assets/js/jquery.youtube-background.min.js' | prepend: site.baseurl}}"></script>
 
 	<script type="application/ld+json">
@@ -76,9 +78,9 @@
 		]
 	}
 	</script>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
