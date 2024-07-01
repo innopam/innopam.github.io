@@ -11,6 +11,10 @@ h1 {
     font-size: 48px;
 }
 
+.recruit-wrap {
+    position: inherit !important;
+}
+
 @media (max-width: $screen-sm-max) {
 
     .is-mb {
