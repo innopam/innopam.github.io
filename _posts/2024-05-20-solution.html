@@ -23,6 +23,22 @@ nav: solutions
       </div>
 
       <div class="container">
+
+
+        <div class="fullwidthbanner-container hero" style="height: 630px; margin-bottom: 40px">
+          <div class="content maps-img" style="background-image: url('/assets/img/main/main_img2.png');">
+            <div class="hero-text" style="color: white !important">
+              <h1 style="color:  white !important;">M.A.P.S</h1>
+              <h4>공간정보기반 디지털트윈 구현 전 과정의 Total care를 위한 End to End 서비스</h4>
+              <h4>Mapping & Ai Platform Service</h4>
+              {% assign changedetection = site.data.solutions.changedetection %}
+              <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-MAPS"
+                >View more <img src="/assets/img/main/tail-right.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+
         {% assign solution-lists = site.data.solutions.lists | sort: 'id' %} {% for solution in solution-lists %} {%
         assign mod = forloop.index | modulo: 2 %}
 
@@ -33,9 +49,11 @@ nav: solutions
             <h2>{{solution.title}}</h2>
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
+
             <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">
               View more <img src="/assets/img/main/tail-right.svg" />
             </a>
+
           </div>
           <div class="col-sm-7">
             {% if solution.id == 1 %}
@@ -68,15 +86,19 @@ nav: solutions
             <h2>{{solution.title}}</h2>
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
+
             <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">
               View more <img src="/assets/img/main/tail-right.svg" />
             </a>
+
+
           </div>
           {% endif %}
         </div>
         {% endfor %}
       </div>
     </article>
+
 
     {% include mmaps.html %} {% include dmapai.html %} {% include ldmapai.html %} {% include ddriveai.html %} {% include
     msaips.html %} {% include footer.html %} {% include js.html %}
@@ -153,5 +175,6 @@ nav: solutions
         document.addEventListener('touchmove', updateSlider);
       });
     </script>
+
   </body>
 </html>
