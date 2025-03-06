@@ -1,0 +1,83 @@
+{% assign changedetection = site.data.solutions.changedetection %}
+
+<div
+  class="modal fade modal-fullscreen"
+  id="modal-{{changedetection.id}}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+>
+  <a class="close" data-dismiss="modal" aria-hidden="true"></a>
+  <div class="fullwidthbanner-container">
+    <div class="solution-hero text-center">
+      <h2>{{changedetection.title}}</h2>
+      <h3>{{changedetection.subtitle}}</h3>
+      <div class="desc">{{changedetection.description}}</div>
+      <div class="background"></div>
+    </div>
+  </div>
+  <div class="container" id="solution-detail">
+    <div class="row" id="feature">
+      <div class="col-sm-12">
+        <h1>기능</h1>
+      </div>
+      <div class="item-wrap col-sm-12">
+        {% for feature in changedetection.features %}
+        {% if forloop.first %}
+        <div class="item col-sm-6 col-xs-12">
+          <video class="video-mp4" autoplay>
+            <source src="{{feature.image}}" type="video/mp4" />
+          </video>
+          <div class="text">
+            <h2>{{feature.title}}</h2>
+            {{feature.description | newline_to_br}}
+          </div>
+        </div>
+        {% else %}
+        <div class="item col-sm-6 col-xs-12">
+          <div class="image" style="background-image:url('{{feature.image}}');"></div>
+          <div class="text">
+            <h2>{{feature.title}}</h2>
+            {{feature.description | newline_to_br}}
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+      {% if changedetection.examples %}
+      <div class="col-sm-12 pt-6">
+        <h1>도입 사례</h1>
+      </div>
+      <div class="item-wrap col-sm-12">
+        {% for example in changedetection.examples %}
+        {% if forloop.last %}
+        <div class="video-container col-sm-6 col-sx-12">
+            <iframe
+            class="video"
+                src="{{ example.url | replace: 'watch?v=', 'embed/' }}" 
+                frameborder="0" 
+                allow="
+                    accelerometer; 
+                    clipboard-write; 
+                    encrypted-media; 
+                    gyroscope; 
+                    picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        {% else %}
+        <div class="item col-sm-6 col-xs-12">
+          <div class="image" style="background-image:url('{{example.image}}');"></div>
+          <div class="text">
+            <h2>{{example.title}}</h2>
+            {{example.description | newline_to_br}}
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

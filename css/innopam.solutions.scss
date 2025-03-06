@@ -107,6 +107,18 @@
           height: 95%;
         }
       }
+      .video-mp4 {
+        width: 100%;
+        height: 292px;
+      }
+      .video-container {
+        width: 100%;
+        height: 100%;
+        .video {
+          width: 98%;
+          height: 500px;
+        }
+      }
     }
   }
 
