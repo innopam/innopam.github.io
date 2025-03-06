@@ -296,11 +296,15 @@ changedetection:
   id: changedetection
   # 적용분야
   features:
-    - title: AI 기반 영상-영상 건물/도로 변화탐지
+    - title: | 
+        AI 기반 영상-영상 
+        건물/도로 변화탐지
       description: 두 시기 영상에 대해 건물(신축, 철거, 갱신, 색변화)/도로(신축, 소멸, 확장, 축소)의 변화탐지
       image: '/assets/img/solutions/change-detection/ai-based-image-to-image.mp4'
 
-    - title: AI 기반 영상-수치지도 건물/도로 변화탐지
+    - title: | 
+        AI 기반 영상-수치지도 
+        건물/도로 변화탐지
       description: 두 시기 영상에 대해 건물(신축, 철거, 갱신)/도로(신축, 소멸, 확장, 축소)의 변화탐지
       image: '/assets/img/solutions/change-detection/ai-based-image-to-digital-map.png'
 

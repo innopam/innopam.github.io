@@ -13,32 +13,32 @@
     <div class="solution-hero text-center">
       <h2>{{changedetection.title}}</h2>
       <h3>{{changedetection.subtitle}}</h3>
-      <div class="desc">{{changedetection.description}}</div>
+      <div>{{changedetection.description}}</div>
       <div class="background"></div>
     </div>
   </div>
   <div class="container" id="solution-detail">
     <div class="row" id="feature">
       <div class="col-sm-12">
-        <h1>기능</h1>
+        <h1 style="font-size: 40px; font-weight: 700; color: white;">기능</h1>
       </div>
       <div class="item-wrap col-sm-12">
         {% for feature in changedetection.features %}
         {% if forloop.first %}
         <div class="item col-sm-6 col-xs-12">
-          <video class="video-mp4" autoplay>
+          <video class="video-mp4" autoplay loop>
             <source src="{{feature.image}}" type="video/mp4" />
           </video>
-          <div class="text">
-            <h2>{{feature.title}}</h2>
+          <div class="change-feature-details">
+            <h2>{{feature.title | newline_to_br}}</h2>
             {{feature.description | newline_to_br}}
           </div>
         </div>
         {% else %}
         <div class="item col-sm-6 col-xs-12">
           <div class="image" style="background-image:url('{{feature.image}}');"></div>
-          <div class="text">
-            <h2>{{feature.title}}</h2>
+          <div class="change-feature-details">
+            <h2>{{feature.title | newline_to_br}}</h2>
             {{feature.description | newline_to_br}}
           </div>
         </div>
