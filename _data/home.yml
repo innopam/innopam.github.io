@@ -10,38 +10,42 @@ hero-sub-text: |
   더 나은 세상을 향해 나아가고 있습니다.
 
 # Hero 영역 프리로딩 이미지
-hero-bg: '/assets/img/main/main_img1.png'
+hero-bg: "/assets/img/main/main_img1.png"
+
 
 maps-text: M.A.P.S
-maps-bg: '/assets/img/main/main_img2.png'
+maps-bg: "/assets/img/main/main_img2.png"
 
-maps-sub-text: |
+
+maps-sub-text:  |
   공간정보기반 디지털트윈 구현 전 과정의 Total care를 위한 End to End 서비스
   Mapping & AI Platform Service
 
-solution-text: |
+solution-text:   |
   MAPS의 토대가 되는 단위별 솔루션은 모듈로 다양한 서비스에
   적용되어 현장에서 활용 중입니다.
 
+
+
 # Youtube Video ID
-video: 'UPUhZqVrirA'
+video: "UPUhZqVrirA"
 
 missions:
-  - number: '10'
-    title: '년'
-    description: '현장 중심의 GeoAI 기술연구로 국가R&D 및 공공서비스 솔루션 개발 수행'
+ - number: "10"
+   title: "년"
+   description: "현장 중심의 GeoAI 기술연구로 국가R&D 및 공공서비스 솔루션 개발 수행"
 
-  - number: '65'
-    title: '%'
-    description: '기술R&D 성과 기반 영리활동 이후 연평균 약 65% 수준 지속 성장'
+ - number: "65"
+   title: "%"
+   description: "기술R&D 성과 기반 영리활동 이후 연평균 약 65% 수준 지속 성장"
 
-  - number: '7'
-    title: '개 분야'
-    description: '도시관리(도시변화모니터링), 농업분야(생산량 예측), 해양분야(선박 및 쓰레기 탐지), 산림관리(산림훼손, 재선충 탐지), 재난안전(피해지역 분석) 등'
+ - number: "7"
+   title: "개 분야"
+   description: "도시관리(도시변화모니터링), 농업분야(생산량 예측), 해양분야(선박 및 쓰레기 탐지), 산림관리(산림훼손, 재선충 탐지), 재난안전(피해지역 분석) 등"
 
-  - number: '30'
-    title: '개 모델'
-    description: '변화탐지, 객체탐지 및 데이터 분석・처리 GeoAI 모델 개발・보유'
+ - number: "30"
+   title: "개 모델"
+   description: "변화탐지, 객체탐지 및 데이터 분석・처리 GeoAI 모델 개발・보유"
 
 visions:
   - title: 독보적인 공간정보 기술을 보유한<br> 세계적인 강소기업
@@ -50,25 +54,13 @@ visions:
   - title: 고객, 투자자, 직원, 회사<br> 모두가 수익을 공유하는 기업
 
 # 채용 사이트 링크
-recruit: 'https://innopam.notion.site/2022-c2bd7792b4c8416e80df3f17abed3bfa'
+recruit: "https://innopam.notion.site/2022-c2bd7792b4c8416e80df3f17abed3bfa"
 
-solutions:
-  - title: 변화탐지 솔루션
-    subtitle: Change Detection Solution
-    description: AI기반 건물, 도로 변화 자동탐지 솔루션
-      영상-영상, 영상-수치지도 비교 분석
-    img: /assets/img/solutions/dmapai.gif
-
-  - title: 실감정사영상 생성 솔루션
-    subtitle: Multi-Sensor  AI  platform service
-    description: 멀티센서(위성, 항공, 드론) 영상 기반의 GeoAI 분석 플랫폼 서비스
-    img: /assets/img/solutions/ldmapai.gif
-
+solutions: 
   - title: DmapAI
     subtitle: Drone Mapping AI
-    description:
-      드론 영상을 업로드하면 정사영상(Orthophoto), 포인트클라우드(PointCloud), 3차원모델(3D Mesh), DSM(Digital Surface Model)을 생성하는
-      솔루션
+    description: 드론 영상을 업로드하면 정사영상(Orthophoto), 포인트클라우드(PointCloud), 3차원모델(3D Mesh), DSM(Digital Surface Model)을 생성하는
+                  솔루션
     img: /assets/img/solutions/dmapai.gif
 
   - title: LDMapAI
@@ -88,3 +80,4 @@ solutions:
     description: |
       멀티센서(위성,항공,드론)영상 기반의 GeoAI분석 플랫폼 서비스
     img: /assets/img/solutions/NIA.gif
+

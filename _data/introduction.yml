@@ -41,9 +41,11 @@ history:
 
 contact:
   - place: 본사
+    address: 서울특별시 동대문구 서울시립대로 163 (전농동, 서울시립대학교 21세기관 711호)
+  - place: 연구소
     address: 서울시 용산구 원효로 146 금강프라임빌딩 6층, 13층
   - place: 제주지사
-    address: 제주특별자치도 제주시 신대로 145. 2층 005호 (연동, 앤써밀당)
+    address: 제주특별자치도 제주시 첨단로 213-65 제주 종합비즈니스센터 4층 이노팸
   - place: Tel.
     address: 02-702-5127
   - place: E-mail.
@@ -51,6 +53,12 @@ contact:
 
 map-1:
   name: 이노팸 본사
+  latlng: 37.5830126,127.0585939
+  img: '/assets/img/map/uos21.png'
+  address: 서울시 동대문구 서울시립대로 163 서울시립대학교 21세기관 711호
+
+map-2:
+  name: 이노팸 연구소
   latlng: 37.5341955,126.959340
   img: '/assets/img/map/innopam_ys.jpg'
   address: 서울시 용산구 원효로 146 금강프라임빌딩 6층, 13층
