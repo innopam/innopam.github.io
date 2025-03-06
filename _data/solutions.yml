@@ -139,8 +139,7 @@ mmaps:
   title: M.A.P.S
   subtitle: Mapping & Ai Platform Service
   description:  |
-    공간정보기반 디지털트윈 구현 전 과정을 아우르는
-    end to end 서비스
+    공간정보기반 디지털트윈 구현 전 과정의 Total care를 위한 End to End 서비스
 
 
   # 기능
@@ -217,3 +216,55 @@ msaips:
     - title: 제주 해양쓰레기관리 서비스
       description: 'AI 분석을 통한 해양쓰레기 자동탐지 및 행정구역별 통계 정보 확인을 위한 서비스'
       image: '/assets/img/solutions/MS-AI-PS/jeju-sea-trash-manage.png'
+
+# # 실감정사영상 상세페이지
+# # 헤더
+trueortho:
+  title: 실감정사영상 생성 솔루션
+  subtitle: True Orthophoto Generation Solution
+  description: | 
+    멀티센서(위성, 항공, 드론)영상 기반의
+    실감정사영상 제작 솔루션
+  id: trueortho
+
+  # 기능
+  features:
+    - title: 정사영상 생성 단계별 관리
+      description: | 
+        정사영상 생성의 효율적 관리를 위한 
+        단계별 산출물(데이터, 프로젝트)의 조회/관리/검색 지원
+      image: '/assets/img/solutions/trueortho/ortho-gen-by-level.png'
+
+    - title: 지도 기반 영상 조회
+      description: | 
+        단계별 산출물(원본영상, DSM, 정사영상 등)을 
+        지도 기반으로 조회
+      image: '/assets/img/solutions/trueortho/map-base-images.png'
+
+    - title: 영상 정합
+      description: | 
+        영상 자동 매칭 및 최적화를 통한 영상의 정밀한 위치 추정 
+        향후 산출물의 높은 위치 정확도 확보
+      image: '/assets/img/solutions/trueortho/images-integration.png'
+
+    - title: 포인트 클라우드 생성
+      description: | 
+        영상 정합 결과 기반 3차원 포인트 클라우드 생성 
+        고정밀 포인트 클라우드 생성으로 폐색지역 최소화
+      image: '/assets/img/solutions/trueortho/point-cloud.png'
+
+    - title: DSM 생성
+      description: |
+        대상지역의 건물, 지형 등 모든 객체를 포함한 
+        고해상도의 정밀한 높이 데이터 생성
+      image: '/assets/img/solutions/trueortho/dsm.png'
+
+    - title: 실감 정사영상 생성
+      description: | 
+        기복변위를 해소하고, 건물 외곽선을 명확히 표현한
+        고정밀 실감 정사영상 생성
+      image: '/assets/img/solutions/trueortho/trueortho-gen.png'
+
+    - title: 실감정사영상 결과
+      description: 건물 옆면과 같은 기복변위를 해소하고, 건물 외곽선을 명확히 표현해 수치지도 검수, 건물/도로 변화탐지 등에 이용 가능성 향상
+      image: '/assets/img/solutions/trueortho/result.png'
