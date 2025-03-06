@@ -9,6 +9,7 @@ nav: solutions
   {% include head.html %}
   <body id="page-top" class="index">
     {% include header.html %}
+
     <article>
       <div class="fullwidthbanner-container" style="margin: 50px 0px">
         <div class="solution-hero text-center" style="background-color: transparent">
@@ -21,8 +22,6 @@ nav: solutions
         </div>
       </div>
 
-
-
       <div class="container">
 
 
@@ -32,6 +31,7 @@ nav: solutions
               <h1 style="color:  white !important;">M.A.P.S</h1>
               <h4>공간정보기반 디지털트윈 구현 전 과정의 Total care를 위한 End to End 서비스</h4>
               <h4>Mapping & Ai Platform Service</h4>
+              {% assign changedetection = site.data.solutions.changedetection %}
               <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-MAPS"
                 >View more <img src="/assets/img/main/tail-right.svg"
               /></a>
@@ -39,28 +39,46 @@ nav: solutions
           </div>
         </div>
 
-
-
         {% assign solution-lists = site.data.solutions.lists | sort: 'id' %} {% for solution in solution-lists %} {%
-        assign mod = forloop.index | modulo: 2 %} {% if mod == 1 %}
+        assign mod = forloop.index | modulo: 2 %}
+
         <div class="row solution-item">
-          <div class="col-sm-7 visible-xs">
-            <div class="image" style="background-image:url('{{solution.image}}');"></div>
-          </div>
+          {% if mod == 1 %}
+          <!-- 왼쪽에 설명 / 오른쪽에 이미지 -->
           <div class="col-sm-5">
             <h2>{{solution.title}}</h2>
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
-            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}"
-              >View more <img src="/assets/img/main/tail-right.svg"
-            /></a>
+
+            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">
+              View more <img src="/assets/img/main/tail-right.svg" />
+            </a>
+
           </div>
-          <div class="col-sm-7 hidden-xs">
+          <div class="col-sm-7">
+            {% if solution.id == 1 %}
+            <div class="image-compare-container">
+              <div class="image-wrapper">
+                <img src="/assets/img/solutions/2.png" alt="Before Image" class="before-img" />
+                <img src="/assets/img/solutions/1.png" alt="After Image" class="after-img" />
+              </div>
+              <div class="slider"></div>
+            </div>
+
+            <!-- <div class="image-compare-container" id="compare-container">
+              <div class="image-compare-overlay" id="overlay">
+                <img src="/assets/img/solutions/Change_after.png" alt="After Image" />
+              </div>
+              <img src="/assets/img/solutions/Change_before.png" alt="Before Image" />
+              <div class="slider" id="slider"></div>
+            </div> -->
+
+            {% else %}
             <div class="image" style="background-image:url('{{solution.image}}');"></div>
+            {% endif %}
           </div>
-        </div>
-        {% else %}
-        <div class="row solution-item">
+          {% else %}
+          <!-- 오른쪽에 설명 / 왼쪽에 이미지 -->
           <div class="col-sm-7">
             <div class="image" style="background-image:url('{{solution.image}}');"></div>
           </div>
@@ -68,17 +86,95 @@ nav: solutions
             <h2>{{solution.title}}</h2>
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
-            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}"
-              >View more <img src="/assets/img/main/tail-right.svg"
-            /></a>
-          </div>
-        </div>
 
-        {% endif %} {% endfor %}
+            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">
+              View more <img src="/assets/img/main/tail-right.svg" />
+            </a>
+
+
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
       </div>
     </article>
 
-    {% include mmaps.html %} {% include dmapai.html %} {% include ldmapai.html %} {% include ddriveai.html %}
-    {% include msaips.html %} {% include footer.html %} {% include js.html %}
+
+    {% include mmaps.html %} {% include dmapai.html %} {% include ldmapai.html %} {% include ddriveai.html %} {% include
+    msaips.html %} {% include footer.html %} {% include js.html %}
+
+    <style>
+      .image-compare-container {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+      }
+
+      .before-img,
+      .after-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .after-img {
+        -webkit-mask-image: linear-gradient(to right, black 50%, transparent 50%);
+        mask-image: linear-gradient(to right, black 50%, transparent 50%);
+        transition: mask-image 0.1s ease; /* 부드러운 전환 */
+      }
+
+      .slider {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 5px;
+        height: 100%;
+        background-color: #0085ff;
+        cursor: ew-resize;
+        z-index: 2;
+      }
+    </style>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const slider = document.querySelector('.slider');
+        const afterImg = document.querySelector('.after-img');
+        const container = document.querySelector('.image-compare-container');
+        let isDragging = false;
+
+        const updateSlider = event => {
+          if (!isDragging) return;
+
+          let rect = container.getBoundingClientRect();
+          let position = (event.clientX || event.touches[0].clientX) - rect.left;
+
+          if (position < 0) position = 0;
+          if (position > rect.width) position = rect.width;
+
+          let percentage = (position / rect.width) * 100;
+
+          // mask-image 업데이트
+          afterImg.style.webkitMaskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
+          afterImg.style.maskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
+
+          // 슬라이더 위치 업데이트
+          slider.style.left = `${percentage}%`;
+        };
+
+        slider.addEventListener('mousedown', () => (isDragging = true));
+        slider.addEventListener('touchstart', () => (isDragging = true));
+
+        document.addEventListener('mouseup', () => (isDragging = false));
+        document.addEventListener('touchend', () => (isDragging = false));
+
+        document.addEventListener('mousemove', updateSlider);
+        document.addEventListener('touchmove', updateSlider);
+      });
+    </script>
+
   </body>
 </html>

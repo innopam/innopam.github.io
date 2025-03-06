@@ -7,19 +7,22 @@ lists:
     subtitle: Change Detection Solution
     description: 'AI기반 건물, 도로 변화 자동탐지 솔루션
     영상-영상, 영상-수치지도 비교 분석'
+    target: changedetection
     image: '/assets/img/solutions/dmapai.gif'
     url: '#'
 
   - id: 2
     title: 실감정사영상 생성 솔루션
     subtitle: Multi-Sensor  AI  platform service
+    target: trueortho
     description: '멀티센서(위성, 항공, 드론) 영상 기반의 GeoAI 분석 플랫폼 서비스'
-    image: '/assets/img/solutions/ldmapai.gif'
+    image: '/assets/img/solutions/Multi_sensor_display.png'
     url: '#'
 
   - id: 3
     title: DmapAI
     subtitle: Drone Mapping AI
+    target: DmapAI
     description: '드론 영상을 업로드하면 정사영상(Orthophoto), 포인트클라우드(PointCloud), 3차원모델(3D Mesh), DSM(Digital Surface Model)을 생성하는 솔루션'
     image: '/assets/img/solutions/dmapai.gif'
     url: '#'
@@ -27,6 +30,7 @@ lists:
   - id: 4
     title: LDMapAI
     subtitle: LiveDroneMapAI
+    target: LDMapAI
     description: '드론에서 전송되는 영상에서 자동으로 객체를 식별하고 실시간으로 위치를 결정하는 솔루션'
     image: '/assets/img/solutions/ldmapai.gif'
     url: '#'
@@ -34,6 +38,7 @@ lists:
   - id: 5
     title: D-drive
     subtitle: Drone drive
+    target: D-drive
     description: '드론 영상을 한 곳에서 자동으로 정리하고 쉽게 찾을 수 있는 드론 영상 관리 서비스'
     image: '/assets/img/solutions/D-drive/bg.png'
     url: '#'
@@ -41,6 +46,7 @@ lists:
   - id: 6
     title: MS-AI-PS
     subtitle: Multi-Sensor AI platform service
+    target: MS-AI-PS
     description: '멀티센서(위성, 항공, 드론)영상 기반의 GeoAI 분석 플랫폼 서비스'
     image: '/assets/img/solutions/NIA.gif'
     url: '#'
@@ -228,3 +234,100 @@ msaips:
     - title: 제주 해양쓰레기관리 서비스
       description: 'AI 분석을 통한 해양쓰레기 자동탐지 및 행정구역별 통계 정보 확인을 위한 서비스'
       image: '/assets/img/solutions/MS-AI-PS/jeju-sea-trash-manage.png'
+
+# # 실감정사영상 상세페이지
+# # 헤더
+trueortho:
+  title: 실감정사영상 생성 솔루션
+  subtitle: True Orthophoto Generation Solution
+  description: | 
+    멀티센서(위성, 항공, 드론)영상 기반의
+    실감정사영상 제작 솔루션
+  id: trueortho
+
+  # 기능
+  features:
+    - title: 정사영상 생성 단계별 관리
+      description: | 
+        정사영상 생성의 효율적 관리를 위한 
+        단계별 산출물(데이터, 프로젝트)의 조회/관리/검색 지원
+      image: '/assets/img/solutions/trueortho/ortho-gen-by-level.png'
+
+    - title: 지도 기반 영상 조회
+      description: | 
+        단계별 산출물(원본영상, DSM, 정사영상 등)을 
+        지도 기반으로 조회
+      image: '/assets/img/solutions/trueortho/map-base-images.png'
+
+    - title: 영상 정합
+      description: | 
+        영상 자동 매칭 및 최적화를 통한 영상의 정밀한 위치 추정 
+        향후 산출물의 높은 위치 정확도 확보
+      image: '/assets/img/solutions/trueortho/images-integration.png'
+
+    - title: 포인트 클라우드 생성
+      description: | 
+        영상 정합 결과 기반 3차원 포인트 클라우드 생성 
+        고정밀 포인트 클라우드 생성으로 폐색지역 최소화
+      image: '/assets/img/solutions/trueortho/point-cloud.png'
+
+    - title: DSM 생성
+      description: |
+        대상지역의 건물, 지형 등 모든 객체를 포함한 
+        고해상도의 정밀한 높이 데이터 생성
+      image: '/assets/img/solutions/trueortho/dsm.png'
+
+    - title: 실감 정사영상 생성
+      description: | 
+        기복변위를 해소하고, 건물 외곽선을 명확히 표현한
+        고정밀 실감 정사영상 생성
+      image: '/assets/img/solutions/trueortho/trueortho-gen.png'
+
+    - title: 실감정사영상 결과
+      description: 건물 옆면과 같은 기복변위를 해소하고, 건물 외곽선을 명확히 표현해 수치지도 검수, 건물/도로 변화탐지 등에 이용 가능성 향상
+      image: '/assets/img/solutions/trueortho/result.png'
+
+# # 변화탐지 상세페이지
+# # 헤더
+changedetection:
+  title: 변화탐지 솔루션
+  subtitle: Change Detection Solution
+  description:  AI 기반 영상-영상/영상-수치지도 건물/도로 변화 자동탐지 솔루션
+  id: changedetection
+  # 적용분야
+  features:
+    - title: AI 기반 영상-영상 건물/도로 변화탐지
+      description: 두 시기 영상에 대해 건물(신축, 철거, 갱신, 색변화)/도로(신축, 소멸, 확장, 축소)의 변화탐지
+      image: '/assets/img/solutions/change-detection/ai-based-image-to-image.mp4'
+
+    - title: AI 기반 영상-수치지도 건물/도로 변화탐지
+      description: 두 시기 영상에 대해 건물(신축, 철거, 갱신)/도로(신축, 소멸, 확장, 축소)의 변화탐지
+      image: '/assets/img/solutions/change-detection/ai-based-image-to-digital-map.png'
+
+    - title: 사용자 검수
+      description: 사용자 검수(변화종류, 사유 등)를 통한 변화탐지 결과 고도화 기능
+      image: '/assets/img/solutions/change-detection/user-examination.png'
+
+    - title: 분석 리포트
+      description: 탐지 유형별 , 지역별 분포  PDF리포트 
+      image: '/assets/img/solutions/change-detection/analysis-report.png'
+
+  # 도입 사례
+  examples:
+    - title: 서울시 GeoAI 기반 도시 변화탐지
+      description: 서울시 항공사진을 이용해 건물의 변화(신축/소멸/갱신/색변화)를 자동으로 탐지 및 관
+      image: '/assets/img/solutions/change-detection/examples/geoai-based-change-detection.png'
+    
+    - title: 개발제한구역 내 불법개발 건물 변화탐지(서울특별시)
+      description: AI 건물 변화탐지 알고리즘을 이용한 건물 변화 관리 업무의 행정 효율성 향상
+      image: '/assets/img/solutions/change-detection/examples/illegal-change-detection.png'
+    
+    - title: 고정밀 전자지도 구축 챌린지 사업(아산시)
+      description: 아산시 1:1,000 수치지도 갱신 효율화를 위한 영상-영상/영상-수치지도 건물/도로 변화탐지
+      image: '/assets/img/solutions/change-detection/examples/asan-challenge.png'
+    
+    - title: 고정밀 전자지도 구축 챌린지 사업(제주도)
+      description: 제주특별자치도 1:1,000 수치지도 갱신 효율화를 위한 영상-영상/영상-수치지도 건물/도로 변화탐지
+      image: '/assets/img/solutions/change-detection/examples/jeju-challenge.png'
+    
+    - url: https://www.youtube.com/watch?v=3bt3v6JCjeo
