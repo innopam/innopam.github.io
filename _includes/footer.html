@@ -1,73 +1,47 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <hr>
-                </div>
-                <div class="col-md-4 footer-company">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            {{ site.data.company.company-name }}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-2 col-xs-4">
-                            사업자등록번호
-                        </div>
-                        <div class="col-md-8 col-sm-10 col-xs-8">
-                            {{site.data.company.company-number}}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-2 col-xs-4">
-                            Tel
-                        </div>
-                        <div class="col-md-8 col-sm-10 col-xs-8">
-                            {{site.data.company.tel}}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-2 col-xs-4">
-                            E-mail
-                        </div>
-                        <div class="col-md-8 col-sm-10 col-xs-8">
-                            <a href="mailto:{{site.data.company.email}}
-                            ">{{site.data.company.email}}</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 footer-company">
-                    <div class="row">
-                        <div class="col-sm-2 col-xs-4">
-                            본사
-                        </div>
-                        <div class="col-sm-10 col-xs-8">
-                            {{site.data.company.address-1 | newline_to_br}}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-2 col-xs-4">
-                            연구소 
-                        </div>
-                        <div class="col-sm-10 col-xs-8">
-                            {{site.data.company.address-2 | newline_to_br}}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-2 col-xs-4">
-                            제주지사 
-                        </div>
-                        <div class="col-sm-10 col-xs-8">
-                            {{site.data.company.address-3 | newline_to_br}}
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 footer-sns">
-                    {% for network in site.data.company.sns %}
-                        <a href="{{network.url}}" target="_blank"><i class="fab fa-{{network.name}}-square fa-3x"></i></a>
-                    {% endfor %}
-                </div>
-            </div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <hr />
+      </div>
+      <div class="col-md-4 footer-company">
+        <div class="row">
+          <div class="col-xs-12">{{ site.data.company.company-name }}</div>
         </div>
-    </footer>
-
+        <div class="row">
+          <div class="col-md-4 col-sm-2 col-xs-4">사업자등록번호</div>
+          <div class="col-md-8 col-sm-10 col-xs-8">{{site.data.company.company-number}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-2 col-xs-4">Tel</div>
+          <div class="col-md-8 col-sm-10 col-xs-8">{{site.data.company.tel}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-2 col-xs-4">E-mail</div>
+          <div class="col-md-8 col-sm-10 col-xs-8">
+            <a
+              href="mailto:{{site.data.company.email}}
+                            "
+              >{{site.data.company.email}}</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 footer-company">
+        <div class="row">
+          <div class="col-sm-2 col-xs-4">본사</div>
+          <div class="col-sm-10 col-xs-8">{{site.data.company.address-1 | newline_to_br}}</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2 col-xs-4">제주지사</div>
+          <div class="col-sm-10 col-xs-8">{{site.data.company.address-2 | newline_to_br}}</div>
+        </div>
+      </div>
+      <div class="col-md-2 footer-sns">
+        {% for network in site.data.company.sns %}
+        <a href="{{network.url}}" target="_blank"><i class="fab fa-{{network.name}}-square fa-3x"></i></a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</footer>
