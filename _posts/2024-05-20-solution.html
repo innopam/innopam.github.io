@@ -39,14 +39,22 @@ nav: solutions
           </div>
           <div class="col-sm-7">
             {% if solution.id == 1 %}
-            <!-- 첫 번째 아이템만 이미지 비교 슬라이더 -->
-            <div class="image-compare-container" id="compare-container">
-              <div class="image-compare-overlay" id="overlay">
-                <img src="/assets/img/solutions/dmapai_after.jpg" alt="After Image" />
+            <div class="image-compare-container">
+              <div class="image-wrapper">
+                <img src="/assets/img/solutions/2.png" alt="Before Image" class="before-img" />
+                <img src="/assets/img/solutions/1.png" alt="After Image" class="after-img" />
               </div>
-              <img src="/assets/img/solutions/dmapai_before.jpg" alt="Before Image" />
-              <div class="slider" id="slider"></div>
+              <div class="slider"></div>
             </div>
+
+            <!-- <div class="image-compare-container" id="compare-container">
+              <div class="image-compare-overlay" id="overlay">
+                <img src="/assets/img/solutions/Change_after.png" alt="After Image" />
+              </div>
+              <img src="/assets/img/solutions/Change_before.png" alt="Before Image" />
+              <div class="slider" id="slider"></div>
+            </div> -->
+
             {% else %}
             <div class="image" style="background-image:url('{{solution.image}}');"></div>
             {% endif %}
@@ -74,70 +82,75 @@ nav: solutions
     msaips.html %} {% include footer.html %} {% include js.html %}
 
     <style>
-      /* 이미지 비교 슬라이더 스타일 */
       .image-compare-container {
         position: relative;
         width: 100%;
-        height: 400px;
+        height: 500px;
         overflow: hidden;
-        border: 2px solid #ddd;
       }
 
-      .image-compare-container img {
+      .before-img,
+      .after-img {
         position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
 
-      .image-compare-overlay {
-        width: 50%;
-        overflow: hidden;
-        position: absolute;
-        height: 100%;
+      .after-img {
+        -webkit-mask-image: linear-gradient(to right, black 50%, transparent 50%);
+        mask-image: linear-gradient(to right, black 50%, transparent 50%);
+        transition: mask-image 0.1s ease; /* 부드러운 전환 */
       }
 
       .slider {
         position: absolute;
-        left: 50%;
         top: 0;
-        width: 4px;
+        left: 50%;
+        width: 5px;
         height: 100%;
-        background-color: red;
+        background-color: #0085ff;
         cursor: ew-resize;
+        z-index: 2;
       }
     </style>
 
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const container = document.getElementById('compare-container');
-        if (!container) return;
-
-        const overlay = document.getElementById('overlay');
-        const slider = document.getElementById('slider');
-
+        const slider = document.querySelector('.slider');
+        const afterImg = document.querySelector('.after-img');
+        const container = document.querySelector('.image-compare-container');
         let isDragging = false;
 
-        slider.addEventListener('mousedown', () => {
-          isDragging = true;
-        });
-        document.addEventListener('mouseup', () => {
-          isDragging = false;
-        });
-
-        document.addEventListener('mousemove', event => {
+        const updateSlider = event => {
           if (!isDragging) return;
 
           let rect = container.getBoundingClientRect();
-          let position = event.clientX - rect.left;
+          let position = (event.clientX || event.touches[0].clientX) - rect.left;
 
           if (position < 0) position = 0;
           if (position > rect.width) position = rect.width;
 
           let percentage = (position / rect.width) * 100;
-          overlay.style.width = `${percentage}%`;
+
+          // mask-image 업데이트
+          afterImg.style.webkitMaskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
+          afterImg.style.maskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
+
+          // 슬라이더 위치 업데이트
           slider.style.left = `${percentage}%`;
-        });
+        };
+
+        slider.addEventListener('mousedown', () => (isDragging = true));
+        slider.addEventListener('touchstart', () => (isDragging = true));
+
+        document.addEventListener('mouseup', () => (isDragging = false));
+        document.addEventListener('touchend', () => (isDragging = false));
+
+        document.addEventListener('mousemove', updateSlider);
+        document.addEventListener('touchmove', updateSlider);
       });
     </script>
   </body>
