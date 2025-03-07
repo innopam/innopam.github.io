@@ -6,48 +6,35 @@
   tabindex="-1"
   role="dialog"
   aria-labelledby="myModalLabel"
-  aria-hidden="true"
 >
-  <a class="close" data-dismiss="modal" aria-hidden="true"></a>
+  <a class="close" data-dismiss="modal"></a>
   <div class="fullwidthbanner-container">
     <div class="solution-hero text-center">
       <h2>{{changedetection.title}}</h2>
       <h3>{{changedetection.subtitle}}</h3>
-      <div class="desc">{{changedetection.description}}</div>
+      <div>{{changedetection.description}}</div>
       <div class="background"></div>
     </div>
   </div>
   <div class="container" id="solution-detail">
     <div class="row" id="feature">
       <div class="col-sm-12">
-        <h1>기능</h1>
+        <h1 style="font-size: 40px; font-weight: 700; color: white;">기능</h1>
       </div>
       <div class="item-wrap col-sm-12">
         {% for feature in changedetection.features %}
-        {% if forloop.first %}
-        <div class="item col-sm-6 col-xs-12">
-          <video class="video-mp4" autoplay>
-            <source src="{{feature.image}}" type="video/mp4" />
-          </video>
-          <div class="text">
-            <h2>{{feature.title}}</h2>
-            {{feature.description | newline_to_br}}
-          </div>
-        </div>
-        {% else %}
         <div class="item col-sm-6 col-xs-12">
           <div class="image" style="background-image:url('{{feature.image}}');"></div>
-          <div class="text">
-            <h2>{{feature.title}}</h2>
+          <div class="change-feature-details">
+            <h2 style="font-size: 40px; font-weight: 700; color: white;">{{feature.title | newline_to_br}}</h2>
             {{feature.description | newline_to_br}}
           </div>
         </div>
-        {% endif %}
         {% endfor %}
       </div>
       {% if changedetection.examples %}
       <div class="col-sm-12 pt-6">
-        <h1>도입 사례</h1>
+        <h1 style="font-size: 40px; font-weight: 700; color: white;">도입 사례</h1>
       </div>
       <div class="item-wrap col-sm-12">
         {% for example in changedetection.examples %}
@@ -70,7 +57,7 @@
         <div class="item col-sm-6 col-xs-12">
           <div class="image" style="background-image:url('{{example.image}}');"></div>
           <div class="text">
-            <h2>{{example.title}}</h2>
+            <h2 style="font-size: 40px; font-weight: 700; color: white;">{{example.title | newline_to_br}}</h2>
             {{example.description | newline_to_br}}
           </div>
         </div>

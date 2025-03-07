@@ -264,12 +264,14 @@ trueortho:
         영상 자동 매칭 및 최적화를 통한 영상의 정밀한 위치 추정 
         향후 산출물의 높은 위치 정확도 확보
       image: '/assets/img/solutions/trueortho/images-integration.png'
+      url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=DyCZl9kSm54
 
     - title: 포인트 클라우드 생성
       description: | 
         영상 정합 결과 기반 3차원 포인트 클라우드 생성 
         고정밀 포인트 클라우드 생성으로 폐색지역 최소화
       image: '/assets/img/solutions/trueortho/point-cloud.png'
+      url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=Kn7bLoVsxbs
 
     - title: DSM 생성
       description: |
@@ -296,38 +298,76 @@ changedetection:
   id: changedetection
   # 적용분야
   features:
-    - title: AI 기반 영상-영상 건물/도로 변화탐지
-      description: 두 시기 영상에 대해 건물(신축, 철거, 갱신, 색변화)/도로(신축, 소멸, 확장, 축소)의 변화탐지
-      image: '/assets/img/solutions/change-detection/ai-based-image-to-image.mp4'
+    - title: | 
+        AI 기반 영상-영상 
+        건물 변화탐지
+      description: | 
+        두 시기 정사영상을 비교하여 
+        건물의 변화(신축, 소멸, 갱신, 색변화)를 탐지
+      image: '/assets/img/solutions/change-detection/ai-based-image-to-image-building.gif'
 
-    - title: AI 기반 영상-수치지도 건물/도로 변화탐지
-      description: 두 시기 영상에 대해 건물(신축, 철거, 갱신)/도로(신축, 소멸, 확장, 축소)의 변화탐지
-      image: '/assets/img/solutions/change-detection/ai-based-image-to-digital-map.png'
+    - title: | 
+        AI 기반 영상-수치지도 
+        건물 변화탐지
+      description: | 
+        두 시기 정사영상과 수치지도를 비교하여
+        수치지도의 건물 변화(신축, 소멸, 갱신)를 탐지
+      image: '/assets/img/solutions/change-detection/ai-based-image-to-digital-map-building.gif'
+
+    - title: |
+        AI 기반 영상-영상
+        도로 변화탐지
+      description: | 
+        두 시기 정사영상을 비교하여 
+        도로의 변화(신축, 소멸, 확장, 축소)를 탐지
+      image: '/assets/img/solutions/change-detection/ai-based-image-to-image-road.gif'
+
+    - title: |
+        AI 기반 영상-수치지도
+        도로 변화탐지
+      description: | 
+        두 시기 정사영상과 수치지도를 비교하여
+        수치지도의 도로 변화(신축, 소멸, 갱신)를 탐지
+      image: '/assets/img/solutions/change-detection/ai-based-image-to-digital-map-road.gif'
 
     - title: 사용자 검수
       description: 사용자 검수(변화종류, 사유 등)를 통한 변화탐지 결과 고도화 기능
       image: '/assets/img/solutions/change-detection/user-examination.png'
 
     - title: 분석 리포트
-      description: 탐지 유형별 , 지역별 분포  PDF리포트 
+      description: 탐지 유형별 , 지역별 분포 PDF리포트 제공
       image: '/assets/img/solutions/change-detection/analysis-report.png'
 
   # 도입 사례
   examples:
     - title: 서울시 GeoAI 기반 도시 변화탐지
-      description: 서울시 항공사진을 이용해 건물의 변화(신축/소멸/갱신/색변화)를 자동으로 탐지 및 관
+      description: | 
+        서울시 항공사진을 이용해 건물의 변화
+        (신축/소멸/갱신/색변화)를 자동으로 탐지 및 관
       image: '/assets/img/solutions/change-detection/examples/geoai-based-change-detection.png'
     
-    - title: 개발제한구역 내 불법개발 건물 변화탐지(서울특별시)
-      description: AI 건물 변화탐지 알고리즘을 이용한 건물 변화 관리 업무의 행정 효율성 향상
+    - title: | 
+        개발제한구역 내 불법개발 
+        건물 변화탐지(서울특별시)
+      description: | 
+        AI 건물 변화탐지 알고리즘을 이용한 
+        건물 변화 관리 업무의 행정 효율성 향상
       image: '/assets/img/solutions/change-detection/examples/illegal-change-detection.png'
     
-    - title: 고정밀 전자지도 구축 챌린지 사업(아산시)
-      description: 아산시 1:1,000 수치지도 갱신 효율화를 위한 영상-영상/영상-수치지도 건물/도로 변화탐지
+    - title: | 
+        고정밀 전자지도 구축 
+        챌린지 사업(아산시)
+      description: | 
+        아산시 1:1,000 수치지도 갱신 효율화를 위한 
+        영상-영상/영상-수치지도 건물/도로 변화탐지
       image: '/assets/img/solutions/change-detection/examples/asan-challenge.png'
     
-    - title: 고정밀 전자지도 구축 챌린지 사업(제주도)
-      description: 제주특별자치도 1:1,000 수치지도 갱신 효율화를 위한 영상-영상/영상-수치지도 건물/도로 변화탐지
+    - title: | 
+        고정밀 전자지도 구축 
+        챌린지 사업(제주도)
+      description: | 
+        제주특별자치도 1:1,000 수치지도 갱신 효율화를 위한 
+        영상-영상/영상-수치지도 건물/도로 변화탐지
       image: '/assets/img/solutions/change-detection/examples/jeju-challenge.png'
     
     - url: https://www.youtube.com/watch?v=3bt3v6JCjeo
