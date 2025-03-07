@@ -23,8 +23,6 @@ nav: solutions
       </div>
 
       <div class="container">
-
-
         <div class="fullwidthbanner-container hero" style="height: 630px; margin-bottom: 40px">
           <div class="content maps-img" style="background-image: url('/assets/img/main/main_img2.png');">
             <div class="hero-text" style="color: white !important">
@@ -50,7 +48,7 @@ nav: solutions
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
 
-            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">
+            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.target}}">
               View more <img src="/assets/img/main/tail-right.svg" />
             </a>
 
@@ -86,12 +84,9 @@ nav: solutions
             <h2>{{solution.title}}</h2>
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
-
-            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.title}}">
+            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.target}}">
               View more <img src="/assets/img/main/tail-right.svg" />
             </a>
-
-
           </div>
           {% endif %}
         </div>
@@ -101,7 +96,7 @@ nav: solutions
 
 
     {% include mmaps.html %} {% include dmapai.html %} {% include ldmapai.html %} {% include ddriveai.html %} {% include
-    msaips.html %} {% include footer.html %} {% include js.html %}
+    msaips.html %} {% include trueortho.html %} {% include changedetection.html %} {% include footer.html %} {% include js.html %}
 
     <style>
       .image-compare-container {
