@@ -92,7 +92,9 @@ nav: home
           {% for solution in home.solutions %}
           <section class="col-md-5 col-xs-12 col-sm-4 p-3" style="max-width: 538px; height: 562px;">
             <div class="card pb-sm-3">
-              <img class="solution-img" src="{{solution.img}}" />
+              <div class="solution-img-container">
+                <img class="solution-img" src="{{solution.img}}" />
+              </div>
               <h2>{{solution.title}}</h2>
               <h3>{{solution.subtitle}}</h3>
               <h5>{{solution.description}}</h5>
@@ -153,6 +155,20 @@ nav: home
       //     jQuery('.blur').css('opacity','0');
       //     jQuery('.hero-text').css('opacity','0');
       //     jQuery('.preloader').css('opacity','0');
+
+      // 이미지 확대 코드 추가
+      const images = document.querySelectorAll('.solution-img');
+
+      images.forEach(image => {
+        const src = image.getAttribute('src');
+        if (src === '/assets/img/solutions/dmapai.gif') {
+          image.style.transform = 'scale(1.04)';
+        } else if (src === '/assets/img/solutions/ldmapai.gif') {
+          image.style.transform = 'scale(1.1)';
+        } else {
+          image.style.transform = 'scale(1)';
+        }
+      });
     });
   </script>
 </body>
