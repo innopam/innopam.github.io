@@ -76,12 +76,11 @@
       margin-top: $margin/2;
       .item {
         margin-bottom: $margin;
-
         .image {
           width: 100%;
           height: 300px;
           border-radius: 8px 8px 0 0;
-          background-size: cover;
+          background-size: contain;
           background-position: 50% 50%;
           background-repeat: no-repeat;
         }
@@ -94,6 +93,20 @@
             font-size: 20px;
           }
         }
+        .change-feature-details {
+          h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-top: 20px;
+          }
+        }
+      }
+      .under-video {
+        margin-top: 0px;
+        &:nth-of-type(5),
+        &:nth-of-type(6) {
+          margin-top: 190px;
+        }
       }
       .last-feature {
         margin: 0 auto;
@@ -102,14 +115,28 @@
           font-size: 20px;
         }
 
+        .video {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          .video iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute; /* 추가 */
+            top: 0; /* 추가 */
+            left: 0; /* 추가 */
+          }
+          
+          .video .text {
+            position: relative; /* 추가 */
+            z-index: 1; /* 추가 */
+          }
+        }
+
         .last-image {
           width: 95%;
           height: 95%;
         }
-      }
-      .video-mp4 {
-        width: 100%;
-        height: 292px;
       }
       .video-container {
         width: 100%;
