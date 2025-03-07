@@ -298,15 +298,31 @@ changedetection:
   features:
     - title: | 
         AI 기반 영상-영상 
-        건물/도로 변화탐지
+        건물 변화탐지
       description: 두 시기 영상에 대해 건물(신축, 철거, 갱신, 색변화)/도로(신축, 소멸, 확장, 축소)의 변화탐지
-      image: '/assets/img/solutions/change-detection/ai-based-image-to-image.mp4'
+      image: '/assets/img/solutions/change-detection/ai-based-image-to-image-building.gif'
 
     - title: | 
         AI 기반 영상-수치지도 
-        건물/도로 변화탐지
+        건물 변화탐지
       description: 두 시기 영상에 대해 건물(신축, 철거, 갱신)/도로(신축, 소멸, 확장, 축소)의 변화탐지
-      image: '/assets/img/solutions/change-detection/ai-based-image-to-digital-map.png'
+      image: '/assets/img/solutions/change-detection/ai-based-image-to-digital-map-building.gif'
+
+    - title: |
+        AI 기반 영상-영상
+        도로 변화탐지
+      description: | 
+        두 시기 정사영상을 비교하여 
+        도로의 변화(신축, 소멸, 확장, 축소)를 탐지
+      image: '/assets/img/solutions/change-detection/ai-based-image-to-image-road.gif'
+
+    - title: |
+        AI 기반 영상-수치지도
+        도로 변화탐지
+      description: | 
+        두 시기 정사영상을 수치지도를 비교하여 
+        수치지도의 도로의 변화(신축, 소멸, 확장, 축소)를 탐지
+      image: '/assets/img/solutions/change-detection/ai-based-image-to-digital-map-road.gif'
 
     - title: 사용자 검수
       description: 사용자 검수(변화종류, 사유 등)를 통한 변화탐지 결과 고도화 기능

@@ -6,9 +6,8 @@
   tabindex="-1"
   role="dialog"
   aria-labelledby="myModalLabel"
-  aria-hidden="true"
 >
-  <a class="close" data-dismiss="modal" aria-hidden="true"></a>
+  <a class="close" data-dismiss="modal"></a>
   <div class="fullwidthbanner-container">
     <div class="solution-hero text-center">
       <h2>{{changedetection.title}}</h2>
@@ -24,17 +23,6 @@
       </div>
       <div class="item-wrap col-sm-12">
         {% for feature in changedetection.features %}
-        {% if forloop.first %}
-        <div class="item col-sm-6 col-xs-12">
-          <video class="video-mp4" autoplay loop>
-            <source src="{{feature.image}}" type="video/mp4" />
-          </video>
-          <div class="change-feature-details">
-            <h2>{{feature.title | newline_to_br}}</h2>
-            {{feature.description | newline_to_br}}
-          </div>
-        </div>
-        {% else %}
         <div class="item col-sm-6 col-xs-12">
           <div class="image" style="background-image:url('{{feature.image}}');"></div>
           <div class="change-feature-details">
@@ -42,7 +30,6 @@
             {{feature.description | newline_to_br}}
           </div>
         </div>
-        {% endif %}
         {% endfor %}
       </div>
       {% if changedetection.examples %}
