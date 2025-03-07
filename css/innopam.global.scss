@@ -77,19 +77,18 @@ h3 {
     display: none;
   }
 
-  h2{
+  h2 {
     font-size: 32px !important;
   }
 
-  .smallTitle{
+  .smallTitle {
     font-size: 24px !important;
     // padding-top: 10px !important;
   }
 
-  .sub-ino{
+  .sub-ino {
     font-size: 14px !important;
   }
-
 }
 
 // variables
@@ -234,6 +233,7 @@ article {
   font-size: 48px;
   font-weight: 600;
   text-align: center;
+  font-family: 'Noto Sans HK';
   padding-top: $margin;
   padding-bottom: $margin * 2;
 }
