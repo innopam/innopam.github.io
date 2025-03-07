@@ -264,12 +264,14 @@ trueortho:
         영상 자동 매칭 및 최적화를 통한 영상의 정밀한 위치 추정 
         향후 산출물의 높은 위치 정확도 확보
       image: '/assets/img/solutions/trueortho/images-integration.png'
+      url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=DyCZl9kSm54
 
     - title: 포인트 클라우드 생성
       description: | 
         영상 정합 결과 기반 3차원 포인트 클라우드 생성 
         고정밀 포인트 클라우드 생성으로 폐색지역 최소화
       image: '/assets/img/solutions/trueortho/point-cloud.png'
+      url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=Kn7bLoVsxbs
 
     - title: DSM 생성
       description: |
