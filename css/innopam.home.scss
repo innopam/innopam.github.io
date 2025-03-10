@@ -15,6 +15,17 @@ h1 {
 }
 
 @media (max-width: $screen-sm-max) {
+  .recruit-wrap {
+    .btn-show-more {
+      &:nth-of-type(1) {
+        margin-top: 50px;
+      }
+    }
+  }
+  
+}
+
+@media (max-width: $screen-sm-max) {
   .is-mb {
     height: 400px;
     padding-top: 100px !important;
@@ -293,6 +304,12 @@ h5 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
+}
+
+@media (max-width: $screen-xs-max) {
+  .solution-img-container {
+    width: 100%;
+  }
 }
 
 .solution-img {
