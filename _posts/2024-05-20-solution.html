@@ -68,17 +68,10 @@ nav: solutions
               <div class="image-wrapper">
                 <img src="/assets/img/solutions/2.png" alt="Before Image" class="before-img" />
                 <img src="/assets/img/solutions/1.png" alt="After Image" class="after-img" />
-              </div>
-              <div class="slider"></div>
+              </div>           
+                <div class="slider"></div>
+                <div class="slider-arrow"></div>  
             </div>
-
-            <!-- <div class="image-compare-container" id="compare-container">
-              <div class="image-compare-overlay" id="overlay">
-                <img src="/assets/img/solutions/Change_after.png" alt="After Image" />
-              </div>
-              <img src="/assets/img/solutions/Change_before.png" alt="Before Image" />
-              <div class="slider" id="slider"></div>
-            </div> -->
 
             {% else %}
             <div class="image" style="background-image:url('{{solution.image}}');"></div>
@@ -87,7 +80,19 @@ nav: solutions
           {% else %}
           <!-- 오른쪽에 설명 / 왼쪽에 이미지 -->
           <div class="col-sm-7">
+            {% if solution.id == 2 %}
+            <div class="image-compare-container">
+              <div class="image-wrapper">
+                <img src="/assets/img/solutions/Multi-sensor/sensor_before.png" alt="Before Image" class="before-img" />
+                <img src="/assets/img/solutions/Multi-sensor/sensor_after.png" alt="After Image" class="after-img" />
+              </div>
+              <div class="slider"></div>
+              <div class="slider-arrow"></div>
+            </div>
+          {% else %}
             <div class="image" style="background-image:url('{{solution.image}}');"></div>
+          {% endif %}
+          
           </div>
           <div class="col-sm-5">
             <h2>{{solution.title}}</h2>
@@ -110,7 +115,7 @@ nav: solutions
     <style>
       .image-compare-container {
         position: relative;
-        width: 88%;
+        width: 100%;
         height: 371px;
         overflow: hidden;
         border-radius: 20px;
@@ -143,43 +148,128 @@ nav: solutions
         cursor: ew-resize;
         z-index: 2;
       }
+
+      .slider-arrow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background: url('/assets/img/solutions/sideArrow.png') no-repeat center center;
+        background-size: contain;
+        cursor: pointer;
+        z-index: 3;
+      }
     </style>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const slider = document.querySelector('.slider');
-        const afterImg = document.querySelector('.after-img');
-        const container = document.querySelector('.image-compare-container');
-        let isDragging = false;
+document.addEventListener('DOMContentLoaded', function () {
+  const containers = document.querySelectorAll('.image-compare-container'); // 모든 container 요소 선택
+  let isDragging = false;
+  let activeSlider = null;
 
-        const updateSlider = event => {
-          if (!isDragging) return;
+  const updateSlider = (event, slider, afterImg, container, arrow) => {
+    if (!isDragging) return;
 
-          let rect = container.getBoundingClientRect();
-          let position = (event.clientX || event.touches[0].clientX) - rect.left;
+    let rect = container.getBoundingClientRect();
+    let position = (event.clientX || event.touches[0].clientX) - rect.left;
 
-          if (position < 0) position = 0;
-          if (position > rect.width) position = rect.width;
+    if (position < 0) position = 0;
+    if (position > rect.width) position = rect.width;
 
-          let percentage = (position / rect.width) * 100;
+    let percentage = (position / rect.width) * 100;
 
-          // mask-image 업데이트
-          afterImg.style.webkitMaskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
-          afterImg.style.maskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
+    // mask-image 업데이트
+    afterImg.style.webkitMaskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
+    afterImg.style.maskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
 
-          // 슬라이더 위치 업데이트
-          slider.style.left = `${percentage}%`;
-        };
+    // 슬라이더와 화살표 위치 업데이트
+    slider.style.left = `${percentage}%`;
+    arrow.style.left = `${percentage}%`;
+  };
 
-        slider.addEventListener('mousedown', () => (isDragging = true));
-        slider.addEventListener('touchstart', () => (isDragging = true));
+  containers.forEach((container) => {
+    const slider = container.querySelector('.slider');
+    const arrow = container.querySelector('.slider-arrow');
+    const afterImg = container.querySelector('.after-img');
 
-        document.addEventListener('mouseup', () => (isDragging = false));
-        document.addEventListener('touchend', () => (isDragging = false));
+    slider.addEventListener('mousedown', () => {
+      isDragging = true;
+      activeSlider = slider; // 드래그 중인 슬라이더를 추적
+    });
+    slider.addEventListener('touchstart', () => {
+      isDragging = true;
+      activeSlider = slider; // 드래그 중인 슬라이더를 추적
+    });
 
-        document.addEventListener('mousemove', updateSlider);
-        document.addEventListener('touchmove', updateSlider);
-      });
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      activeSlider = null; // 드래그 종료 후 activeSlider 초기화
+    });
+    document.addEventListener('touchend', () => {
+      isDragging = false;
+      activeSlider = null; // 드래그 종료 후 activeSlider 초기화
+    });
+
+    document.addEventListener('mousemove', (event) => {
+      if (isDragging && activeSlider === slider) {
+        updateSlider(event, slider, afterImg, container, arrow);
+      }
+    });
+    document.addEventListener('touchmove', (event) => {
+      if (isDragging && activeSlider === slider) {
+        updateSlider(event, slider, afterImg, container, arrow);
+      }
+    });
+
+    // 화살표 클릭 시 슬라이더 동작
+    arrow.addEventListener('mousedown', (event) => {
+      event.preventDefault(); // 화살표 클릭이 드래그 이벤트로 처리되도록 합니다
+      isDragging = true;
+      activeSlider = slider; // 드래그 중인 슬라이더를 추적
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      activeSlider = null; // 드래그 종료 후 activeSlider 초기화
+    });
+
+    document.addEventListener('mousemove', (event) => {
+      if (isDragging && activeSlider === slider) {
+        updateSlider(event, slider, afterImg, container, arrow);
+      }
+    });
+
+    document.addEventListener('touchmove', (event) => {
+      if (isDragging && activeSlider === slider) {
+        updateSlider(event, slider, afterImg, container, arrow);
+      }
+    });
+
+    // 화살표 클릭 시 슬라이더 동작
+    arrow.addEventListener('click', (event) => {
+      event.stopPropagation(); // 클릭 이벤트가 슬라이더를 드래그하는 동작으로 전파되지 않도록
+
+      let rect = container.getBoundingClientRect();
+      let position = event.clientX - rect.left; // 화살표 클릭 위치에 따라 슬라이더 이동
+      if (position < 0) position = 0;
+      if (position > rect.width) position = rect.width;
+
+      let percentage = (position / rect.width) * 100;
+
+      // mask-image 업데이트
+      afterImg.style.webkitMaskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
+      afterImg.style.maskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
+
+      // 슬라이더와 화살표 위치 업데이트
+      slider.style.left = `${percentage}%`;
+      arrow.style.left = `${percentage}%`;
+    });
+  });
+});
+
+
     </script>
 
   </body>
