@@ -201,8 +201,16 @@
   transform: rotate(-45deg);
 }
 @media (max-width: 544px) {
-  .col-sm-5 {
-    display: flex;
-    flex-direction: column-reverse;
+  .solution-item {
+    display: flex; /* flexbox 활성화 */
+    flex-direction: column; /* 세로로 배치 */
+  }
+
+  .solution-item .col-sm-5 {
+    order: 2; /* 오른쪽에 있는 내용이 모바일에서는 아래로 내려옴 */
+  }
+
+  .solution-item .col-sm-7 {
+    order: 1; /* 왼쪽에 있는 내용이 모바일에서는 위로 올라옴 */
   }
 }
