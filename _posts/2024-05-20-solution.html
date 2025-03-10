@@ -163,40 +163,87 @@ nav: solutions
     </style>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const slider = document.querySelector('.slider');
-        const afterImg = document.querySelector('.after-img');
-        const container = document.querySelector('.image-compare-container');
-        let isDragging = false;
+ document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.querySelector('.slider');
+  const afterImg = document.querySelector('.after-img');
+  const container = document.querySelector('.image-compare-container');
+  const arrow = document.querySelector('.slider-arrow');
+  let isDragging = false;
 
-        const updateSlider = event => {
-          if (!isDragging) return;
+  const updateSlider = event => {
+    if (!isDragging) return;
 
-          let rect = container.getBoundingClientRect();
-          let position = (event.clientX || event.touches[0].clientX) - rect.left;
+    let rect = container.getBoundingClientRect();
+    let position = (event.clientX || event.touches[0].clientX) - rect.left;
 
-          if (position < 0) position = 0;
-          if (position > rect.width) position = rect.width;
+    if (position < 0) position = 0;
+    if (position > rect.width) position = rect.width;
 
-          let percentage = (position / rect.width) * 100;
+    let percentage = (position / rect.width) * 100;
 
-          // mask-image 업데이트
-          afterImg.style.webkitMaskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
-          afterImg.style.maskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
+    // mask-image 업데이트
+    afterImg.style.webkitMaskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
+    afterImg.style.maskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
 
-          // 슬라이더 위치 업데이트
-          slider.style.left = `${percentage}%`;
-        };
+    // 슬라이더 위치 업데이트
+    slider.style.left = `${percentage}%`;
 
-        slider.addEventListener('mousedown', () => (isDragging = true));
-        slider.addEventListener('touchstart', () => (isDragging = true));
+    // 화살표도 슬라이더와 함께 이동
+    arrow.style.left = `${percentage}%`;
+  };
 
-        document.addEventListener('mouseup', () => (isDragging = false));
-        document.addEventListener('touchend', () => (isDragging = false));
+  slider.addEventListener('mousedown', () => (isDragging = true));
+  slider.addEventListener('touchstart', () => (isDragging = true));
 
-        document.addEventListener('mousemove', updateSlider);
-        document.addEventListener('touchmove', updateSlider);
-      });
+  document.addEventListener('mouseup', () => (isDragging = false));
+  document.addEventListener('touchend', () => (isDragging = false));
+
+  document.addEventListener('mousemove', updateSlider);
+  document.addEventListener('touchmove', updateSlider);
+
+  // 화살표 클릭 시 슬라이더 동작
+  arrow.addEventListener('mousedown', (event) => {
+    event.preventDefault(); // 화살표 클릭이 드래그 이벤트로 처리되도록 합니다
+    isDragging = true;
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
+  document.addEventListener('mousemove', (event) => {
+    if (isDragging) {
+      updateSlider(event);
+    }
+  });
+
+  document.addEventListener('touchmove', (event) => {
+    if (isDragging) {
+      updateSlider(event);
+    }
+  });
+
+  // 화살표 클릭 시 슬라이더 동작
+  arrow.addEventListener('click', (event) => {
+    event.stopPropagation(); // 클릭 이벤트가 슬라이더를 드래그하는 동작으로 전파되지 않도록
+
+    let rect = container.getBoundingClientRect();
+    let position = event.clientX - rect.left; // 화살표 클릭 위치에 따라 슬라이더 이동
+    if (position < 0) position = 0;
+    if (position > rect.width) position = rect.width;
+
+    let percentage = (position / rect.width) * 100;
+
+    // mask-image 업데이트
+    afterImg.style.webkitMaskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
+    afterImg.style.maskImage = `linear-gradient(to right, black ${percentage}%, transparent ${percentage}%)`;
+
+    // 슬라이더와 화살표 위치 업데이트
+    slider.style.left = `${percentage}%`;
+    arrow.style.left = `${percentage}%`;
+  });
+});
+
     </script>
 
   </body>
