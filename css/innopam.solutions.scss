@@ -202,15 +202,15 @@
 }
 @media (max-width: 544px) {
   .solution-item {
-    display: flex; /* flexbox 활성화 */
-    flex-direction: column; /* 세로로 배치 */
+    display: flex !important; /* !important 추가 */
+    flex-direction: column !important;
   }
 
   .solution-item .col-sm-5 {
-    order: 2; /* 오른쪽에 있는 내용이 모바일에서는 아래로 내려옴 */
+    order: 2 !important;
   }
 
   .solution-item .col-sm-7 {
-    order: 1; /* 왼쪽에 있는 내용이 모바일에서는 위로 올라옴 */
+    order: 1 !important;
   }
 }
