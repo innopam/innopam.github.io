@@ -58,7 +58,7 @@ solutions:
     target: changedetection
     description: AI기반 건물, 도로 변화 자동탐지 솔루션
       영상-영상, 영상-수치지도 비교 분석
-    img: /assets/img/solutions/Change_main.png
+    img: /assets/img/solutions/change-detection/change_detection_main.gif
 
   - title: 실감정사영상 생성 솔루션
     subtitle: Multi-Sensor  AI  platform service
