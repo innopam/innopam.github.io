@@ -16,7 +16,7 @@ lists:
     subtitle: Multi-Sensor  AI  platform service
     target: trueortho
     description: '멀티센서(위성, 항공, 드론) 영상 기반의 GeoAI 분석 플랫폼 서비스'
-    image: '/assets/img/solutions/Multi_sensor_display-.png'
+    image: '/assets/img/solutions/Change_after.png'
     url: '#'
 
   - id: 3
