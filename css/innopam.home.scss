@@ -279,7 +279,7 @@ h5 {
 /* 모바일 화면 (최대 너비 767px) */
 @media (max-width: 767px) {
   .card > h5 {
-    height: 50px !important; /* 모바일에서는 높이 50px */
+    height: 50px; /* 모바일에서는 높이 50px */
   }
 }
 /* On mouse-over, add a deeper shadow */
