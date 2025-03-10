@@ -56,51 +56,21 @@ nav: solutions
             <h2>{{solution.title}}</h2>
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
-
-            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.target}}">
-              View more <img src="/assets/img/main/tail-right.svg" />
-            </a>
-
+            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.target}}">View more <img src="/assets/img/main/tail-right.svg" /></a>
           </div>
           <div class="col-sm-7">
-            {% if solution.id == 1 %}
-            <div class="image-compare-container">
-              <div class="image-wrapper">
-                <img src="/assets/img/solutions/2.png" alt="Before Image" class="before-img" />
-                <img src="/assets/img/solutions/1.png" alt="After Image" class="after-img" />
-              </div>           
-                <div class="slider"></div>
-                <div class="slider-arrow"></div>  
-            </div>
-
-            {% else %}
             <div class="image" style="background-image:url('{{solution.image}}');"></div>
-            {% endif %}
           </div>
           {% else %}
           <!-- 오른쪽에 설명 / 왼쪽에 이미지 -->
           <div class="col-sm-7">
-            {% if solution.id == 2 %}
-            <div class="image-compare-container">
-              <div class="image-wrapper">
-                <img src="/assets/img/solutions/Multi-sensor/sensor_after.png" alt="Before Image" class="before-img" />
-                <img src="/assets/img/solutions/Multi-sensor/sensor_before.png" alt="After Image" class="after-img" />
-              </div>
-              <div class="slider"></div>
-              <div class="slider-arrow"></div>
-            </div>
-          {% else %}
             <div class="image" style="background-image:url('{{solution.image}}');"></div>
-          {% endif %}
-          
           </div>
           <div class="col-sm-5">
             <h2>{{solution.title}}</h2>
             <h3>{{solution.subtitle}}</h3>
             <div class="desc">{{solution.description}}</div>
-            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.target}}">
-              View more <img src="/assets/img/main/tail-right.svg" />
-            </a>
+            <a class="btn-show-more" role="button" data-toggle="modal" data-target="#modal-{{solution.target}}">View more <img src="/assets/img/main/tail-right.svg" /></a>
           </div>
           {% endif %}
         </div>
