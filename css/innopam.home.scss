@@ -22,7 +22,6 @@ h1 {
       }
     }
   }
-  
 }
 
 @media (max-width: $screen-sm-max) {
@@ -274,9 +273,15 @@ h5 {
   letter-spacing: -0.8px;
   padding-left: 30px;
   padding-right: 30px;
-  height: 76.75px;
+  height: 30px; /* 기본값(웹) */
 }
 
+/* 모바일 화면 (최대 너비 767px) */
+@media (max-width: 767px) {
+  .card > h5 {
+    height: 50px !important; /* 모바일에서는 높이 50px */
+  }
+}
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
