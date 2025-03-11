@@ -19,7 +19,7 @@
   <div class="container" id="solution-detail">
     <div class="row" id="feature">
       <div class="col-sm-12">
-        <h1 style="font-size: 40px; font-weight: 700; color: white;">기능</h1>
+        <h1 style="font-size: 40px; font-weight: 700;">기능</h1>
       </div>
       <div class="item-wrap col-sm-12">
         {% for feature in changedetection.features %}
@@ -27,14 +27,14 @@
           <div class="image" style="background-image:url('{{feature.image}}');"></div>
           <div class="change-feature-details">
             <h2 style="font-size: 40px; font-weight: 700; color: white;">{{feature.title | newline_to_br}}</h2>
-            {{feature.description | newline_to_br}}
+            <p>{{feature.description | newline_to_br}}</p>
           </div>
         </div>
         {% endfor %}
       </div>
       {% if changedetection.examples %}
       <div class="col-sm-12 pt-6">
-        <h1 style="font-size: 40px; font-weight: 700; color: white;">도입 사례</h1>
+        <h1 style="font-size: 40px; font-weight: 700;">도입 사례</h1>
       </div>
       <div class="item-wrap col-sm-12">
         {% for example in changedetection.examples %}
@@ -56,9 +56,9 @@
         {% else %}
         <div class="item col-sm-6 col-xs-12">
           <div class="image" style="background-image:url('{{example.image}}');"></div>
-          <div class="text">
+          <div class="change-feature-details">
             <h2 style="font-size: 40px; font-weight: 700; color: white;">{{example.title | newline_to_br}}</h2>
-            {{example.description | newline_to_br}}
+            <p>{{example.description | newline_to_br}}</p>
           </div>
         </div>
         {% endif %}

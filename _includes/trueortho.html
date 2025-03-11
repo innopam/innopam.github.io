@@ -20,22 +20,24 @@
   <div class="container" id="solution-detail">
     <div class="row" id="feature">
       <div class="col-sm-12">
-        <h1>기능</h1>
+        <h1 style="font-size: 40px; font-weight: 700;">기능</h1>
       </div>
       <div class="item-wrap col-sm-12">
         {% for feature in trueortho.features %}
             {% if forloop.last %}
               <div class="last-feature col-12">
-                  <h2 style="color: white; font-size: 40px; font-weight: 900;">{{feature.title}}</h2>
+                  <h2 style="font-size: 40px; font-weight: 900; margin-top: 100px;">{{feature.title}}</h2>
                   {{feature.description | newline_to_br}}
                   <img class="last-image" src="{{feature.image}}" alt="{{feature.title}}" />
               </div>
             {% else %} 
               <div class="item under-video col-sm-6 col-xs-12">
                   <div class="image" style="background-image:url('{{feature.image}}');"></div>
-                  <div class="text">
+                  <div class="change-feature-details">
                       <h2 style="color: white; font-size: 40px; font-weight: 900;">{{feature.title}}</h2>
-                      {{feature.description | newline_to_br}}
+                      <p>
+                        {{feature.description | newline_to_br}}
+                      </p>
                   </div>
               </div>
             {% endif %}
