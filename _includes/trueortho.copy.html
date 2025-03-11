@@ -1,0 +1,83 @@
+{% assign trueortho = site.data.solutions.trueortho %}
+
+<div
+  class="modal fade modal-fullscreen"
+  id="modal-{{trueortho.id}}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+>
+  <a class="close" data-dismiss="modal" aria-hidden="true"></a>
+  <div class="fullwidthbanner-container">
+    <div class="solution-hero text-center">
+      <h2>{{trueortho.title}}</h2>
+      <h3>{{trueortho.subtitle}}</h3>
+      <div class="desc">{{trueortho.description | newline_to_br}}</div>
+      <div class="background"></div>
+    </div>
+  </div>
+  <div class="container" id="solution-detail">
+    <div class="row" id="feature">
+      <div class="col-sm-12">
+        <h1>기능</h1>
+      </div>
+      <div class="item-wrap col-sm-12">
+        {% for feature in trueortho.features %}
+            {% if forloop.last %}
+              <div class="last-feature col-12">
+                  <h2 style="color: white; font-size: 40px; font-weight: 900;">{{feature.title}}</h2>
+                  {{feature.description | newline_to_br}}
+                  <img class="last-image" src="{{feature.image}}" alt="{{feature.title}}" />
+              </div>
+            {% elsif forloop.index == 3 %}
+              <div class="video item col-sm-6 col-xs-12">
+                <iframe 
+                  src="{{feature.url}}" 
+                  frameborder="0" 
+                  allow="accelerometer; 
+                    clipboard-write; 
+                    encrypted-media; 
+                    gyroscope; 
+                    picture-in-picture;
+                    autoplay;" 
+                  allowfullscreen>
+                </iframe>
+                <div class="text">
+                  <h2 style="color: white; font-size: 40px; font-weight: 900;">{{feature.title}}</h2>
+                  {{feature.description | newline_to_br}}
+                </div>
+              </div>
+            {% elsif forloop.index == 4 %}
+              <div class="video item col-sm-6 col-xs-12">
+                <iframe 
+                  src="{{feature.url}}" 
+                  frameborder="0" 
+                  allow="
+                    accelerometer; 
+                    clipboard-write; 
+                    encrypted-media; 
+                    gyroscope; 
+                    picture-in-picture;
+                    autoplay;"
+                  allowfullscreen>
+                </iframe>
+                <div class="text">
+                  <h2 style="color: white; font-size: 40px; font-weight: 900;">{{feature.title}}</h2>
+                  {{feature.description | newline_to_br}}
+                </div>
+              </div>
+            {% else %} 
+            <div class="item under-video col-sm-6 col-xs-12">
+                <div class="image" style="background-image:url('{{feature.image}}');"></div>
+                <div class="text">
+                    <h2 style="color: white; font-size: 40px; font-weight: 900;">{{feature.title}}</h2>
+                    {{feature.description | newline_to_br}}
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -263,27 +263,27 @@ trueortho:
       description: | 
         영상 자동 매칭 및 최적화를 통한 영상의 정밀한 위치 추정 
         향후 산출물의 높은 위치 정확도 확보
-      image: '/assets/img/solutions/trueortho/images-integration.png'
-      url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=DyCZl9kSm54
+      image: '/assets/img/none.png'
+      # url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=DyCZl9kSm54
 
     - title: 포인트 클라우드 생성
       description: | 
         영상 정합 결과 기반 3차원 포인트 클라우드 생성 
         고정밀 포인트 클라우드 생성으로 폐색지역 최소화
-      image: '/assets/img/solutions/trueortho/point-cloud.png'
-      url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=Kn7bLoVsxbs
+      image: '/assets/img/none.png'
+      # url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=Kn7bLoVsxbs
 
     - title: DSM 생성
       description: |
         대상지역의 건물, 지형 등 모든 객체를 포함한 
         고해상도의 정밀한 높이 데이터 생성
-      image: '/assets/img/solutions/trueortho/dsm.png'
+      image: '/assets/img/none.png'
 
     - title: 실감 정사영상 생성
       description: | 
         기복변위를 해소하고, 건물 외곽선을 명확히 표현한
         고정밀 실감 정사영상 생성
-      image: '/assets/img/solutions/trueortho/trueortho-gen.png'
+      image: '/assets/img/none.png'
 
     - title: 실감정사영상 결과
       description: 건물 옆면과 같은 기복변위를 해소하고, 건물 외곽선을 명확히 표현해 수치지도 검수, 건물/도로 변화탐지 등에 이용 가능성 향상
@@ -340,7 +340,9 @@ changedetection:
 
   # 도입 사례
   examples:
-    - title: 서울시 GeoAI 기반 도시 변화탐지
+    - title: | 
+        서울시 GeoAI 기반
+        도시 변화탐지
       description: | 
         서울시 항공사진을 이용해 건물의 변화
         (신축/소멸/갱신/색변화)를 자동으로 탐지 및 관
