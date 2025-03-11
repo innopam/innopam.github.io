@@ -81,13 +81,11 @@
           background-repeat: no-repeat;
         }
         .text {
-          padding: $margin;
+          padding: 36px 30px;
           background-color: rgba(255, 255, 255, 0.1);
           border-radius: 0 0 20px 20px;
-
-          h2 {
-            font-size: 40px;
-            color: #fff;
+          p {
+            font-size: 20px;
           }
         }
         .change-feature-details {
@@ -95,6 +93,9 @@
             font-size: 40px;
             font-weight: 700;
             margin-top: 20px;
+          }
+          p {
+            font-size: 20px;
           }
         }
       }
