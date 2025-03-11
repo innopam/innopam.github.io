@@ -16,7 +16,7 @@ lists:
     subtitle: True Orthophoto Generation Solution
     target: trueortho
     description: '실감정사영상 제작을 위한 사용자화 프로세스 생성 솔루션'
-    image: '/assets/img/solutions/Multi-sensor/실감정사영상_2.gif'
+    image: '/assets/img/solutions/Multi-sensor/실감정사영상.gif'
     url: '#'
 
   - id: 3
