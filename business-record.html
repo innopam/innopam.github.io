@@ -23,13 +23,32 @@ nav: business-record
             <h1 class="smallTitle">주요사업 수행 실적</h1>
           </div>
           <ul class="row years col-sm-12" id="list">
-            <li class="list-active">2023</li>
+            <li class="list-active">2024</li>
+            <li>2023</li>
             <li>2022</li>
             <li>2021</li>
             <li>2020</li>
             <li>2019</li>
             <li>2018</li>
           </ul>
+          <div class="col-sm-12 table show-table" data-year="2024">
+            <table class="main-business">
+              <tr>
+                <th>과제명</th>
+                <th>발주처</th>
+                <th class="hidden-xs">사업내용</th>
+              </tr>
+              {% for record in business-record.business-records %}
+                {% if record.year == 2024 %}
+                <tr>
+                  <td>{{record.name}}</td>
+                  <td>{{record.client}}</td>
+                  <td class="hidden-xs">{{record.note}}</td>
+                </tr>
+                {% endif %}
+              {% endfor %}
+            </table>
+          </div>
           <div class="col-sm-12 table show-table" data-year="2023">
             <table class="main-business">
               <tr>
