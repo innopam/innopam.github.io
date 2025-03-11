@@ -82,7 +82,7 @@ solutions:
 
   - title: D-drive
     subtitle: 영상 데이터 저장·관리
-    target:: D-drive
+    target: D-drive
     description: |
       수많은 영상을 한곳에서 편리하게 관리/검색/공유하는 서비스
       AI를 활용한 영상 자동 분류

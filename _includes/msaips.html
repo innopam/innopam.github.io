@@ -25,9 +25,9 @@
         {% for feature in msaips.features %}
         <div class="item col-sm-6 col-xs-12">
           <div class="image" style="background-image:url('{{feature.image}}');"></div>
-          <div class="text">
-            <h2>{{feature.title}}</h2>
-            {{feature.description | newline_to_br}}
+          <div class="change-feature-details">
+            <h2 style="color: #fff;">{{feature.title}}</h2>
+            <p>{{feature.description | newline_to_br}}</p>
           </div>
         </div>
         {% endfor %}
@@ -40,9 +40,9 @@
         {% for example in msaips.examples %}
         <div class="item col-sm-6 col-xs-12">
           <div class="image" style="background-image:url('{{example.image}}');"></div>
-          <div class="text">
-            <h2>{{example.title}}</h2>
-            {{example.description | newline_to_br}}
+          <div class="change-feature-details">
+            <h2 style="color: #fff;">{{example.title}}</h2>
+            <p>{{example.description | newline_to_br}}</p>
           </div>
         </div>
         {% endfor %}
