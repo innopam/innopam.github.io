@@ -241,8 +241,8 @@ trueortho:
   title: 실감정사영상 생성 솔루션
   subtitle: True Orthophoto Generation Solution
   description: | 
-    멀티센서(위성, 항공, 드론)영상 기반의
-    실감정사영상 제작 솔루션
+    실감정사영상 제작을 위한
+    사용자화 프로세스 생성 솔루션
   id: trueortho
 
   # 기능
