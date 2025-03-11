@@ -1,12 +1,13 @@
----
-# Innopam Site SCSS
----
+// ---
+// # Innopam Site SCSS
+// ---
 
 //Base Url
 $baseurl: "{{ site.baseurl }}";
 
 // Color Setting
 $main-color: #1057C1;
+$main-bg-color: #5430E1;
 $sub-color: #00E3FF;
 
 // base margin

@@ -41,7 +41,7 @@
   position: relative;
   z-index: 1;
   padding: $margin 0;
-  background-color: $main-color;
+  background-color: $main-bg-color;
   .desc {
     width: 400px;
     margin: 0 auto;
@@ -125,8 +125,8 @@
         .last-image {
           margin-top: 15px;
           margin-bottom: 350px;
-          width: 95%;
-          height: 95%;
+          width: 100%;
+          height: 75%;
         }
       }
       .video-container {
