@@ -25,9 +25,9 @@
         {% for feature in ddriveai.features %}
         <div class="item col-sm-6 col-xs-12">
           <div class="image" style="background-image:url('{{feature.image}}');"></div>
-          <div class="text">
-            <h2>{{feature.title}}</h2>
-            {{feature.description | newline_to_br}}
+          <div class="change-feature-details">
+            <h2 style="color: #fff;">{{feature.title}}</h2>
+            <p>{{feature.description | newline_to_br}}</p>
           </div>
         </div>
         {% endfor %}

@@ -202,37 +202,53 @@ msaips:
   # 적용분야
   features:
     - title: 데이터 수집 • 저장
-      description: '위성 • 항공 • 드론 영상의 계층적 정보 취득 및 활용'
+      description: | 
+        위성 • 항공 • 드론 영상의
+        계층적 정보 취득 및 활용
       image: '/assets/img/solutions/MS-AI-PS/data-get-save.png'
 
     - title: GEO-AI 모델 개발
-      description: '모델 앙상블 적용을 통한 AI모델 객체 탐지 정확도 제고'
+      description: | 
+        모델 앙상블 적용을 통한
+        AI모델 객체 탐지 정확도 제고
       image: '/assets/img/solutions/MS-AI-PS/GEO-AI.png'
 
     - title: One-Stop AI 서비스
-      description: '학습데이터 수집, 전처리, 구축, 관리를 위한 One-Stop 서비스'
+      description: | 
+        학습데이터 수집, 전처리, 구축, 관리를 위한
+        One-Stop 서비스
       image: '/assets/img/solutions/MS-AI-PS/One-Stop.png'
 
     - title: 모델 학습 갱신
-      description: '플랫폼에서 구축된 학습데이터를 이용해 직접 모델 학습 갱신'
+      description: | 
+        플랫폼에서 구축된 학습데이터를 이용해
+        직접 모델 학습 갱신
       image: '/assets/img/solutions/MS-AI-PS/model-practice.png'
 
   # 도입 사례
   examples:
     - title: 제주 위성영상 분석시스템
-      description: '제주의 도시 문제에 대한 신속한 분석과 최적 대응 체계를 위해 GEO-AI를 활용한 범용적 영상분석 시스템 구축'
+      description: | 
+        제주의 도시 문제에 대한 신속한 분석과 최적 대응 체계를 위해
+        GEO-AI를 활용한 범용적 영상분석 시스템 구축
       image: '/assets/img/solutions/MS-AI-PS/jeju-analysis.png'
 
     - title: 제주 재배작물관리 서비스
-      description: 'AI분석을 통한 작물자동탐지 및 편리하고 체계적인 재배면적 신고 관리를 위한 서비스'
+      description: | 
+        AI분석을 통한 작물자동탐지 및 편리하고 체계적인
+        재배면적 신고 관리를 위한 서비스
       image: '/assets/img/solutions/MS-AI-PS/jeju-plant-manage.png'
 
     - title: 제주 불법산림훼손관리 서비스
-      description: 'AI분석을 통한 불법산림훼손 자동탐지 및 훼손지 관리를 위한 서비스'
+      description: | 
+        AI분석을 통한 불법산림훼손 자동탐지 및
+        훼손지 관리를 위한 서비스
       image: '/assets/img/solutions/MS-AI-PS/jeju-illegally-ruin-manage.png'
 
     - title: 제주 해양쓰레기관리 서비스
-      description: 'AI 분석을 통한 해양쓰레기 자동탐지 및 행정구역별 통계 정보 확인을 위한 서비스'
+      description: | 
+        AI 분석을 통한 해양쓰레기 자동탐지 및
+        행정구역별 통계 정보 확인을 위한 서비스
       image: '/assets/img/solutions/MS-AI-PS/jeju-sea-trash-manage.png'
 
 # # 실감정사영상 상세페이지
