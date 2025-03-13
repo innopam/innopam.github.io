@@ -65,8 +65,12 @@ dmapai:
       description: '사용자가 업로드한 드론영상을 활용해, 영상매칭과 사진측량 기술을 이용해 정사영상을 제작하는 기능'
       image: '/assets/img/solutions/dmapai/feature-1.png'
 
-    - title: Point Cloud/3DMesh 제작 기능
-      description: '사용자가 업로드한 드론영상을 활용해, 영상 매칭과 사진측량 기술을 이용해 3차원 Point Cloud와 Mesh를제작하는 기능'
+    - title: | 
+        Point Cloud/3DMesh 
+        제작 기능
+      description: | 
+        사용자가 업로드한 드론영상으로 영상 매칭과 사진측량 
+        기술을 이용해 3차원 Point Cloud와 Mesh를제작하는 기능
       image: '/assets/img/solutions/dmapai/feature-2.png'
 
     - title: DSM 제작기능
@@ -192,7 +196,7 @@ mmaps:
         사용자 인터페이스 라이브러리
         디지털트윈기반 서비스 구현
 
-# # D-drive 상세페이지
+# # MS-AI-PS 상세페이지
 # # 헤더
 msaips:
   title: MS-AI-PS
