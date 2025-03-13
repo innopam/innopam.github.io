@@ -88,6 +88,13 @@
             font-size: 20px;
           }
         }
+        .dmapai-text {
+          width: 540px;
+          height: 240px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
         .change-feature-details {
           h2 {
             font-size: 40px;
@@ -151,6 +158,9 @@
     #feature {
       .item-wrap {
         flex-direction: column;
+        .dmapai-text {
+          width: fit-content !important;
+        }
         .video {
           &:nth-of-type(3),
           &:nth-of-type(4) {
