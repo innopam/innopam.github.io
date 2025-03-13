@@ -24,9 +24,9 @@
         {% for feature in ldmapai.features %}
         <div class="item col-sm-6 col-xs-12">
           <div class="image" style="background-image:url('{{feature.image}}');"></div>
-          <div class="text">
-            <h2>{{feature.title}}</h2>
-            {{feature.description}}
+          <div class="change-feature-details">
+            <h2>{{feature.title | newline_to_br}}</h2>
+            <p>{{feature.description | newline_to_br}}</p>
           </div>
         </div>
         {% endfor %}
@@ -40,9 +40,9 @@
         {% for example in ldmapai.examples %}
         <div class="item col-sm-6 col-xs-12">
           <div class="image" style="background-image:url('{{example.image}}');"></div>
-          <div class="text">
-            <h2>{{example.title}}</h2>
-            {{example.description}}
+          <div class="change-feature-details">
+            <h2>{{example.title | newline_to_br}}</h2>
+            <p>{{feature.description | newline_to_br}}</p>
           </div>
         </div>
         {% endfor %}
