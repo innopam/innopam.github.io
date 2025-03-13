@@ -201,7 +201,9 @@ mmaps:
 msaips:
   title: MS-AI-PS
   subtitle: Multi-Sensor AI platform service
-  description: '멀티센서(위성, 항공, 드론)영상 기반의 GeoAI 분석 플랫폼 서비스'
+  description: | 
+    멀티센서(위성, 항공, 드론)영상 기반의
+    GeoAI 분석 플랫폼 서비스
 
   # 적용분야
   features:
