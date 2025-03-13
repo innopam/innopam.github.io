@@ -23,11 +23,11 @@
       </div>
       <div class="item-wrap col-sm-12">
         {% for feature in dmapai.features %}
-        <div class="item col-lg-4 col-md-6 col-sm-6 col-xs-12 min-width">
+        <div class="item col-lg-6 col-md-6 col-sm-6 col-xs-12 min-width">
           <div class="image" style="background-image:url('{{feature.image}}');"></div>
-          <div class="text">
-            <h2>{{feature.title}}</h2>
-            {{feature.description}}
+          <div class="text dmapai-text">
+            <h2>{{feature.title | newline_to_br}}</h2>
+            <p>{{feature.description | newline_to_br}}</p>
           </div>
         </div>
         {% endfor %}
