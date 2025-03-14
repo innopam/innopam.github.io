@@ -299,13 +299,13 @@ trueortho:
       description: |
         대상지역의 건물, 지형 등 모든 객체를 포함한 
         고해상도의 정밀한 높이 데이터 생성
-      image: '/assets/img/none.png'
+      image: '/assets/img/solutions/trueortho/dsm.gif'
 
     - title: 실감 정사영상 생성
       description: | 
         기복변위를 해소하고, 건물 외곽선을 명확히 표현한
         고정밀 실감 정사영상 생성
-      image: '/assets/img/none.png'
+      image: '/assets/img/solutions/trueortho/trueortho-gen.gif'
 
     - title: 실감정사영상 결과
       description: 건물 옆면과 같은 기복변위를 해소하고, 건물 외곽선을 명확히 표현해 수치지도 검수, 건물/도로 변화탐지 등에 이용 가능성 향상
