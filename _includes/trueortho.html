@@ -29,6 +29,26 @@
                   {{feature.description | newline_to_br}}
                   <img class="last-image" src="{{feature.image}}" alt="{{feature.title}}" />
               </div>
+            {% elsif forloop.index == 5  %} 
+              <div class="item under-video col-sm-6 col-xs-12">
+                <div class="image" style="background-image:url('{{feature.image}}');"></div>
+                <div class="change-feature-details">
+                    <h2 style="color: white; font-size: 40px; font-weight: 900;">{{feature.title}}</h2>
+                    <p>
+                      {{feature.description | newline_to_br}}
+                    </p>
+                </div>
+              </div>
+            {% elsif forloop.index == 6  %} 
+              <div class="item under-video col-sm-6 col-xs-12">
+                <div class="image" style="background-image:url('{{feature.image}}');"></div>
+                <div class="change-feature-details">
+                    <h2 style="color: white; font-size: 40px; font-weight: 900;">{{feature.title}}</h2>
+                    <p>
+                      {{feature.description | newline_to_br}}
+                    </p>
+                </div>
+              </div>
             {% else %} 
               <div class="item under-video col-sm-6 col-xs-12">
                   <div class="image" style="background-image:url('{{feature.image}}');"></div>
