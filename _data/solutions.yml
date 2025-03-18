@@ -269,18 +269,6 @@ trueortho:
 
   # 기능
   features:
-    - title: 정사영상 생성 단계별 관리
-      description: | 
-        정사영상 생성의 효율적 관리를 위한 
-        단계별 산출물(데이터, 프로젝트)의 조회/관리/검색 지원
-      image: '/assets/img/solutions/trueortho/ortho-gen-by-level.png'
-
-    - title: 지도 기반 영상 조회
-      description: | 
-        단계별 산출물(원본영상, DSM, 정사영상 등)을 
-        지도 기반으로 조회
-      image: '/assets/img/solutions/trueortho/map-base-images.png'
-
     - title: 영상 정합
       description: | 
         영상 자동 매칭 및 최적화를 통한 영상의 정밀한 위치 추정 
@@ -292,8 +280,8 @@ trueortho:
       description: | 
         영상 정합 결과 기반 3차원 포인트 클라우드 생성 
         고정밀 포인트 클라우드 생성으로 폐색지역 최소화
-      image: '/assets/img/none.png'
-      # url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=Kn7bLoVsxbs
+      # image: '/assets/img/none.png'
+      url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=Kn7bLoVsxbs
 
     - title: DSM 생성
       description: |
@@ -306,6 +294,18 @@ trueortho:
         기복변위를 해소하고, 건물 외곽선을 명확히 표현한
         고정밀 실감 정사영상 생성
       image: '/assets/img/solutions/trueortho/trueortho-gen.gif'
+
+    - title: 정사영상 생성 단계별 관리
+      description: | 
+        정사영상 생성의 효율적 관리를 위한 
+        단계별 산출물(데이터, 프로젝트)의 조회/관리/검색 지원
+      image: '/assets/img/solutions/trueortho/ortho-gen-by-level.png'
+
+    - title: 지도 기반 영상 조회
+      description: | 
+        단계별 산출물(원본영상, DSM, 정사영상 등)을 
+        지도 기반으로 조회
+      image: '/assets/img/solutions/trueortho/map-base-images.png'
 
     - title: 실감정사영상 결과
       description: 건물 옆면과 같은 기복변위를 해소하고, 건물 외곽선을 명확히 표현해 수치지도 검수, 건물/도로 변화탐지 등에 이용 가능성 향상
