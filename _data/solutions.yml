@@ -273,8 +273,8 @@ trueortho:
       description: | 
         영상 자동 매칭 및 최적화를 통한 영상의 정밀한 위치 추정 
         향후 산출물의 높은 위치 정확도 확보
-      # image: '/assets/img/none.png'
-      url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=gCYDjR4gtOo
+      image: '/assets/img/solutions/trueortho/image-integration.gif'
+      # url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=gCYDjR4gtOo
 
     - title: 포인트 클라우드 생성
       description: | 
