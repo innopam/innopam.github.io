@@ -29,24 +29,6 @@
                   {{feature.description | newline_to_br}}
                   <img class="last-image" src="{{feature.image}}" alt="{{feature.title}}" />
               </div>
-            {% elsif forloop.index == 2 %}
-              <div class="video item col-sm-6 col-xs-12">
-                <iframe 
-                  src="{{feature.url}}" 
-                  frameborder="0" 
-                  allow="accelerometer; 
-                    clipboard-write; 
-                    encrypted-media; 
-                    gyroscope; 
-                    picture-in-picture;
-                    autoplay;" 
-                  allowfullscreen>
-                </iframe>
-                <div class="change-feature-details">
-                  <h2>{{feature.title}}</h2>
-                  <p>{{feature.description | newline_to_br}}</p>
-                </div>
-              </div>
             {% elsif forloop.index == 3  %} 
               <div class="item under-video col-sm-6 col-xs-12">
                 <div class="image" style="background-image:url('{{feature.image}}');"></div>

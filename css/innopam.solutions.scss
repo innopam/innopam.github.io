@@ -131,13 +131,8 @@
       .under-video {
         margin-top: 0px;
         &:nth-of-type(1) {
-          position: relative;
-          top: 5px;
           > .image {
             background-size: cover;
-          }
-          > .change-feature-details {
-            padding-top: 14px;
           }
         }
         &:nth-of-type(3) {

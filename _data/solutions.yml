@@ -280,8 +280,8 @@ trueortho:
       description: | 
         영상 정합 결과 기반 3차원 포인트 클라우드 생성 
         고정밀 포인트 클라우드 생성으로 폐색지역 최소화
-      # image: '/assets/img/none.png'
-      url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=Kn7bLoVsxbs
+      image: '/assets/img/solutions/trueortho/point-cloud.gif'
+      # url: https://www.youtube.com/embed?autoplay=1&loop=1&mute=1&playlist=Kn7bLoVsxbs
 
     - title: DSM 생성
       description: |
