@@ -160,24 +160,108 @@ nav: business-record
         </div>
         <div class="row contents" id="patent">
           <div class="col-sm-12">
-            <h1 class="smallTitle">특허 / 저작권</h1>
+            <h1 class="smallTitle">지적재산권</h1>
           </div>
-          <div class="col-sm-12">
+          <ul class="row categories col-sm-12" id="category-container">
+            <li class="category-active">특허</li>
+            <li>프로그램등록</li>
+            <li>학술지</li>
+            <li>학술대회</li>
+          </ul>
+          <div class="col-sm-12 table-container show-container" data-category="특허">
             <table>
-              <tr>
-                <th>구분</th>
-                <th>명칭</th>
-                <th class="hidden-xs">등록일</th>
-                <th class="hidden-xs">비고</th>
-              </tr>
-              {% for patent in business-record.patents %}
-              <tr>
-                <td>{{patent.status}}</td>
-                <td>{{patent.name}}</td>
-                <td class="hidden-xs">{{patent.date}}</td>
-                <td class="hidden-xs">{{patent.note}}</td>
-              </tr>
-              {% endfor %}
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>명칭</th>
+                  <th class="hidden-xs">등록일</th>
+                  <th class="hidden-xs">특허번호</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for patent in business-record.patents %}
+                  {% if patent.status == "특허" %}
+                    <tr>
+                      <td>{{patent.status}}</td>
+                      <td>{{patent.name}}</td>
+                      <td class="hidden-xs">{{patent.date}}</td>
+                      <td class="hidden-xs">{{patent.application_number}}</td>
+                    </tr>
+                  {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <div class="col-sm-12 table-container" data-category="프로그램등록">
+            <table>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>명칭</th>
+                  <th class="hidden-xs">등록일</th>
+                  <th class="hidden-xs">특허번호</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for patent in business-record.patents %}
+                  {% if patent.status == "프로그램등록" %}
+                    <tr>
+                      <td>{{patent.status}}</td>
+                      <td>{{patent.name}}</td>
+                      <td class="hidden-xs">{{patent.date}}</td>
+                      <td class="hidden-xs">{{patent.application_number}}</td>
+                    </tr>
+                  {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <div class="col-sm-12 table-container" data-category="학술지">
+            <table>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>명칭</th>
+                  <th class="hidden-xs">등록일</th>
+                  <th class="hidden-xs">특허번호</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for patent in business-record.patents %}
+                  {% if patent.status == "학술지" %}
+                    <tr>
+                      <td>{{patent.status}}</td>
+                      <td>{{patent.name}}</td>
+                      <td class="hidden-xs">{{patent.date}}</td>
+                      <td class="hidden-xs">{{patent.application_number}}</td>
+                    </tr>
+                  {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <div class="col-sm-12 table-container" data-category="학술대회">
+            <table>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>명칭</th>
+                  <th class="hidden-xs">등록일</th>
+                  <th class="hidden-xs">특허번호</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for patent in business-record.patents %}
+                  {% if patent.status == "학술대회" %}
+                    <tr>
+                      <td>{{patent.status}}</td>
+                      <td>{{patent.name}}</td>
+                      <td class="hidden-xs">{{patent.date}}</td>
+                      <td class="hidden-xs">{{patent.application_number}}</td>
+                    </tr>
+                  {% endif %}
+                {% endfor %}
+              </tbody>
             </table>
           </div>
         </div>
