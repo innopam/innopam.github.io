@@ -7,6 +7,12 @@ h1 {
 .show-table {
     display: block;
 }
+.table-container {
+    display: none;
+}
+.show-container {
+    display: block;
+}
 
 .hero-about {
     background-color: $main-color;
@@ -150,6 +156,26 @@ h1 {
 }
 
 #patent {
+    .categories {
+        list-style: none;
+        color: white;
+        display: flex;
+        font-size: larger;
+        margin: 20px 0 20px 0;
+
+        > li:not(:nth-of-type(1)) {
+            margin-left: 25px;
+        }
+    }
+    #category-container {
+        cursor: pointer;
+        margin-top: 0 !important;
+        .category-active {
+            border-bottom: 1px solid #00E3FF;
+            color: #00E3FF;
+            font-weight: 900;
+        }
+    }
     table {
         width:100%;
         margin-top:$margin/2;

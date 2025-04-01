@@ -359,69 +359,163 @@ clients:
   - name: 한국수자원공사
     img: '/assets/img/clients/kwater.png'
 
-# 특허 / 저작권
+# 지적재산권
 patents:
-  - status: 특허 등록
-    name: 복수의 센서를 탑재한 무인 비행체를 이용하는 매핑 방법 및 시스템
-    date: 2017.08.21
-    note: 기술 이전
-
-  - status: 특허 출원
+  - status: 특허
+    name: 재배 작물 모니터링 방법 및 시스템
+    date: 2023.08.31
+    application_number: 10-2023-0115473
+  - status: 특허
+    name: 시설물 손상 분석 방법 및 시스템
+    date: 2024.05.28
+    application_number: 10-2024-0069062
+  - status: 특허
+    name: 지상기준점 자동 매칭을 이용한 정사 영상 생성 방법 및 시스템
+    date: 2024.04.18
+    application_number: 10-2024-0052291
+  - status: 특허
+    name: 인공지능과 드론영상을 이용한 실시간 재난정보 탐지 시스템 및 방법
+    date: 2021.05.07
+    application_number: 제10-2021-0059196호
+  - status: 특허
     name: GeoAI를 이용한 공간 정보 생성 방법 및 공간 정보 생성 장치
     date: 2019.11.26
-    note:
-
-  - status: 특허 등록
-    name: 지리공간정보를 이용한 실시간 감독 학습 방법 및 시스템
-    date: 2019.12.03
-    note: 기술 이전
-
-  - status: 프로그램 등록
-    name: 변화탐지 인공지능 네트워크 학습을 위한 데이터 구축 프로그램
-    date: 2019.11.18
-    note:
-
-  - status: 프로그램 등록
+    application_number: 제10-2019-0153767호
+  - status: 특허
+    name: 지리공간정보를 이용하는 실시간 감독 학습 방법 및 시스템
+    date: 2017.08.31
+    application_number: 제10-2017-0110631호
+  - status: 특허
+    name: 복수센서를 탑재한 무인 비행체를 이용하는 매핑 방법 및 시스템
+    date: 2014.12.29
+    application_number: 제10-2014-0192665호
+  - status: 프로그램등록
+    name: 전개도 기반의 손상 탐지 및 물량 산출 프로그램
+    date: 2024.06.14
+    application_number: C-2024-020472
+  - status: 프로그램등록
+    name: 시설물 손상 정량화 SW
+    date: 2023.11.07
+    application_number: C-2023-049786
+  - status: 프로그램등록
+    name: 인공지능 기반 시설물 손상 탐지 S/W
+    date: 2023.10.19
+    application_number: C-2023-046109
+  - status: 프로그램등록
+    name: 지오에이아이(GeoAI)와 공간영상 빅데이터(Big Data) 기반 도시 변화탐지 플랫폼(Platform)
+    date: 2021.09.13
+    application_number: C-2021-036634
+  - status: 프로그램등록
+    name: 공간데이터베이스 기반 학습데이터 관리체계
+    date: 2021.03.24
+    application_number: C-2021-013800
+  - status: 프로그램등록
+    name: 드론영상 실시간 전송 어플리케이션
+    date: 2021.03.19
+    application_number: C-2021-013315
+  - status: 프로그램등록
+    name: 인공지능과 드론 기반 재해정보 자동 탐지
+    date: 2021.03.19
+    application_number: C-2021-013316
+  - status: 프로그램등록
+    name: 드론 동영상 개별 매핑 프로그램
+    date: 2020.03.12
+    application_number: C-2020-008884
+  - status: 프로그램등록
+    name: 드론항공동영상을 이용한 인공지능기반 재난정보 탐지추출 프로그램
+    date: 2020.03.12
+    application_number: C-2020-008883
+  - status: 프로그램등록
     name: 인공지능 기반 불법건축물 탐지 프로그램
     date: 2019.11.18
-    note:
-
-  - status: 프로그램 등록
-    name: 클라우드 기반 드론 영상 매핑 프로그램
+    application_number: C-2019-033829
+  - status: 프로그램등록
+    name: 클라우드(Cloud) 기반 드론(Drone)영상 매핑(Mapping) 프로그램
     date: 2019.04.16
-    note:
-
-  - status: 저작권 등록
-    name: 인공지능과 드론 기반 재해정보 자동 탐지
-    date: 2020.08.03
-    note:
-
-  - status: 저작권 등록
-    name: 드론영상 실시간 전송 어플리케이션
-    date: 2020.08.03
-    note:
-
-  - status: 특허 등록
-    name: GeoAI를 이용한 공간 정보 생성 방법 및 공간 정보 생성 장치
-    date: 2021.09.03
-    note:
-
-  - status: 특허 등록
-    name: 인공지능과 드론 영상을 이용한 실시간 재난정보 탐지 시스템 및 방법
-    date: 2021.10.22
-    note:
-
-  - status: 특허 등록
-    name: 인공지능 기반 정사영상 잘피 서식지 탐지 프로그램
-    date: 2022
-    note:
-
-  - status: 특허 등록
-    name: 재배 작물 모니터링 방법 및 시스템 2023
-    date: 2023
-    note:
-
-  - status: 특허 등록
-    name: 지상기준점 자동매칭을 이용한 정사영상 생성 방법 및 시스템
-    date: 2024
-    note:
+    application_number: C-2019-009052
+  - status: 프로그램등록
+    name: 변화탐지 인공지능 네트워크(Network) 학습을 위한 데이터(Data) 구축 프로그램(Program)
+    date: 2019.11.18
+    application_number: C-2019-033828
+  - status: 학술지
+    name: 지하시설물 안전점검을 위한 딥러닝 기반 콘크리트 균열 검출
+    date: 2023.11.30
+  - status: 학술지
+    name: 시설물 상태평가를 위한 파운데이션 모델 기반 2-Step 시설물 손상 분석
+    date: 2023.10.31
+  - status: 학술지
+    name: 드론 영상으로부터 월동 작물 분류를 위한 의미론적 분할 딥러닝 모델 학습 최적 공간 해상도와 영상 크기 선정
+    date: 2021.12.31
+  - status: 학술지
+    name: 콘크리트 라이닝 균열 분할 딥러닝 모델 평가 방법
+    date: 2022.10.31
+  - status: 학술지
+    name: 터널 콘크리트 라이닝 균열 분석을 위한 의미론적 분할 모델 학습
+    date: 2021.11.30
+  - status: 학술지
+    name: 딥러닝 기반 터널 콘크리트 라이닝 균열 탐지
+    date: 2022.10.31
+  - status: 학술지
+    name: 코리더 모니터링을 위한 드론 영상 기반 액션 카메라 매핑
+    date: 2021.9.30
+  - status: 학술지
+    name: 장기체공형 태양광 드론과 딥러닝을 이용한 산불 감시 시스템 개발
+    date: 2020.6.30
+  - status: 학술대회
+    name: Exploring the Potential of Super-Resolution for Crack Analysis in UAV Facade Orthomosaics of Small Bridges
+    date: 2025년 9월 10일
+  - status: 학술대회
+    name: Multi-Class Building Change Detection in Urban Areas using High-Resolution Aerial Images with Class Imbalance Mitigation and VSSM-Based Model
+    date: 2025년 8월 5일
+  - status: 학술대회
+    name: "Implementation of Two-Step Structural Damage Analysis Based on Foundation Models : Case Study for Small Size Bridge in South Korea"
+    date: 2025년 5월 26일
+  - status: 학술대회
+    name: 입면 정사영상 기반 균열 탐지 및 분석을 위한 초해상화 활용성 검토
+    date: 2025년 4월 10일
+  - status: 학술대회
+    name: "Building Extraction from High Resolution Aerial Imagery: Issue to Discuss about Data and Ground Truth"
+    date: 2024년 10월 25일
+  - status: 학술대회
+    name: 다시점 수치지도를 활용한 건물 변화 탐지용 Ground Trth 생성
+    date: 2024년 10월 25일
+  - status: 학술대회
+    name: 수치지도의 건물 속성정보를 활용한 항공영상 기반 건물 분할 성능평가
+    date: 2024년 10월 16일
+  - status: 학술대회
+    name: 딥러닝 기반 콘크리트 구조물의 손상 탐지 및 상태평가 시스템
+    date: 2024년 9월 30일
+  - status: 학술대회
+    name: REGISTRATION OF AERIAL AND GROUND IMAGES FOR 3D RECONSTRUCTION USING TIE POINT FILTERING BASED ON REPROJECTION ERRORS
+    date: 2024년 7월 12일
+  - status: 학술대회
+    name: 파운데이션 모델을 이용한 항공사진 건물 의미론적 분할
+    date: 2024년 5월 17일
+  - status: 학술대회
+    name: 시설물 손상 탐지를 위한 인공지능 파운데이션 모델 활용 및 검증
+    date: 2023년 10월 20일
+  - status: 학술대회
+    name: 콘크리트 라이닝 균열의 딥러닝 성능 평가 지표의 버퍼 범위 선정을 위한 연구
+    date: 2023년 10월 19일
+  - status: 학술대회
+    name: "Citrus Unshiu Monitoring using UAV and Deep Learning : For Semantic Segmentation of Citrus Tress"
+    date: 2023년 8월 23일
+  - status: 학술대회
+    name: 딥러닝 기반 터널 라이닝 균열 탐지를 위한 라인 스캐닝 자료 및 외관망도 활용방안
+    date: 2022년 10월 20일
+  - status: 학술대회
+    name: 기반시설물 손상부위 딥러닝 학습을 위한 분류체계 및 학습데이터 구조 설계
+    date: 2022년 10월 20일
+  - status: 학술대회
+    name: 균열의 특성을 고려한 의미론적 분할 딥러닝 모델 평가 방법
+    date: 2022년 5월 19일
+  - status: 학술대회
+    name: 드론 영상과 팜맵을 이용한 딥러닝 기반 작물 재배면적 산정
+    date: 2022년 5월 19일
+  - status: 학술대회
+    name: 수중 구조물 모니터링을 위한 ROV 영상 3차원 모델링
+    date: 2022년 5월 19일
+  - status: 학술대회
+    name: 장기체공형 태양광 드론과 딥러닝을 이용한 산불 이상징후 감지 체계 구축
+    date: 2019년 4월 11일
+  
